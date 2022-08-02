@@ -116,14 +116,14 @@
                     <div class="collapse" id="navbar-ar">
                         <ul class="nav nav-sm flex-column">
                             <li class="nav-item">
-                                <a class="nav-link" href="{{ route('profile.edit') }}">
+                                <a class="nav-link" href="{{ route('article.create') }}">
                                     {{ __('Create New') }}
                                 </a>
                             </li>
 
                             
                             <li class="nav-item">
-                                <a class="nav-link" href="{{ route('user.index') }}">
+                                <a class="nav-link" href="{{ route('article.allpost') }}">
                                     {{ __('All Post') }}
                                 </a>
                             </li>
