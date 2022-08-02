@@ -67,11 +67,15 @@
                                 {{ __('User profile') }}
                             </a>
                         </li>
+
+                        @can('manage users', User::class)
                         <li class="nav-item">
                             <a class="nav-link" href="{{ route('user.index') }}">
                                 {{ __('User Management') }}
                             </a>
                         </li>
+                        @endcan
+                        
                     </ul>
                 </div>
             </li>

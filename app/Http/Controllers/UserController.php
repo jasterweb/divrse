@@ -8,6 +8,11 @@ use Illuminate\Support\Facades\Hash;
 
 class UserController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('permission:manage users', ['only' => ['index']]);
+    }
+
     /**
      * Display a listing of the users
      *
