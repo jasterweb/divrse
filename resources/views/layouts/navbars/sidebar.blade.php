@@ -96,7 +96,6 @@
                                     {{ __('User profile') }}
                                 </a>
                             </li>
-
                             @can('manage users', User::class)
                             <li class="nav-item">
                                 <a class="nav-link" href="{{ route('user.index') }}">
@@ -104,7 +103,6 @@
                                 </a>
                             </li>
                             @endcan
-
                         </ul>
                     </div>
                 </li>
@@ -112,21 +110,25 @@
                 <li class="nav-item">
                     <a class="nav-link" href="#navbar-ar" data-toggle="collapse" role="button" aria-expanded="true" aria-controls="navbar-examples">
                         <i class="ni ni-books text-blue"></i>
-                        <span class="nav-link-text">{{ __('Article') }}</span>
+                        <span class="nav-link-text">{{ __('Articles') }}</span>
                     </a>
 
                     <div class="collapse" id="navbar-ar">
                         <ul class="nav nav-sm flex-column">
                             <li class="nav-item">
-                                <a class="nav-link" href="{{ route('profile.edit') }}">
-                                    {{ __('User profile') }}
+                                <a class="nav-link" href="{{ route('article.create') }}">
+                                    {{ __('Create New') }}
                                 </a>
                             </li>
+
+                            
                             <li class="nav-item">
-                                <a class="nav-link" href="{{ route('user.index') }}">
-                                    {{ __('User Management') }}
+                                <a class="nav-link" href="{{ route('article.allpost') }}">
+                                    {{ __('All Post') }}
                                 </a>
                             </li>
+                            
+
                         </ul>
                     </div>
                 </li>
