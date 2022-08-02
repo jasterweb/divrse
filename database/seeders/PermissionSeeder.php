@@ -29,21 +29,37 @@ class PermissionSeeder extends Seeder
         Permission::create(['name' => 'manage users']);
 
         // create admin role and assign permissions
-        $adminRole = Role::create(['name' => 'admin']);
-        $adminRole->givePermissionTo('view posts');
-        $adminRole->givePermissionTo('create posts');
-        $adminRole->givePermissionTo('edit posts');
-        $adminRole->givePermissionTo('delete posts');
-        $adminRole->givePermissionTo('publish posts');
-        $adminRole->givePermissionTo('unpublish posts');
+        $writerRole = Role::create(['name' => 'writer']);
+        $writerRole->givePermissionTo('view posts');
+        $writerRole->givePermissionTo('create posts');
+        $writerRole->givePermissionTo('edit posts');
+        $writerRole->givePermissionTo('delete posts');
+        $writerRole->givePermissionTo('publish posts');
+        $writerRole->givePermissionTo('unpublish posts');
 
-        // create superadmin role
-        $superadminRole = Role::create(['name' => 'superadmin']);
+        // create admin role
+        $adminRole = Role::create(['name' => 'admin']);
         // gets all permissions via Gate::before rule
 
         // create demo users
         $user = User::factory()->create([
-            'name' => 'admin',
+            'username' => 'writer',
+            'fullname' => 'writer',
+            'address' => 'test',
+            'phone' => '1234',
+            'email' => 'writer@gmail.com',
+            'email_verified_at' => now(),
+            'password' => Hash::make('secret'),
+            'created_at' => now(),
+            'updated_at' => now()
+        ]);
+        $user->assignRole($writerRole);
+
+        $user = User::factory()->create([
+            'username' => 'admin',
+            'fullname' => 'admin',
+            'address' => 'test',
+            'phone' => '1234',
             'email' => 'admin@gmail.com',
             'email_verified_at' => now(),
             'password' => Hash::make('secret'),
@@ -51,15 +67,5 @@ class PermissionSeeder extends Seeder
             'updated_at' => now()
         ]);
         $user->assignRole($adminRole);
-
-        $user = User::factory()->create([
-            'name' => 'superadmin',
-            'email' => 'superadmin@gmail.com',
-            'email_verified_at' => now(),
-            'password' => Hash::make('secret'),
-            'created_at' => now(),
-            'updated_at' => now()
-        ]);
-        $user->assignRole($superadminRole);
     }
 }
