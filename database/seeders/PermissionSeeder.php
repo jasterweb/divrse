@@ -43,7 +43,10 @@ class PermissionSeeder extends Seeder
 
         // create demo users
         $user = User::factory()->create([
-            'name' => 'writer',
+            'username' => 'writer',
+            'fullname' => 'writer',
+            'address' => 'test',
+            'phone' => '1234',
             'email' => 'writer@gmail.com',
             'email_verified_at' => now(),
             'password' => Hash::make('secret'),
@@ -53,7 +56,10 @@ class PermissionSeeder extends Seeder
         $user->assignRole($writerRole);
 
         $user = User::factory()->create([
-            'name' => 'admin',
+            'username' => 'admin',
+            'fullname' => 'admin',
+            'address' => 'test',
+            'phone' => '1234',
             'email' => 'admin@gmail.com',
             'email_verified_at' => now(),
             'password' => Hash::make('secret'),
