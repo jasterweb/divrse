@@ -1,0 +1,99 @@
+
+.title1 {
+    color: var(--white);
+    font-weight: bold;
+    font-size: 2.5rem;
+  }
+  .desc1 {
+    font-size: 18px;
+  }
+
+  .text-2rem
+{
+    font-size: 2rem !important;
+}
+
+.mb-10
+{
+    margin-bottom: 5rem !important;
+}
+
+
+.main-content section {
+  display: inline-block;
+  width: 100%;
+  padding: 4rem 0;
+}
+.titlesect {
+  text-align: center;
+  font-size: 2.2rem;
+  font-weight: bold;
+}
+
+.w600{max-width: 600px;}
+.m0-auto{margin:0 auto}
+.bg-white-2{background-color: #F4F4F4;}
+
+.title2 {
+  font-size: 2.2rem;
+  font-weight: bold;
+}
+
+
+.btn-xl {
+  padding: 1rem 2.2rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  letter-spacing: 0;
+}
+.image-box{text-align: center;}
+.imgcta img{margin-top:-6rem}
+.footlanding{border-bottom: 8px solid var(--cyan);}
+
+
+.wcuslide {
+  display: flex;
+  gap: 0;
+  flex-wrap: wrap;
+  margin: 5rem 0 0;
+}
+.wcuitem {
+  width: 33.33%;
+  padding: 0 20px;
+}
+.wcuwrap {
+  text-align: center;
+}
+.wcuwrap img {
+  margin-bottom: 1.5rem;
+}
+.wcuwrap h3 {
+  font-size: 1.5rem;
+  padding: 0 2rem;
+  margin-bottom: 1.2rem;
+  font-weight: bold;
+}
+
+
+.slick-dots {
+  margin: 1.5rem auto 0;
+  list-style: none;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.slick-dots li {
+  font-size: 0;
+  padding: 0 5px;
+}
+.slick-dots li button {
+  border: 0;
+  background: var(--primary);
+  padding: 10px;
+  border-radius: 25px;
+  opacity: 0.2;
+}
+.slick-dots .slick-active button {
+  opacity: 1;
+}
