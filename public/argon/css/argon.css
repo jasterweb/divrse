@@ -21865,3 +21865,7 @@ html:not([dir='rtl']) .noUi-horizontal .noUi-handle
 
     height: 3px;
 }
+.brand-background {
+    background-color: #172b4d;
+    border-radius: .375rem;
+}
