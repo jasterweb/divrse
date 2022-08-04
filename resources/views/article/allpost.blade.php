@@ -1,127 +1,106 @@
-@extends('layouts.app', ['title' => __('User Profile')])
+@extends('layouts.app')
 
 @section('content')
-    @include('users.partials.header', [
-        'title' => __('Hello') . ' '. auth()->user()->name,
-        'description' => __('This is your profile page. You can see the progress you\'ve made with your work and manage your projects or assigned tasks'),
-        'class' => 'col-lg-7'
-    ])   
+    <div class="header bg-gradient-primary pb-8 pt-5 pt-md-8">
+        <div class="container-fluid">
+        </div>
+    </div>
 
     <div class="container-fluid mt--7">
         <div class="row">
-            <div class="col-xl-4 order-xl-2 mb-5 mb-xl-0">
-                <div class="card card-profile shadow">
-                    
-                    <div class="card-body pt-0 pt-md-4">
-                       @foreach ($articles as $article)
-                       <img src="{{$article->getFirstMediaUrl('document')}}" / width="120px">
-                       @endforeach
-                    </div>
-                </div>
-            </div>
-            <div class="col-xl-8 order-xl-1">
-                <div class="card bg-secondary shadow">
-                    <div class="card-header bg-white border-0">
+            <div class="col">
+                <div class="card shadow mb-5">
+
+                    <div class="card-header border-0">
                         <div class="row align-items-center">
-                            <h3 class="mb-0">{{ __('Edit Profile') }}</h3>
+                            <div class="col-8">
+                                <h3 class="mb-0">Users</h3>
+                            </div>
+                            <div class="col-4 text-right">
+                                <a href="{{route('article.create')}}" class="btn btn-sm btn-primary">Add Article</a>
+                            </div>
                         </div>
                     </div>
+
                     <div class="card-body">
-                        <form method="post" action="{{ route('profile.update') }}" autocomplete="off">
-                            @csrf
-                            @method('put')
 
-                            <h6 class="heading-small text-muted mb-4">{{ __('User information') }}</h6>
-                            
-                            @if (session('status'))
-                                <div class="alert alert-success alert-dismissible fade show" role="alert">
-                                    {{ session('status') }}
-                                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
-                                    </button>
-                                </div>
-                            @endif
+                        <div class="table-responsive">
+                            <table id="article-table" class="table align-items-center table-flush">
 
+                                <thead class="thead-light">
+                                    <tr>
+                                        <th scope="col">No</th>
+                                        <th scope="col">title</th>
+                                        <th scope="col">Image</th>
+                                        <th scope="col">Published at</th>
+                                        <th scope="col">Action</th>
+                                    </tr>
+                                </thead>
 
-                            <div class="pl-lg-4">
-                                <div class="form-group{{ $errors->has('name') ? ' has-danger' : '' }}">
-                                    <label class="form-control-label" for="input-name">{{ __('Name') }}</label>
-                                    <input type="text" name="name" id="input-name" class="form-control form-control-alternative{{ $errors->has('name') ? ' is-invalid' : '' }}" placeholder="{{ __('Name') }}" value="{{ old('name', auth()->user()->name) }}" required autofocus>
+                                <tbody>
 
-                                    @if ($errors->has('name'))
-                                        <span class="invalid-feedback" role="alert">
-                                            <strong>{{ $errors->first('name') }}</strong>
-                                        </span>
-                                    @endif
-                                </div>
-                                <div class="form-group{{ $errors->has('email') ? ' has-danger' : '' }}">
-                                    <label class="form-control-label" for="input-email">{{ __('Email') }}</label>
-                                    <input type="email" name="email" id="input-email" class="form-control form-control-alternative{{ $errors->has('email') ? ' is-invalid' : '' }}" placeholder="{{ __('Email') }}" value="{{ old('email', auth()->user()->email) }}" required>
+                                    @foreach ($articles as $article)
+                                        <tr>
+                                            <td>{{ $loop->iteration }}</td>
+                                            <td>{{ $article->title }}</td>
+                                            <td><img src="{{$article->getFirstMediaUrl('document')}}" / width="120px"></td>
+                                            <td>{{ date('d/F/Y', strtotime($article->published_at));}}</td>
+                                            <td class="text-center">
+                                                <input class="form-control" type="hidden" name="idAbsen" id="idarticle" value="{{ $article->id }}">
+                                                <a class="btn-primary inline" href="{{ route('article.edit',$article->id) }}">Edit</a>
+                                                <a href="{{ route('article.delete', $article->id) }}" class="btn-ic btn-danger hilang"><i data-feather="slash"></i>Delete</a>
+                                            </td>
+                                        </tr>
+                                    @endforeach
 
-                                    @if ($errors->has('email'))
-                                        <span class="invalid-feedback" role="alert">
-                                            <strong>{{ $errors->first('email') }}</strong>
-                                        </span>
-                                    @endif
-                                </div>
-
-                                <div class="text-center">
-                                    <button type="submit" class="btn btn-success mt-4">{{ __('Save') }}</button>
-                                </div>
-                            </div>
-                        </form>
-                        <hr class="my-4" />
-                        <form method="post" action="{{ route('profile.password') }}" autocomplete="off">
-                            @csrf
-                            @method('put')
-
-                            <h6 class="heading-small text-muted mb-4">{{ __('Password') }}</h6>
-
-                            @if (session('password_status'))
-                                <div class="alert alert-success alert-dismissible fade show" role="alert">
-                                    {{ session('password_status') }}
-                                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
-                                    </button>
-                                </div>
-                            @endif
-
-                            <div class="pl-lg-4">
-                                <div class="form-group{{ $errors->has('old_password') ? ' has-danger' : '' }}">
-                                    <label class="form-control-label" for="input-current-password">{{ __('Current Password') }}</label>
-                                    <input type="password" name="old_password" id="input-current-password" class="form-control form-control-alternative{{ $errors->has('old_password') ? ' is-invalid' : '' }}" placeholder="{{ __('Current Password') }}" value="" required>
-                                    
-                                    @if ($errors->has('old_password'))
-                                        <span class="invalid-feedback" role="alert">
-                                            <strong>{{ $errors->first('old_password') }}</strong>
-                                        </span>
-                                    @endif
-                                </div>
-                                <div class="form-group{{ $errors->has('password') ? ' has-danger' : '' }}">
-                                    <label class="form-control-label" for="input-password">{{ __('New Password') }}</label>
-                                    <input type="password" name="password" id="input-password" class="form-control form-control-alternative{{ $errors->has('password') ? ' is-invalid' : '' }}" placeholder="{{ __('New Password') }}" value="" required>
-                                    
-                                    @if ($errors->has('password'))
-                                        <span class="invalid-feedback" role="alert">
-                                            <strong>{{ $errors->first('password') }}</strong>
-                                        </span>
-                                    @endif
-                                </div>
-                                <div class="form-group">
-                                    <label class="form-control-label" for="input-password-confirmation">{{ __('Confirm New Password') }}</label>
-                                    <input type="password" name="password_confirmation" id="input-password-confirmation" class="form-control form-control-alternative" placeholder="{{ __('Confirm New Password') }}" value="" required>
-                                </div>
-
-                                <div class="text-center">
-                                    <button type="submit" class="btn btn-success mt-4">{{ __('Change password') }}</button>
-                                </div>
-                            </div>
-                        </form>
+                                </tbody>
+                                
+                            </table>
+                        </div>
+                        
                     </div>
+
+                    <div class="card-footer py-4">
+                        <nav class="d-flex justify-content-end" aria-label="..."></nav>
+                    </div>
+
                 </div>
             </div>
         </div>
-        
-        @include('layouts.footers.auth')
     </div>
 @endsection
+
+@push('js')
+    {{-- <script src="{{ asset('argon') }}/vendor/jquery/dist/jquery.min.js"></script> --}}
+    {{-- <script src="{{ asset('argon') }}/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script> --}}
+    <script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.12.1/js/dataTables.bootstrap4.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.12.1/css/dataTables.bootstrap4.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/6.6.9/sweetalert2.min.js"></script>
+    <!-- Argon JS -->
+    {{-- <script src="{{ asset('argon') }}/js/argon.js?v=1.0.0"></script> --}}
+
+    <script>
+        $(document).ready(function() {
+            $('#article-table').DataTable();
+        });
+
+        $('.hilang').on('click', function (event) {
+            event.preventDefault();
+            var idAbsen = $('#articleid').val();
+     
+     
+            const url = $(this).attr('href');
+            swal({
+             title: 'Yakin mau Delete ?',
+                text: 'Pastikan dulu biar ngga salah 🙏',
+                icon: 'warning',
+                buttons: ["Gajadi, maap", "Tolak"],
+            }).then(function(value) {
+                if (value) {
+                    window.location.href = url;
+                }
+            });
+        });
+    </script>
+@endpush

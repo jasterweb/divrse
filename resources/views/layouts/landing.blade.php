@@ -30,7 +30,8 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet"> 
-
+        <style>
+        </style>
     </head>
     <body class="{{ $class ?? '' }}">
        
@@ -39,9 +40,7 @@
             @yield('content')
         </div>
 
-        @guest()
-            @include('layouts.footers.guest')
-        @endguest
+        @include('layouts.footers.guest')
 
       
         <script src="{{ asset('argon') }}/vendor/jquery/dist/jquery.min.js"></script>

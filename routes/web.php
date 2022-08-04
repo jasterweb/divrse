@@ -14,9 +14,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [App\Http\Controllers\LandingController::class, 'index']);
 
 Auth::routes();
 
@@ -39,6 +37,9 @@ Route::group(['middleware' => 'auth'], function () {
 	Route::get('article/create', ['as' => 'article.create', 'uses' => 'App\Http\Controllers\ArticleController@create']);
 	Route::post('article/media', ['as' => 'article.storeMedia', 'uses' => 'App\Http\Controllers\ArticleController@storeMedia']);
 	Route::post('article/store', ['as' => 'article.store', 'uses' => 'App\Http\Controllers\ArticleController@store']);
+	Route::get('article/{article}/edit', ['as' => 'article.edit', 'uses' => 'App\Http\Controllers\ArticleController@edit']);
+	Route::put('article/{article}/update', ['as' => 'article.update', 'uses' => 'App\Http\Controllers\ArticleController@update']);
+	Route::get('article/{article}/delete', ['as' => 'article.delete', 'uses' => 'App\Http\Controllers\ArticleController@destroy']);
 
 	// user resource route
 	Route::resource('user', 'App\Http\Controllers\UserController', ['except' => ['show']]);

@@ -8,7 +8,8 @@
     ])   
 
     <div class="container-fluid mt--7">
-        <form action="{{route('article.store')}}" method="POST" enctype="multipart/form-data">
+        <form action="{{route('article.update',$article->id)}}" method="POST" enctype="multipart/form-data">
+            @method('PUT')
             @csrf
         <div class="row">
            
@@ -30,23 +31,49 @@
                                 <div class="card-profile-stats d-flex justify-content-center mt-md-5 flex-column">
                                     <div class="d-flex justify-content-between">
                                        <h3>Date </h3>
-                                       <p class="ml-4 description text-dark">{{ now() }}</p>
+                                       <p class="ml-4 description text-dark">{{ $article->published_at }}</p>
                                     </div>
                                     <div class="d-flex justify-content-between">
                                         <h3>Post By </h3>
-                                        <p class="ml-4 description text-dark">{{ auth()->user()->name }}</p>
+                                        <p class="ml-4 description text-dark">{{ $article->user->name }}</p>
                                      </div>
                                      <div>
                                         <h3>Thumbnail </h3>
                                         <form action="{{route('article.storeMedia')}}" method="POST" enctype="multipart/form-data">
                                             @csrf
                                         
+                                            <div class="d-flex flex-column">
+                                            <img src="{{$article->getFirstMediaUrl('document')}}" />
+                                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                                                Change Image
+                                              </button>
+                                            </div>
+                                            <!-- Modal -->
+                                            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                <div class="modal-dialog" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                    
                                             <div class="form-group">
                                                 <div class="needsclick dropzone" id="document-dropzone">
                                         
                                                 </div>
                                             </div>
-                                        </form>  
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                                    </div>
+                                                </div>
+                                                </div>
+                                            </div>
+                                            </form>  
                                      </div>
                                 </div>
                             </div>
@@ -71,17 +98,17 @@
                             <div class="pl-lg-4">
                                 <div class="form-group{{ $errors->has('name') ? ' has-danger' : '' }}">
                                     <label class="form-control-label" for="input-name">{{ __('Ttiel') }}</label>
-                                    <input type="text" name="title" id="input-name" class="form-control form-control-alternative{{ $errors->has('name') ? ' is-invalid' : '' }}" placeholder="{{ __('Title') }}" required autofocus>
+                                    <input type="text" name="title" id="input-name" class="form-control form-control-alternative{{ $errors->has('title') ? ' is-invalid' : '' }}" placeholder="{{ __('Title') }}" value="{{$article->title}}" required autofocus>
 
                                     @if ($errors->has('name'))
                                         <span class="invalid-feedback" role="alert">
-                                            <strong>{{ $errors->first('name') }}</strong>
+                                            <strong>{{ $errors->first('title') }}</strong>
                                         </span>
                                     @endif
                                 </div>
                                 <div class="form-group{{ $errors->has('desc') ? ' has-danger' : '' }}">
                                     <label class="form-control-label" for="input-email">{{ __('Description') }}</label>
-                                    <textarea class="form-control" name="desc" rows="5" id="notes" placeholder="Description"></textarea>
+                                    <textarea class="form-control" name="desc" rows="5" id="notes" placeholder="Description">{{$article->desc   }}</textarea>
 
                                     @if ($errors->has('email'))
                                         <span class="invalid-feedback" role="alert">
@@ -134,9 +161,9 @@
                 $('form').find('input[name="document[]"][value="' + name + '"]').remove()
             },
             init: function () {
-                @if(isset($project) && $project->document)
+                @if(isset($article) && $article->document)
                 var files =
-                    {!! json_encode($project->document) !!}
+                    {!! json_encode($article->document) !!}
                 for (var i in files) {
                     var file = files[i]
                     this.options.addedfile.call(this, file)

@@ -43,7 +43,8 @@ class ArticleController extends Controller
     {
         $article = new Article();
         $article->title = $request->title;
-        $article->desc = $request->desc;
+        $replaced = preg_replace('~<p[^>]*>~', '', $request->desc);
+        $article->desc = $replaced;
         $article->user_id = auth()->user()->id;
         $article->published_at = now();
         $article->slug = \Str::slug($request->title);;
@@ -55,5 +56,45 @@ class ArticleController extends Controller
         $article->save();
 
         return redirect()->route('article.create');
+    }
+
+    public function edit(Article $article) 
+    {
+        // dd($item);
+        return view('article.edit',compact('article'));
+    }
+
+    public function update(Request $request, Article $article)
+    {
+
+       
+        if (count(array($article->img)) > 0) {
+         
+            foreach (array($article->img) as $media) {
+                    if (!in_array($article->media->pluck('file_name')->toArray(), $request->input('document', []))) {
+                        if($article->img && $request->input('document', []) != []){
+                            $article->media()->delete();
+                        }
+                    }
+            }
+        }
+        $media = $article->media->pluck('file_name')->toArray();
+       
+        foreach ($request->input('document', []) as $file) {
+            if (count($media) === 0 || !in_array($file, $media)) {
+                $article->addMedia(storage_path('tmp/uploads/' . $file))->toMediaCollection('document');
+                $article->img = $file;
+            }
+            
+        }
+        
+        $article->update($request->all());
+
+        return redirect()->route('article.allpost');
+    }
+    public function destroy(Article $article)
+    {
+        $article->delete();
+        return redirect()->route('article.allpost');
     }
 }

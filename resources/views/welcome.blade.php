@@ -193,7 +193,25 @@
             <div class="row align-items-center justify-content-between">
                     <h2 class="titlesect text-primary">DE&I Resources</h2>
                     <a href="">View All Posts</a>
+                   
             </div>
+            <div class="row align-items-center justify-content-between">
+               
+                    @forelse ($articles as $article)
+                    <div class="wrapper">
+                        <img src="{{$article->getFirstMediaUrl('document')}}" / width="120px">
+                        <div class="content">
+                            <h2>{{$article->title}}</h2>
+                            <p>{{strip_tags($article->desc)}}</p>
+                            <button class="btn btn-primary">Learn More</button>
+                        </div>
+                    </div>
+                    @empty
+                
+                    @endforelse
+                
+            </div>
+        
         </div>
     </section>
 @endsection
