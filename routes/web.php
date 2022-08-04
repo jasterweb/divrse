@@ -26,7 +26,6 @@ Auth::routes();
 Route::get('/home', 'App\Http\Controllers\HomeController@index')->name('home');
 
 Route::group(['middleware' => 'auth'], function () {
-	Route::resource('user', 'App\Http\Controllers\UserController', ['except' => ['show']]);
 	Route::get('profile', ['as' => 'profile.edit', 'uses' => 'App\Http\Controllers\ProfileController@edit']);
 	Route::put('profile', ['as' => 'profile.update', 'uses' => 'App\Http\Controllers\ProfileController@update']);
 	Route::get('upgrade', function () {return view('pages.upgrade');})->name('upgrade'); 
@@ -34,11 +33,14 @@ Route::group(['middleware' => 'auth'], function () {
 	Route::get('icons', function () {return view('pages.icons');})->name('icons'); 
 	Route::get('table-list', function () {return view('pages.tables');})->name('table');
 	Route::put('profile/password', ['as' => 'profile.password', 'uses' => 'App\Http\Controllers\ProfileController@password']);
-
+	
 	//article route
 	Route::get('article', ['as' => 'article.allpost', 'uses' => 'App\Http\Controllers\ArticleController@index']);
 	Route::get('article/create', ['as' => 'article.create', 'uses' => 'App\Http\Controllers\ArticleController@create']);
 	Route::post('article/media', ['as' => 'article.storeMedia', 'uses' => 'App\Http\Controllers\ArticleController@storeMedia']);
 	Route::post('article/store', ['as' => 'article.store', 'uses' => 'App\Http\Controllers\ArticleController@store']);
+
+	// user resource route
+	Route::resource('user', 'App\Http\Controllers\UserController', ['except' => ['show']]);
 });
 
