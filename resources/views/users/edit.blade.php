@@ -13,7 +13,7 @@
         <div class="card shadow p-lg-5 py-md-5 px-md-2 col-xl-9 col-12 mx-auto mb-5">
 
             <div class="card-header">
-                <h2 class="text-black mb-0">Add User</h2>
+                <h2 class="text-black mb-0">Edit User</h2>
             </div>
 
             <div class="card-body">

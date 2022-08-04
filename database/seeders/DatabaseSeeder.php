@@ -15,5 +15,15 @@ class DatabaseSeeder extends Seeder
     {
         $this->call([PermissionSeeder::class]);
         $this->call([UsersTableSeeder::class]);
+
+        DB::table('contacts')->insert([
+            'email' => 'admin@argon.com',
+            'phone' => '0893859932859',
+            'address' => 'Toronto, Canada',
+            'instagram' => '@argon',
+            'youtube' => 'argon',
+            'facebook' => 'argon',
+            'whatsapp' => '0893859932859'
+        ]);
     }
 }
