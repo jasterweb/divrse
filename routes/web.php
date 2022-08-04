@@ -40,7 +40,8 @@ Route::group(['middleware' => 'auth'], function () {
 	Route::post('article/media', ['as' => 'article.storeMedia', 'uses' => 'App\Http\Controllers\ArticleController@storeMedia']);
 	Route::post('article/store', ['as' => 'article.store', 'uses' => 'App\Http\Controllers\ArticleController@store']);
 
-	// user resource route
+	// user route
 	Route::resource('user', 'App\Http\Controllers\UserController', ['except' => ['show']]);
+	Route::put('user/password/{user}', ['as' => 'user.password', 'uses' => 'App\Http\Controllers\UserController@password']);
 });
 

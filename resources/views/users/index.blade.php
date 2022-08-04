@@ -22,7 +22,17 @@
                         </div>
                     </div>
 
+
                     <div class="card-body">
+
+                        @if (session('status'))
+                            <div class="alert alert-success alert-dismissible fade show" role="alert">
+                                {{ session('status') }}
+                                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                        @endif
 
                         <div class="table-responsive">
                             <table id="users-table" class="table align-items-center table-flush">
@@ -35,7 +45,7 @@
                                         <th scope="col">Address</th>
                                         <th scope="col">Email</th>
                                         <th scope="col">Phone Number</th>
-                                        <th scope="col">Creation Date</th>
+                                        {{-- <th scope="col">Creation Date</th> --}}
                                         <th scope="col"></th>
                                     </tr>
                                 </thead>
@@ -50,14 +60,14 @@
                                             <td>{{ $user->address }}</td>
                                             <td><a href="mailto:{{ $user->email }}">{{ $user->email }}</a></td>
                                             <td>{{ $user->phone }}</td>
-                                            <td>{{ $user->created_at->format('d/m/Y H:i') }}</td>
+                                            {{-- <td>{{ $user->created_at->format('d/m/Y H:i') }}</td> --}}
                                             <td class="text-right">
                                                 <div class="dropdown">
                                                     <a class="btn btn-sm btn-icon-only text-light" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                                         <i class="fas fa-ellipsis-v"></i>
                                                     </a>
                                                     <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
-                                                        <a class="dropdown-item" href="">Edit</a>
+                                                        <a class="dropdown-item" href="/user/{{ $user->id }}/edit">Edit</a>
                                                         <form method="POST" action="/user/{{ $user->id }}">
                                                             @csrf
                                                             @method('delete')
