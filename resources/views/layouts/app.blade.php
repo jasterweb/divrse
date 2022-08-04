@@ -11,7 +11,8 @@
         <!-- Favicon -->
         <link href="{{ asset('argon') }}/logo/fav.png" rel="icon" type="image/png">
         <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet"> 
+        <link href="http://fonts.cdnfonts.com/css/futura-md-bt" rel="stylesheet">
         <!-- Extra details for Live View on GitHub Pages -->
 
         <!-- Icons -->
