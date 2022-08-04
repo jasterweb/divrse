@@ -25,7 +25,8 @@
         href="https://unpkg.com/dropzone@5/dist/min/dropzone.min.css"
         type="text/css"
         />
-    
+        <link rel="stylesheet" href="https://unpkg.com/dropzone@5/dist/min/dropzone.min.css" type="text/css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/6.6.9/sweetalert2.min.css">
 
     </head>
     <body class="{{ $class ?? '' }}">
@@ -51,50 +52,6 @@
         
         <!-- Argon JS -->
         <script src="{{ asset('argon') }}/js/argon.js?v=1.0.0"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/tinymce/5.10.3/tinymce.min.js"></script>
-
-        <script>
-           tinymce.init({
-            selector: 'textarea#notes',
-            height: 385,
-            });
-          </script>
-        <script>
-            var uploadedDocumentMap = {}
-            Dropzone.options.documentDropzone = {
-              url: '{{ route('article.storeMedia') }}',
-              maxFilesize: 2, // MB
-              addRemoveLinks: true,
-              headers: {
-                'X-CSRF-TOKEN': "{{ csrf_token() }}"
-              },
-              success: function (file, response) {
-                $('form').append('<input type="hidden" name="document[]" value="' + response.name + '">')
-                uploadedDocumentMap[file.name] = response.name
-              },
-              removedfile: function (file) {
-                file.previewElement.remove()
-                var name = ''
-                if (typeof file.file_name !== 'undefined') {
-                  name = file.file_name
-                } else {
-                  name = uploadedDocumentMap[file.name]
-                }
-                $('form').find('input[name="document[]"][value="' + name + '"]').remove()
-              },
-              init: function () {
-                @if(isset($project) && $project->document)
-                  var files =
-                    {!! json_encode($project->document) !!}
-                  for (var i in files) {
-                    var file = files[i]
-                    this.options.addedfile.call(this, file)
-                    file.previewElement.classList.add('dz-complete')
-                    $('form').append('<input type="hidden" name="document[]" value="' + file.file_name + '">')
-                  }
-                @endif
-              }
-            }
-          </script>
+  
     </body>
 </html>
