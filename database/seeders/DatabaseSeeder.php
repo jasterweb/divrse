@@ -17,12 +17,12 @@ class DatabaseSeeder extends Seeder
         $this->call([UsersTableSeeder::class]);
 
         DB::table('contacts')->insert([
-            'email' => 'admin@argon.com',
+            'email' => 'admin@divrse.com',
             'phone' => '0893859932859',
             'address' => 'Toronto, Canada',
-            'instagram' => 'argon',
-            'youtube' => 'argon',
-            'facebook' => 'argon',
+            'instagram' => 'divrse',
+            'youtube' => 'divrse',
+            'facebook' => 'divrse',
             'whatsapp' => '0893859932859'
         ]);
     }

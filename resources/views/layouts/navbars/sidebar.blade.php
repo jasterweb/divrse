@@ -114,14 +114,14 @@
 
                 <li class="nav-item">
                     <a class="nav-link {{ Route::currentRouteName() == 'contact.edit' ? 'active' : '' }}" href="{{ route('contact.edit') }}">
-                        <i class="ni ni-single-02 text-blue"></i> {{ __('Contact') }}
+                        <i class="ni ni-building text-blue"></i> {{ __('Contact') }}
                     </a>
                 </li>
 
                 @can('manage users', User::class)
                 <li class="nav-item">
                     <a class="nav-link {{ Route::currentRouteName() == 'user.index' ? 'active' : '' }}" href="{{ route('user.index') }}">
-                        <i class="ni ni-building text-blue"></i> {{ __('All Users') }}
+                        <i class="ni ni-single-02 text-blue"></i> {{ __('All Users') }}
                     </a>
                 </li>
                 @endcan

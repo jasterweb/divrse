@@ -88,7 +88,7 @@
                         
                     </div>
 
-                    <div class="card-footer py-4">
+                    <div class="card-footer py-3">
                         <nav class="d-flex justify-content-end" aria-label="..."></nav>
                     </div>
 
@@ -99,22 +99,18 @@
 @endsection
 
 @push('js')
-    {{-- <script src="{{ asset('argon') }}/vendor/jquery/dist/jquery.min.js"></script> --}}
-    {{-- <script src="{{ asset('argon') }}/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script> --}}
     <script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
     <script src="https://cdn.datatables.net/1.12.1/js/dataTables.bootstrap4.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <link rel="stylesheet" href="https://cdn.datatables.net/1.12.1/css/dataTables.bootstrap4.min.css">
-
-    <!-- Argon JS -->
-    {{-- <script src="{{ asset('argon') }}/js/argon.js?v=1.0.0"></script> --}}
 
     <script>
         $(document).ready(function() {
             $('#users-table').DataTable( {
                 "language": {
                     "paginate": {
-                    "previous": "<",
-                    "next": ">"
+                        "previous": "<",
+                        "next": ">"
                     }
                 }
             });

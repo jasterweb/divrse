@@ -59,11 +59,6 @@
                         {{-- Second Column --}}
                         <div class="col-lg-6 col-md-12">
                             <div class="form-group">
-                                <label class="form-control-label" for="input-youtube">{{ __('Youtube') }}</label>
-                                <input type="text" name="youtube" id="input-youtube" class="form-control form-control-alternative{{ $errors->has('name') ? ' is-invalid' : '' }}" placeholder="{{ __('Youtube') }}" value="{{ $contact->youtube }}" required>
-                            </div>
-
-                            <div class="form-group">
                                 <label class="form-control-label" for="input-instagram">{{ __('Instagram') }}</label>
                                 <input type="text" name="instagram" id="input-instagram" class="form-control form-control-alternative{{ $errors->has('name') ? ' is-invalid' : '' }}" placeholder="{{ __('Instagram') }}" value="{{ $contact->instagram }}" required>
                             </div>
@@ -71,6 +66,11 @@
                             <div class="form-group">
                                 <label class="form-control-label" for="input-facebook">{{ __('Facebook') }}</label>
                                 <input type="text" name="facebook" id="input-facebook" class="form-control form-control-alternative{{ $errors->has('name') ? ' is-invalid' : '' }}" placeholder="{{ __('Facebook') }}" value="{{ $contact->facebook }}" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="form-control-label" for="input-youtube">{{ __('Youtube') }}</label>
+                                <input type="text" name="youtube" id="input-youtube" class="form-control form-control-alternative{{ $errors->has('name') ? ' is-invalid' : '' }}" placeholder="{{ __('Youtube') }}" value="{{ $contact->youtube }}" required>
                             </div>
                         </div>
 
