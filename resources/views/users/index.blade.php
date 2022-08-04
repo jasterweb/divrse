@@ -17,13 +17,13 @@
                                 <h3 class="mb-0">Users</h3>
                             </div>
                             <div class="col-4 text-right">
-                                <a href="/user/create" class="btn btn-sm btn-primary">Add user</a>
+                                <a href="/user/create" class="btn btn-sm btn-primary">Add User</a>
                             </div>
                         </div>
                     </div>
 
 
-                    <div class="card-body">
+                    <div class="card-body py-0">
 
                         @if (session('status'))
                             <div class="alert alert-success alert-dismissible fade show" role="alert">
@@ -83,6 +83,7 @@
                                 </tbody>
                                 
                             </table>
+                            <br>
                         </div>
                         
                     </div>
@@ -109,7 +110,14 @@
 
     <script>
         $(document).ready(function() {
-            $('#users-table').DataTable();
+            $('#users-table').DataTable( {
+                "language": {
+                    "paginate": {
+                    "previous": "<",
+                    "next": ">"
+                    }
+                }
+            });
         });
     </script>
 @endpush

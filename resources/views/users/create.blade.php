@@ -10,7 +10,7 @@
 
     {{-- Form Card --}}
     <div class="container-fluid mt--7">
-        <div class="card shadow p-lg-5 py-md-5 px-md-2 col-xl-9 col-12 mx-auto mb-5">
+        <div class="card shadow p-lg-5 pb-lg-0 py-md-5 px-md-2 col-xl-9 col-12 mx-auto mb-5">
 
             <div class="card-header">
                 <h2 class="text-black mb-0">Add User</h2>
@@ -70,7 +70,7 @@
                     {{-- Input Column End --}}
 
                     <div class="text-right">
-                        <button type="submit" class="btn btn-success mt-4">{{ __('Save') }}</button>
+                        <button type="submit" class="btn btn-success">{{ __('Save') }}</button>
                     </div>
 
                 </form>

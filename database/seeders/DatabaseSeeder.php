@@ -20,7 +20,7 @@ class DatabaseSeeder extends Seeder
             'email' => 'admin@argon.com',
             'phone' => '0893859932859',
             'address' => 'Toronto, Canada',
-            'instagram' => '@argon',
+            'instagram' => 'argon',
             'youtube' => 'argon',
             'facebook' => 'argon',
             'whatsapp' => '0893859932859'
