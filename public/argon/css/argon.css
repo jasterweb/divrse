@@ -92,7 +92,7 @@ section
 
 body
 {
-    font-family: Open Sans, sans-serif;
+    font-family: 'Futura Md BT', sans-serif;
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
@@ -21864,4 +21864,8 @@ html:not([dir='rtl']) .noUi-horizontal .noUi-handle
     bottom: 0; 
 
     height: 3px;
+}
+.brand-background {
+    background-color: #172b4d;
+    border-radius: .375rem;
 }

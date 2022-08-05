@@ -32,6 +32,8 @@
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet"> 
         <style>
         </style>
+        <link href="http://fonts.cdnfonts.com/css/futura-md-bt" rel="stylesheet">
+
     </head>
     <body class="{{ $class ?? '' }}">
        

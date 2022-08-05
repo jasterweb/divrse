@@ -41,7 +41,12 @@ Route::group(['middleware' => 'auth'], function () {
 	Route::put('article/{article}/update', ['as' => 'article.update', 'uses' => 'App\Http\Controllers\ArticleController@update']);
 	Route::get('article/{article}/delete', ['as' => 'article.delete', 'uses' => 'App\Http\Controllers\ArticleController@destroy']);
 
-	// user resource route
+	// user route
 	Route::resource('user', 'App\Http\Controllers\UserController', ['except' => ['show']]);
+	Route::put('user/password/{user}', ['as' => 'user.password', 'uses' => 'App\Http\Controllers\UserController@password']);
+
+	// contact route
+	Route::get('contact', ['as' => 'contact.edit', 'uses' => 'App\Http\Controllers\ContactController@index']);
+	Route::put('contact/{contact}', ['as' => 'contact.update', 'uses' => 'App\Http\Controllers\ContactController@update']);
 });
 

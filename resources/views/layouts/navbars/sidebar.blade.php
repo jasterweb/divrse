@@ -5,9 +5,11 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <!-- Brand -->
-        <a class="navbar-brand pt-0" href="{{ route('home') }}">
-            <img src="{{ asset('argon') }}/img/brand/blue.png" class="navbar-brand-img" alt="...">
-        </a>
+        <div class="brand-background">
+            <a class="navbar-brand" href="{{ route('home') }}">
+                <img src="{{ asset('argon') }}/logo/logow.png" class="navbar-brand-img" alt="...">
+            </a>
+        </div>
         <!-- User -->
         <ul class="nav align-items-center d-md-none">
             <li class="nav-item dropdown">
@@ -83,29 +85,6 @@
                         <i class="ni ni-tv-2 text-primary"></i> {{ __('Dashboard') }}
                     </a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#navbar-examples" data-toggle="collapse" role="button" aria-expanded="true" aria-controls="navbar-examples">
-                        <i class="ni ni-single-02 text-blue" ></i>
-                        <span class="nav-link-text">{{ __('User') }}</span>
-                    </a>
-
-                    <div class="collapse" id="navbar-examples">
-                        <ul class="nav nav-sm flex-column">
-                            <li class="nav-item">
-                                <a class="nav-link" href="{{ route('profile.edit') }}">
-                                    {{ __('User profile') }}
-                                </a>
-                            </li>
-                            @can('manage users', User::class)
-                            <li class="nav-item">
-                                <a class="nav-link" href="{{ route('user.index') }}">
-                                    {{ __('User Management') }}
-                                </a>
-                            </li>
-                            @endcan
-                        </ul>
-                    </div>
-                </li>
 
                 <li class="nav-item">
                     <a class="nav-link" href="#navbar-ar" data-toggle="collapse" role="button" aria-expanded="true" aria-controls="navbar-examples">
@@ -132,6 +111,20 @@
                         </ul>
                     </div>
                 </li>
+
+                <li class="nav-item">
+                    <a class="nav-link {{ Route::currentRouteName() == 'contact.edit' ? 'active' : '' }}" href="{{ route('contact.edit') }}">
+                        <i class="ni ni-building text-blue"></i> {{ __('Contact') }}
+                    </a>
+                </li>
+
+                @can('manage users', User::class)
+                <li class="nav-item">
+                    <a class="nav-link {{ Route::currentRouteName() == 'user.index' ? 'active' : '' }}" href="{{ route('user.index') }}">
+                        <i class="ni ni-single-02 text-blue"></i> {{ __('All Users') }}
+                    </a>
+                </li>
+                @endcan
 
                 <li class="nav-item">
                     <a class="nav-link" href="{{ route('icons') }}">
