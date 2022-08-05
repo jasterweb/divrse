@@ -20,6 +20,7 @@
         <link href="{{ asset('argon') }}/vendor/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
         <!-- Argon CSS -->
         <link type="text/css" href="{{ asset('argon') }}/css/argon.css?v=1.0.0" rel="stylesheet">
+        <link type="text/css" href="{{ asset('argon') }}/css/custom.css" rel="stylesheet">
         <script src="https://unpkg.com/dropzone@5/dist/min/dropzone.min.js"></script>
         <link
         rel="stylesheet"

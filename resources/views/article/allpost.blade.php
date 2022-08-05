@@ -3,6 +3,7 @@
 @section('content')
     <div class="header bg-gradient-primary pb-8 pt-5 pt-md-8">
         <div class="container-fluid">
+            <a href="{{route('article.create')}}" class="btn btn-warning">Add New Post</a>
         </div>
     </div>
 
@@ -13,12 +14,10 @@
 
                     <div class="card-header border-0">
                         <div class="row align-items-center">
-                            <div class="col-8">
-                                <h3 class="mb-0">Users</h3>
+                            <div class="col-12">
+                                <h3 class="mb-0">All Posts</h3>
                             </div>
-                            <div class="col-4 text-right">
-                                <a href="{{route('article.create')}}" class="btn btn-sm btn-primary">Add Article</a>
-                            </div>
+                           
                         </div>
                     </div>
 

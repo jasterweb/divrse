@@ -19,7 +19,7 @@
                     <div class="card-header text-center border-0 pt-8 pt-md-4 pb-0 pb-md-4">
                         <div class="d-flex justify-content-center">
                             
-                            <button class="btn btn-md btn-info mr-4" type="submit">{{ __('Publish') }}</button>
+                            <button class="btn btn100 btn-info" type="submit">{{ __('Publish Now') }}</button>
                             
                         </div>
                     </div>
@@ -27,16 +27,16 @@
                         <div class="row">
                             <div class="col">
                                 
-                                <div class="card-profile-stats d-flex justify-content-center mt-md-5 flex-column">
-                                    <div class="d-flex justify-content-between">
+                                <div class="info-article">
+                                    <div class="d-flex justify-content-between item-info">
                                        <h3>Date </h3>
                                        <p class="ml-4 description text-dark">{{ now() }}</p>
                                     </div>
-                                    <div class="d-flex justify-content-between">
+                                    <div class="d-flex justify-content-between item-info">
                                         <h3>Post By </h3>
                                         <p class="ml-4 description text-dark">{{ auth()->user()->name }}</p>
                                      </div>
-                                     <div>
+                                     <div class="item-info">
                                         <h3>Thumbnail </h3>
                                         <form action="{{route('article.storeMedia')}}" method="POST" enctype="multipart/form-data">
                                             @csrf
@@ -70,8 +70,8 @@
 
                             <div class="pl-lg-4">
                                 <div class="form-group{{ $errors->has('name') ? ' has-danger' : '' }}">
-                                    <label class="form-control-label" for="input-name">{{ __('Ttiel') }}</label>
-                                    <input type="text" name="title" id="input-name" class="form-control form-control-alternative{{ $errors->has('name') ? ' is-invalid' : '' }}" placeholder="{{ __('Title') }}" required autofocus>
+                                    <label class="form-control-label" for="input-name">{{ __('Title') }}</label>
+                                    <input type="text" name="title" id="input-name" class="form-control form-control-alternative{{ $errors->has('name') ? ' is-invalid' : '' }}" placeholder="Add Title here..." required autofocus>
 
                                     @if ($errors->has('name'))
                                         <span class="invalid-feedback" role="alert">
