@@ -25,15 +25,6 @@
 
                     <div class="card-body py-0">
 
-                        @if (session('status'))
-                            <div class="alert alert-success alert-dismissible fade show" role="alert">
-                                {{ session('status') }}
-                                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-                            </div>
-                        @endif
-
                         <div class="table-responsive">
                             <table id="users-table" class="table align-items-center table-flush">
 
@@ -45,7 +36,6 @@
                                         <th scope="col">Address</th>
                                         <th scope="col">Email</th>
                                         <th scope="col">Phone Number</th>
-                                        {{-- <th scope="col">Creation Date</th> --}}
                                         <th scope="col"></th>
                                     </tr>
                                 </thead>
@@ -60,19 +50,18 @@
                                             <td>{{ $user->address }}</td>
                                             <td><a href="mailto:{{ $user->email }}">{{ $user->email }}</a></td>
                                             <td>{{ $user->phone }}</td>
-                                            {{-- <td>{{ $user->created_at->format('d/m/Y H:i') }}</td> --}}
                                             <td class="text-right">
                                                 <div class="dropdown">
                                                     <a class="btn btn-sm btn-icon-only text-light" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                                         <i class="fas fa-ellipsis-v"></i>
                                                     </a>
                                                     <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
-                                                        <a class="dropdown-item" href="/user/{{ $user->id }}/edit">Edit</a>
-                                                        <form method="POST" action="/user/{{ $user->id }}">
+                                                        <a class="dropdown-item" href="{{ route('user.edit', $user->id) }}">Edit</a>
+                                                        <form method="POST" class="delete-form" action="{{ route('user.destroy', $user->id) }}">
                                                             @csrf
                                                             @method('delete')
 
-                                                            <button class="dropdown-item" type="submit">Delete</button>
+                                                            <button class="dropdown-item delete-button" type="submit">Delete</button>
                                                         </form>
                                                     </div>
                                                 </div>
@@ -106,6 +95,7 @@
 
     <script>
         $(document).ready(function() {
+
             $('#users-table').DataTable( {
                 "language": {
                     "paginate": {
@@ -114,6 +104,28 @@
                     }
                 }
             });
+
+            @if (session('status'))
+                swal("Done!", "{{ session('status') }}", "success");
+            @endif
+
+            $('.delete-button').on('click', function (e) {
+                var form =  $(this).closest("form");
+                e.preventDefault();
+                swal({
+                    title: 'Are you sure?',
+                    text: 'Once deleted, you will not be able to recover this user!',
+                    icon: 'warning',
+                    buttons: true,
+                    dangerMode: true,
+                })
+                .then((willDelete) => {
+                    if (willDelete) {
+                        form.submit();
+                    }
+                });
+            });
+
         });
     </script>
 @endpush
