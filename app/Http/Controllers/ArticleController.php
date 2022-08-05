@@ -55,7 +55,7 @@ class ArticleController extends Controller
         }
         $article->save();
 
-        return redirect()->route('article.create');
+        return redirect()->route('article.allpost');
     }
 
     public function edit(Article $article) 
