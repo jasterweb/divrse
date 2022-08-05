@@ -17,7 +17,7 @@
             </div>
 
             <div class="card-body">
-                <form method="post" action="/contact/{{ $contact->id }}" autocomplete="off">
+                <form method="post" action="/contact/{{ $contact->id ?? ''}}" autocomplete="off">
                     @csrf
                     @method('put')
 
@@ -37,22 +37,22 @@
                         <div class="col-lg-6 col-md-12">
                             <div class="form-group">
                                 <label class="form-control-label" for="input-email">{{ __('Email') }}</label>
-                                <input type="email" name="email" id="input-email" class="form-control form-control-alternative{{ $errors->has('email') ? ' is-invalid' : '' }}" placeholder="{{ __('Email') }}" value="{{ $contact->email }}" required autofocus>
+                                <input type="email" name="email" id="input-email" class="form-control form-control-alternative{{ $errors->has('email') ? ' is-invalid' : '' }}" placeholder="{{ __('Email') }}" value="{{ $contact->email ?? '' }}" required autofocus>
                             </div>
 
                             <div class="form-group">
                                 <label class="form-control-label" for="input-address">{{ __('Address') }}</label>
-                                <input type="text" name="address" id="input-address" class="form-control form-control-alternative{{ $errors->has('name') ? ' is-invalid' : '' }}" placeholder="{{ __('Address') }}" value="{{ $contact->address }}" required>
+                                <input type="text" name="address" id="input-address" class="form-control form-control-alternative{{ $errors->has('name') ? ' is-invalid' : '' }}" placeholder="{{ __('Address') }}" value="{{ $contact->address ?? '' }}" required>
                             </div>
 
                             <div class="form-group">
                                 <label class="form-control-label" for="input-phone">{{ __('Phone') }}</label>
-                                <input type="text" name="phone" id="input-phone" class="form-control form-control-alternative{{ $errors->has('name') ? ' is-invalid' : '' }}" placeholder="{{ __('Phone') }}" value="{{ $contact->phone }}" required>
+                                <input type="text" name="phone" id="input-phone" class="form-control form-control-alternative{{ $errors->has('name') ? ' is-invalid' : '' }}" placeholder="{{ __('Phone') }}" value="{{ $contact->phone ?? '' }}" required>
                             </div>
 
                             <div class="form-group">
                                 <label class="form-control-label" for="input-whatsapp">{{ __('Whatsapp') }}</label>
-                                <input type="text" name="whatsapp" id="input-whatsapp" class="form-control form-control-alternative{{ $errors->has('name') ? ' is-invalid' : '' }}" placeholder="{{ __('Whatsapp') }}" value="{{ $contact->whatsapp }}" required>
+                                <input type="text" name="whatsapp" id="input-whatsapp" class="form-control form-control-alternative{{ $errors->has('name') ? ' is-invalid' : '' }}" placeholder="{{ __('Whatsapp') }}" value="{{ $contact->whatsapp ?? '' }}" required>
                             </div>
                         </div>
 
@@ -60,17 +60,17 @@
                         <div class="col-lg-6 col-md-12">
                             <div class="form-group">
                                 <label class="form-control-label" for="input-instagram">{{ __('Instagram') }}</label>
-                                <input type="text" name="instagram" id="input-instagram" class="form-control form-control-alternative{{ $errors->has('name') ? ' is-invalid' : '' }}" placeholder="{{ __('Instagram') }}" value="{{ $contact->instagram }}" required>
+                                <input type="text" name="instagram" id="input-instagram" class="form-control form-control-alternative{{ $errors->has('name') ? ' is-invalid' : '' }}" placeholder="{{ __('Instagram') }}" value="{{ $contact->instagram ?? ''}}" required>
                             </div>
 
                             <div class="form-group">
                                 <label class="form-control-label" for="input-facebook">{{ __('Facebook') }}</label>
-                                <input type="text" name="facebook" id="input-facebook" class="form-control form-control-alternative{{ $errors->has('name') ? ' is-invalid' : '' }}" placeholder="{{ __('Facebook') }}" value="{{ $contact->facebook }}" required>
+                                <input type="text" name="facebook" id="input-facebook" class="form-control form-control-alternative{{ $errors->has('name') ? ' is-invalid' : '' }}" placeholder="{{ __('Facebook') }}" value="{{ $contact->facebook ?? ''}}" required>
                             </div>
 
                             <div class="form-group">
                                 <label class="form-control-label" for="input-youtube">{{ __('Youtube') }}</label>
-                                <input type="text" name="youtube" id="input-youtube" class="form-control form-control-alternative{{ $errors->has('name') ? ' is-invalid' : '' }}" placeholder="{{ __('Youtube') }}" value="{{ $contact->youtube }}" required>
+                                <input type="text" name="youtube" id="input-youtube" class="form-control form-control-alternative{{ $errors->has('name') ? ' is-invalid' : '' }}" placeholder="{{ __('Youtube') }}" value="{{ $contact->youtube ?? ''}}" required>
                             </div>
                         </div>
 
