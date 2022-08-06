@@ -74,7 +74,7 @@
                 'X-CSRF-TOKEN': "{{ csrf_token() }}"
             },
             success: function (file, response) {
-                $('form').append('<input type="hidden" name="document" value="' + response.name + '">')
+                $('form').append('<input type="hidden" name="document[]" value="' + response.name + '">')
                 uploadedDocumentMap[file.name] = response.name
             },
             removedfile: function (file) {
@@ -85,7 +85,7 @@
                 } else {
                 name = uploadedDocumentMap[file.name]
                 }
-                $('form').find('input[name="document"][value="' + name + '"]').remove()
+                $('form').find('input[name="document[]"][value="' + name + '"]').remove()
             },
             init: function () {
                 @if(isset($project) && $project->document)
@@ -95,7 +95,7 @@
                     var file = files[i]
                     this.options.addedfile.call(this, file)
                     file.previewElement.classList.add('dz-complete')
-                    $('form').append('<input type="hidden" name="document" value="' + file.file_name + '">')
+                    $('form').append('<input type="hidden" name="document[]" value="' + file.file_name + '">')
                 }
                 @endif
             }
