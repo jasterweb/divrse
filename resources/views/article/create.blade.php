@@ -30,7 +30,7 @@
                                 <div class="info-article">
                                     <div class="d-flex justify-content-between item-info">
                                        <h3>Date </h3>
-                                       <p class="ml-4 description text-dark">{{ now() }}</p>
+                                       <p class="ml-4 description text-dark">{{ now()->format('H:m d/m/Y') }}</p>
                                     </div>
                                     <div class="d-flex justify-content-between item-info">
                                         <h3>Post By </h3>

@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Article;
 use Illuminate\Http\Request;
+use RealRashid\SweetAlert\Facades\Alert;
 
 class ArticleController extends Controller
 {
@@ -32,7 +33,7 @@ class ArticleController extends Controller
 
         $file->move($path, $name);
 
-
+        Alert::success('Success', 'Berhasil Tambah Data');
         return response()->json([
             'name'          => $name,
             'original_name' => $file->getClientOriginalName(),
@@ -53,8 +54,9 @@ class ArticleController extends Controller
            $article->addMedia(storage_path('tmp/uploads/' . $file))->toMediaCollection('document');
            $article->img = $file;
         }
-        $article->save();
 
+        Alert::success('Success', 'Berhasil Tambah Data');
+        $article->save();
         return redirect()->route('article.allpost');
     }
 
