@@ -49,11 +49,9 @@ class ArticleController extends Controller
         $article->user_id = auth()->user()->id;
         $article->published_at = now();
         $article->slug = \Str::slug($request->title);;
-  
-        foreach ($request->input('document', []) as $file) {
+        $file = $request->input('document');
            $article->addMedia(storage_path('tmp/uploads/' . $file))->toMediaCollection('document');
            $article->img = $file;
-        }
 
         Alert::success('Success', 'Berhasil Tambah Data');
         $article->save();
