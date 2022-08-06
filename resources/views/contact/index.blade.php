@@ -21,15 +21,6 @@
                     @csrf
                     @method('put')
 
-                    @if (session('status'))
-                        <div class="alert alert-success alert-dismissible fade show" role="alert">
-                            {{ session('status') }}
-                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
-                        </div>
-                    @endif
-
                     {{-- Input Column --}}
                     <div class="row">
 
@@ -78,7 +69,7 @@
                     {{-- Input Column End --}}
 
                     <div class="text-right">
-                        <button type="submit" class="btn btn-success">{{ __('Save') }}</button>
+                        <button type="submit" id="submit-button" class="btn btn-success">{{ __('Save') }}</button>
                     </div>
 
                 </form>
@@ -87,3 +78,33 @@
         </div>
     </div>
 @endsection
+
+@push('js')
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+
+            @if (session('status'))
+                swal("Done!", "{{ session('status') }}", "success");
+            @endif
+
+            $('#submit-button').on('click', function (e) {
+                e.preventDefault();
+                swal({
+                    title: 'Are you sure?',
+                    text: 'Are you sure want to save contact information?',
+                    icon: 'warning',
+                    buttons: true,
+                    dangerMode: true,
+                })
+                .then((willEdit) => {
+                    if (willEdit) {
+                        $('#contact-form').submit();
+                    }
+                });
+            });
+
+        });
+    </script>
+@endpush

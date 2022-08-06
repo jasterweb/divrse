@@ -21868,3 +21868,6 @@ html:not([dir='rtl']) .noUi-horizontal .noUi-handle
     background-color: #172b4d;
     border-radius: .375rem;
 }
+#delete-button:focus {
+    outline: none;
+}
