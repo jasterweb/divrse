@@ -131,6 +131,6 @@ class UserController extends Controller
     {
         User::destroy($id);
 
-        return redirect('/user');
+        return redirect('/user')->withStatus('Successfully deleted user.');
     }
 }
