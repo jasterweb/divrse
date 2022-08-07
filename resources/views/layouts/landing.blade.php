@@ -41,7 +41,6 @@
             @yield('content')
         </div>
 
-        @include('layouts.footers.guest')
 
       
         <script src="{{ asset('argon') }}/vendor/jquery/dist/jquery.min.js"></script>
@@ -50,48 +49,6 @@
         
         <!-- Argon JS -->
         <script src="{{ asset('argon') }}/js/argon.js?v=1.0.0"></script>
-        <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-        <script type="text/javascript">
-            $(document).ready(function(){
-                $('.wcuslide').slick({
-                    dots: true,
-                    infinite: true,
-                    arrows: false,
-                    speed: 500,
-                    slidesToShow: 3,         
-                    autoplay: true,
-                    autoplaySpeed: 1000,
-                    slidesToScroll: 1,
-                    responsive: [
-                        {
-                        breakpoint: 1024,
-                        settings: {
-                            slidesToShow: 3,
-                            slidesToScroll: 3,
-                            infinite: true,
-                            dots: true
-                        }
-                        },
-                        {
-                        breakpoint: 600,
-                        settings: {
-                            slidesToShow: 2,
-                            slidesToScroll: 2
-                        }
-                        },
-                        {
-                        breakpoint: 480,
-                        settings: {
-                            slidesToShow: 1,
-                            slidesToScroll: 1
-                        }
-                        }
-                        // You can unslick at a given breakpoint now by adding:
-                        // settings: "unslick"
-                        // instead of a settings object
-                    ]
-                    });
-            });
-       </script>
+        @yield('script')
     </body>
 </html>

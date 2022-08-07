@@ -30,7 +30,6 @@
                                     <tr>
                                         <th scope="col">No</th>
                                         <th scope="col">title</th>
-                                        <th scope="col">Image</th>
                                         <th scope="col">Published at</th>
                                         <th scope="col">Action</th>
                                     </tr>
@@ -42,12 +41,11 @@
                                         <tr>
                                             <td>{{ $loop->iteration }}</td>
                                             <td>{{ $article->title }}</td>
-                                            <td><img src="{{$article->getFirstMediaUrl('document')}}" / width="120px"></td>
-                                            <td>{{ date('d/F/Y', strtotime($article->published_at));}}</td>
+                                            <td>{{ date('d F Y', strtotime($article->published_at));}}</td>
                                             <td class="text-center">
                                                 <input class="form-control" type="hidden" name="idAbsen" id="idarticle" value="{{ $article->id }}">
-                                                <a class="btn-primary inline" href="{{ route('article.edit',$article->id) }}">Edit</a>
-                                                <a href="{{ route('article.delete', $article->id) }}" class="btn-ic btn-danger hilang"><i data-feather="slash"></i>Delete</a>
+                                                <a class="btn btn-primary inline" href="{{ route('article.edit',$article->id) }}">Edit</a>
+                                                <a href="{{ route('article.delete', $article->id) }}" class="btn btn-danger hilang"><i data-feather="slash"></i>Delete</a>
                                             </td>
                                         </tr>
                                     @endforeach

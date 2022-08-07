@@ -1,6 +1,6 @@
 <nav class="navbar navbar-top navbar-horizontal navbar-expand-md navbar-dark">
     <div class="container px-4">
-        <a class="navbar-brand" href="{{ route('home') }}">
+        <a class="navbar-brand" href="/">
             <img src="{{ asset('argon') }}/logo/logow.png" />
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapse-main" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -26,12 +26,12 @@
             <!-- Navbar items -->
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link nav-link-icon" href="{{ route('home') }}">
+                    <a class="nav-link nav-link-icon" href="/">
                         <span class="nav-link-inner--text">{{ __('Home') }}</span>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link nav-link-icon" href="{{ route('register') }}">
+                    <a class="nav-link nav-link-icon" href="{{ route('solution') }}">
                         <span class="nav-link-inner--text">{{ __('Solutions') }}</span>
                     </a>
                 </li>

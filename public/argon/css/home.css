@@ -18,7 +18,8 @@
     margin-bottom: 5rem !important;
 }
 
-
+.fw800{font-weight: 800;}
+.fw600{font-weight: 600;}
 .main-content section {
   display: inline-block;
   width: 100%;
@@ -170,3 +171,28 @@
 .feedcontent{padding:1.2rem}
 .feedcontent h2{font-size:16px;font-weight:600;margin-bottom:1rem}
 .feedcontent span{text-transform:uppercase;margin-bottom:10px;display:inline-block;font-size:14px}
+
+.proofnum{display:flex;flex-wrap:wrap;margin:3rem -15px}
+.itemproof{width:25%;padding:0 15px;border-right:1px solid rgba(1,1,1,0.08)}
+.wrapproof h2{font-size:2.8rem;font-weight:700}
+.wrapproof{text-align:center}
+.wrapproof h4{text-transform:uppercase;font-size:20px;margin-bottom:5px}
+.proofnum .itemproof:last-child{border:0}
+
+.w800{max-width: 800px; margin: 0 auto;}
+
+.statsol{margin:4rem -15px;display:flex;flex-wrap:wrap}
+.itemstatsol{border-right:1px solid rgba(255, 255, 255, 0.22); padding: 0 15px;width:25%}
+.wrapstatsol{text-align:center}.statsol .itemstatsol:last-child{border: 0;}
+.roundnum{font-size:2.5rem;color:var(--warning);padding:2rem 1.2rem;border:1px solid var(--warning);border-radius:100%;display:inline-block;width:135px;text-align:center;margin-bottom:2rem}
+
+.atslogo{display:flex;flex-wrap:wrap;list-style:none;margin:4rem -20px 1rem;padding:0}
+.atslogo .itemats{width:25%;float:left;padding:0 25px}
+.atslogo li img{width:100%}
+
+.title3{color:var(--cyan);font-size:2.2rem}
+.title3 b{font-weight:600;color:var(--danger)}
+.title4{font-weight:700;text-align:center;font-size:2.2rem;max-width:750px;margin:0 auto}
+.main-content .navbar-top {
+  background: var(--primary);
+}

@@ -58,7 +58,7 @@
                 </div>
                 <div class="col-lg-6 col-md-6">
                     <div class="image-box introimg">
-                        <img src="{{ asset('argon') }}/home/intro1.png">
+                        <img src="{{ asset('argon') }}/home/recruiting.png">
                     </div>
                 </div>
             </div>
@@ -71,7 +71,7 @@
                 </div>
                 <div class="col-lg-6 col-md-6">
                     <div class="image-box introimg">
-                        <img src="{{ asset('argon') }}/home/intro1.png">
+                        <img src="{{ asset('argon') }}/home/diversity.png">
                     </div>
                 </div>
             </div>
@@ -129,7 +129,7 @@
                 </div>
                 <div class="col-lg-6 col-md-6">
                     <div class="image-box introimg">
-                        <img src="{{ asset('argon') }}/home/intro1.png">
+                        <img src="{{ asset('argon') }}/home/winwin.png">
                     </div>
                 </div>
             </div>
@@ -142,6 +142,48 @@
             <div class="row align-items-center">
                 <div class="col-lg-12 col-md-12">
                     <h2 class="titlesect">The Proof is in the numbers</h2>
+                    <div class="proofnum">
+                        <div class="itemproof">
+                            <div class="wrapproof">
+                                <h2><span class="counting" data-countto="62" data-duration="4000">0</span>%</h2>
+                                <h4>Billingual</h4>
+                                <p>Immigrants that speak more than one language, can provide your company with access to new clients and markets.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="itemproof">
+                            <div class="wrapproof">
+                                <h2><span class="counting" data-countto="19" data-duration="4000">0</span>%</h2>
+                                <h4>Higher Revenue</h4>
+                                <p>Companies with diverse management teams have 19% higher revenues.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="itemproof">
+                            <div class="wrapproof">
+                                <h2><span class="counting" data-countto="38" data-duration="4000">0</span>%</h2>
+                                <h4>Immigrants</h4>
+                                <p>Immigrants have a Canadian-equivalent bachelor’s degree which means knowledgeable employees delivering efficient results.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="itemproof">
+                            <div class="wrapproof">
+                                <h2><span class="counting" data-countto="76" data-duration="4000">0</span>%</h2>
+                                <h4>Jobseekers</h4>
+                                <p>When it comes to choosing a company, 76% of job seekers believe diversity is important.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="itemproof">
+                            <div class="wrapproof">
+                                <h2><span class="counting" data-countto="85" data-duration="4000">0</span>%</h2>
+                                <h4>CEOs</h4>
+                                <p>A diverse workforce, according to 85% of CEOs, improved their bottom lines.</p>
+                            </div>
+                        </div>
+                        
+                    </div>
                 </div>
             </div>
         </div>
@@ -232,6 +274,137 @@
         
         </div>
     </section>
+    <footer class="py-5 footlanding">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 col-md-6">
+                    <h2 class="title2 text-white">Ready to stop talking about diversity recruitment and start doing it?</h2>
+                    <span class="text-light desc1">Turn your DE&I goals into reality with Divrse’s quick, easy and affordable solution</span>
+                    <br/>
+                    <a href="#" class="btn btn-xl btn-secondary mt-5">Get Started</a>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <div class="image-box imgcta">
+                        <img src="{{ asset('argon') }}/home/footcta.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyr">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-light">Copyright © 2022 Divrse - All Rights Reserved</div>
+                    
+                </div>
+            </div>
+        </div>
+    </footer>
+@endsection
+
+@section('script')
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $('.wcuslide').slick({
+            dots: true,
+            infinite: true,
+            arrows: false,
+            speed: 500,
+            slidesToShow: 3,         
+            autoplay: true,
+            autoplaySpeed: 1000,
+            slidesToScroll: 1,
+            responsive: [
+                {
+            breakpoint: 1024,
+            settings: {
+                slidesToShow: 3,
+                slidesToScroll: 3,
+                infinite: true,
+                dots: true
+            }
+            },
+            {
+            breakpoint: 600,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2
+            }
+            },
+            {
+            breakpoint: 480,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+            }
+            }
+        ]
+        });
+        $('.proofnum').slick({
+            dots: true,
+            infinite: true,
+            arrows: false,
+            speed: 500,
+            slidesToShow: 4,         
+            autoplay: true,
+            autoplaySpeed: 1000,
+            slidesToScroll: 1,
+            responsive: [
+                {
+            breakpoint: 1024,
+            settings: {
+                slidesToShow: 3,
+                slidesToScroll: 3,
+                infinite: true,
+                dots: true
+            }
+            },
+            {
+            breakpoint: 600,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2
+            }
+            },
+            {
+            breakpoint: 480,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+            }
+            }
+            // You can unslick at a given breakpoint now by adding:
+            // settings: "unslick"
+            // instead of a settings object
+        ]
+        });
+    });
+</script>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $(".counting").each(function () {
+var $this = $(this),
+countTo = $this.attr("data-countto");
+countDuration = parseInt($this.attr("data-duration"));
+$({ counter: $this.text() }).animate(
+{
+counter: countTo
+},
+{
+duration: countDuration,
+easing: "linear",
+step: function () {
+$this.text(Math.floor(this.counter));
+},
+complete: function () {
+$this.text(this.counter);
+}
+}
+);
+});
+
+});
+</script>
 @endsection
 
 

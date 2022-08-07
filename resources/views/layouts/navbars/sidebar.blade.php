@@ -6,7 +6,7 @@
         </button>
         <!-- Brand -->
         <div class="brand-background">
-            <a class="navbar-brand" href="./">
+            <a class="navbar-brand" href="/">
                 <img src="{{ asset('argon') }}/logo/logow.png" class="navbar-brand-img" alt="...">
             </a>
         </div>
