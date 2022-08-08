@@ -24,16 +24,24 @@
                 </div>
             </div>
             <!-- Navbar items -->
-            <ul class="navbar-nav ml-auto">
+            <ul class="navbar-nav ml-auto align-items-md-center">
                 <li class="nav-item">
                     <a class="nav-link nav-link-icon" href="/">
                         <span class="nav-link-inner--text">{{ __('Home') }}</span>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link nav-link-icon" href="{{ route('solution') }}">
-                        <span class="nav-link-inner--text">{{ __('Solutions') }}</span>
-                    </a>
+                    <div class="dropdown">
+                        <a class="dropdown-toggle nav-link nav-link-icon" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span class="nav-link-inner--text">{{ __('Solutions') }}</span>
+                        </a>
+                      
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                            <a class="dropdown-item" href="{{ route('solution') }}">Submenu 1</a>
+                            <a class="dropdown-item" href="#">Submenu 2</a>
+                            <a class="dropdown-item" href="#">Submenu 3</a>
+                        </div>
+                    </div>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link nav-link-icon" href="{{ route('login') }}">
