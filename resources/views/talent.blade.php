@@ -11,7 +11,7 @@
                         <span class="desc1 text-light">With Divrse’s AI-powered recruiting automation platform, you’ll set your team
                             up for success by hiring diverse, qualified talent year round.</span>
                         <br/>
-                        <a href="#" class="btn btn-xl btn-secondary mt-4 mb-md-0 mb-4">Get Started</a>
+                        <a href="#" class="btn btn-xl btn-secondary mt-4 mb-md-2 mb-4">Get Started</a>
                     </div>
                     <div class="col-lg-6 col-md-6">
                         <div class="image-box heroimage">
@@ -32,7 +32,7 @@
                
                 <div class="col-lg-6 col-md-6">
              
-                        <h2 class="title3 text-left mb-md-0 mb-3">We do the <b>Sourcing</b> for you</h2>
+                        <h2 class="title3 text-left mb-md-2 mb-3">We do the <b>Sourcing</b> for you</h2>
                         <p class="text-dark">Divrse is an automated diversity recruiting layer that allows you to spend less time sourcing random potential candidates and more time building meaningful interactions. Every candidate in Divrse’s pool is qualified, diverse, and ready for the job.
                             Divrse increases the number of underrepresented candidates that apply to your jobs while also providing you with applicants best fit for the role.</p>
                         
@@ -63,7 +63,7 @@
                 </div>
                 <div class="col-lg-7 col-md-7">
              
-                        <h2 class="title3 text-left my-md-0 my-3">Build <b>Authentic</b> connections with <b>qualified</b> Talent</h2>
+                        <h2 class="title3 text-left mb-md-2 mt-md-0 my-3">Build <b>Authentic</b> connections with <b>qualified</b> Talent</h2>
                         <p class="text-light">Increase your outbound recruiting response rates by connecting with our highly engaged talent pool. Manage conversations
                             at scale by leveraging our suite of recruiting tools such as messaging, events, and communities to build authentic connections.</p>
                         
@@ -138,7 +138,7 @@
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-12 col-md-12">
-                    <h2 class="titlesect mb-md-0 mb-4">Seamless ATS Integration</h2>
+                    <h2 class="titlesect mb-md-2 mb-4">Seamless ATS Integration</h2>
                     <p class="text-dark m800">Divrse easily connects to your ATS provider. Gain new insights about talent already in your pipeline and increase productivity.</p>
                     <ul class="atslogo">
                         <li class="itemats"><img src="{{ asset('argon') }}/home/ats1.png"></li>
@@ -247,7 +247,7 @@
             {
             breakpoint: 480,
             settings: {
-                slidesToShow: 1,
+                slidesToShow: 2,
                 slidesToScroll: 1
             }
             }
