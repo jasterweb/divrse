@@ -18,6 +18,7 @@ Route::get('/', [App\Http\Controllers\LandingController::class, 'index']);
 Route::get('/solution', [App\Http\Controllers\LandingController::class, 'solution'])->name('solution');
 Route::get('/candidate', [App\Http\Controllers\LandingController::class, 'candidate'])->name('candidate');
 Route::get('/talent-stream', [App\Http\Controllers\LandingController::class, 'talent'])->name('talent');
+Route::get('/employer', [App\Http\Controllers\LandingController::class, 'employer'])->name('employer');
 
 Auth::routes();
 
