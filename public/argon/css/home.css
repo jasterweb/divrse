@@ -190,9 +190,22 @@
 .atslogo .itemats{width:25%;float:left;padding:0 25px}
 .atslogo li img{width:100%}
 
-.title3{color:var(--cyan);font-size:2.2rem}
-.title3 b{font-weight:600;color:var(--danger)}
+.title3{color:var(--cyan);font-size:2.2rem;font-weight: 800;}
+.title3 b{color:var(--danger)}
 .title4{font-weight:700;text-align:center;font-size:2.2rem;max-width:750px;margin:0 auto}
 .main-content .navbar-top {
   background: var(--primary);
 }
+
+.desc2{display:block;font-size:18px;text-transform:uppercase;font-family:'Montserrat';font-weight:600;color:var(--warning);margin-bottom:15px;padding-right:10%}
+.title5{font-size:2rem;font-weight:800;line-height:normal;text-align: left;}
+.o-center{display: flex; align-items: center; justify-content: center; flex-direction: column; width: 100%;}
+.m800{max-width: 600px; margin: 0 auto; text-align: center;}
+
+.stepby{margin:4rem -10px 0;display:flex;flex-wrap:wrap}
+.itemstep{width:25%;padding:0 10px;position: relative;}
+.wrapstep{display:flex;flex-direction:column;text-align:center;align-items:center}
+.wrapstep img{width:80px}
+.wrapstep span{margin:;margin-top:15px;font-size:20px;font-weight:700;color:var(--primary)}
+.itemstep:after{content:"";background:rgba(1,1,1,0.25);padding:1px;position:absolute;width:50%;bottom:63%;right:-68px}
+.stepby .itemstep:last-child:after{display:none}

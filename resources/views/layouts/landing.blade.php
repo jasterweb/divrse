@@ -7,7 +7,7 @@
 
         <meta name="csrf-token" content="{{ csrf_token() }}">
 
-        <title>Home - {{ config('app.name') }}</title>
+        <title>@yield('title') - {{ config('app.name') }}</title>
         <!-- Favicon -->
         <link href="{{ asset('argon') }}/logo/fav.png" rel="icon" type="image/png">
         <!-- Fonts -->

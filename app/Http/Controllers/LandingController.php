@@ -16,4 +16,6 @@ class LandingController extends Controller
     {
         return view('solution');
     }
+    public function candidate(){return view('candidate');}
+    public function talent(){return view('talent');}
 }

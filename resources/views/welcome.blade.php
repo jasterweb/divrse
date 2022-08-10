@@ -1,4 +1,5 @@
 @extends('layouts.landing', ['class' => 'bg-default'])
+@section('title', 'Home')
 
 @section('content')
     <div class="header bg-primary pb-0 pt-8 ">
