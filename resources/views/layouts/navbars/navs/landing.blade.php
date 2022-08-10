@@ -24,7 +24,7 @@
                 </div>
             </div>
             <!-- Navbar items -->
-            <ul class="navbar-nav ml-auto">
+            <ul class="navbar-nav ml-auto align-items-md-center">
                 <li class="nav-item">
                     <a class="nav-link nav-link-icon" href="/">
                         <span class="nav-link-inner--text">{{ __('Home') }}</span>
@@ -32,14 +32,18 @@
                 </li>
                 <li class="nav-item">
                     <div class="dropdown">
+
                         <a class="dropdown-toggle nav-link nav-link-icon" href="{{ route('solution') }}" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+
                             <span class="nav-link-inner--text">{{ __('Solutions') }}</span>
                         </a>
                       
                         <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+
                             <a class="dropdown-item" href="{{ route('talent') }}">Talent Stream</a>
                             <a class="dropdown-item" href="#">Analytics</a>
                             <a class="dropdown-item" href="#">Employer Community</a>
+
                         </div>
                     </div>
                 </li>
