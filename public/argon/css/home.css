@@ -292,3 +292,10 @@
     position: relative;
   }
 } */
+@media (max-width: 426px) {
+  .atslogo {
+    width: 100%;
+    margin: 3rem auto;
+    margin-bottom: 1rem;
+  }
+}
