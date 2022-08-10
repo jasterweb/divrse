@@ -1,5 +1,5 @@
 @extends('layouts.landing', ['class' => 'bg-default'])
-@section('title', 'Solutions')
+@section('title', 'Candidates')
 @section('content')
     <div class="header bg-white pt-9 pb-6">
         <div class="container">

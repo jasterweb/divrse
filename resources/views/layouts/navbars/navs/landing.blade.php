@@ -32,19 +32,23 @@
                 </li>
                 <li class="nav-item">
                     <div class="dropdown">
-                        <a class="dropdown-toggle nav-link nav-link-icon" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+
+                        <a class="dropdown-toggle nav-link nav-link-icon" href="{{ route('solution') }}" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+
                             <span class="nav-link-inner--text">{{ __('Solutions') }}</span>
                         </a>
                       
                         <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                            <a class="dropdown-item" href="{{ route('solution') }}">Submenu 1</a>
-                            <a class="dropdown-item" href="#">Submenu 2</a>
-                            <a class="dropdown-item" href="#">Submenu 3</a>
+
+                            <a class="dropdown-item" href="{{ route('talent') }}">Talent Stream</a>
+                            <a class="dropdown-item" href="#">Analytics</a>
+                            <a class="dropdown-item" href="#">Employer Community</a>
+
                         </div>
                     </div>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link nav-link-icon" href="{{ route('login') }}">
+                    <a class="nav-link nav-link-icon" href="{{ route('candidate') }}">
                         <span class="nav-link-inner--text">{{ __('Candidates') }}</span>
                     </a>
                 </li>
