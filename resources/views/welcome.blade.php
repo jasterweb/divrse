@@ -143,6 +143,10 @@
             <div class="row align-items-center">
                 <div class="col-lg-12 col-md-12">
                     <h2 class="titlesect">The Proof is in the numbers</h2>
+                    <div class="slider-container mt-4 mb-5" style="width: 100%; text-align:center;">
+                        <p id="slider-value">50</p>
+                        <input type="range" class="slider" min="1" max="100" value="50">
+                    </div>
                     <div class="proofnum">
                         <div class="itemproof">
                             <div class="wrapproof">
@@ -306,6 +310,9 @@
 <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script type="text/javascript">
     $(document).ready(function(){
+        $('.slider').on('input', function () {
+            $('#slider-value').text($('.slider').val());
+        });
         $('.wcuslide').slick({
             dots: true,
             infinite: true,
