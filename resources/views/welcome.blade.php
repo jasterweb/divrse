@@ -100,8 +100,44 @@
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-12 col-md-12">
-                    <h2 class="titlesect text-light">Divrse in numbers</h2>
+                    <h2 class="text-center text-light mb-0">Divrse in numbers</h2>
                 </div>
+
+                <div class="slider-container" style="width: 100%; text-align:center;">
+                    <h2 id="positions" class="title4 text-light mb-5" style="font-size: 2.75rem">3320 open positions</h2>
+                    <input type="range" class="slider" min="1" max="25" value="17">
+                </div>
+
+                <div class="proofnum2 text-light mx-auto">
+                    <div class="itemproof-light">
+                        <div class="wrapproof">
+                            <h2 class="text-light" id="reduction">475H</h2>
+                            <h4 class="text-light">Reduction in TTF</h4>
+                        </div>
+                    </div>
+                    
+                    <div class="itemproof-light">
+                        <div class="wrapproof">
+                            <h2 class="text-light" id="increase">50%</h2>
+                            <h4 class="text-light">Increase in Diverse Applications</h4>
+                        </div>
+                    </div>
+                    
+                    <div class="itemproof-light">
+                        <div class="wrapproof">
+                            <h2 class="text-light" id="saved">$18K</h2>
+                            <h4 class="text-light">Money Saved / mo</h4>
+                        </div>
+                    </div>
+                    
+                    <div class="itemproof-light">
+                        <div class="wrapproof">
+                            <h2 class="text-light" id="candidates">2X</h2>
+                            <h4 class="text-light">Increase Candidate NPS</h4>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
         <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
@@ -143,10 +179,6 @@
             <div class="row align-items-center">
                 <div class="col-lg-12 col-md-12">
                     <h2 class="titlesect">The Proof is in the numbers</h2>
-                    <div class="slider-container mt-4 mb-5" style="width: 100%; text-align:center;">
-                        <p id="slider-value">50</p>
-                        <input type="range" class="slider" min="1" max="100" value="50">
-                    </div>
                     <div class="proofnum">
                         <div class="itemproof">
                             <div class="wrapproof">
@@ -310,9 +342,46 @@
 <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script type="text/javascript">
     $(document).ready(function(){
+
+        const sliderValue = {
+            'position': [
+                '20','70','170','220','370',
+                '420','520','620','720','870',
+                '920','1.170','1.520','2.020','2.850',
+                '3.320','4.210','4.820','5.420','5.920',
+                '6.470','7.970','8.420','9.170','10.000'
+            ],
+            'reduction': [
+                '8H','10H','25H','32H','53H',
+                '60H','75H','89H','103H','125H',
+                '132H','168H','218H','289H','403H',
+                '475H','589H','659H','775H','846H',
+                '925H','1,139H','1,203H','1,310H','1,429H'
+            ],
+            'increase': [
+                '80%','80%','80%','70%','70%',
+                '70%','70%','70%','70%','70%',
+                '70%','60%','60%','55%','50%',
+                '50%','45%','45%','45%','40%',
+                '40%','30%','30%','20%','15%'
+            ],
+            'saved': [
+                '$1K','$1K','$1K','$2K','$2K',
+                '$3K','$3K','$4K','$4K','$5K',
+                '$5K','$7K','$9K','$11K','$16K',
+                '$18K','$23K','$26K','$30K','$32K',
+                '$35K','$43K','$46K','$50K','$54K'
+            ]
+        }
+
         $('.slider').on('input', function () {
-            $('#slider-value').text($('.slider').val());
+            $('#positions').text(sliderValue.position[$('.slider').val() - 1] + ' open positions');
+            $('#reduction').text(sliderValue.reduction[$('.slider').val() - 1]);
+            $('#increase').text(sliderValue.increase[$('.slider').val() - 1]);
+            $('#saved').text(sliderValue.saved[$('.slider').val() - 1]);
+            $('#candidates').text( $('.slider').val() > 15 ? '2X' : '1.5X');
         });
+
         $('.wcuslide').slick({
             dots: true,
             infinite: true,
