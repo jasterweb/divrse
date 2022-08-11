@@ -350,3 +350,11 @@
 .listitem li:before{content:"-";margin-right:10px}
 
 .wcuwrap h4{font-size: 1.2rem; margin-bottom: 1.2rem; font-weight: bold; padding: 0px 3%;}
+
+.dash {
+  list-style-type: none;
+}
+.dash li::before {
+  content: '- ';
+  margin-right: 5px;
+}

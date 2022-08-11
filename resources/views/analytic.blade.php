@@ -31,127 +31,22 @@
             <div class="row align-items-center">
 
                 <div class="col-lg-6 col-md-6">
-                    <div class="image-box introimg">
-                        <img src="{{ asset('argon') }}/page/employer3.png">
-                    </div>
-                </div>
-
-                <div class="col-lg-6 col-md-6">
-                    <h2 class="titlesect text-cyan text-left mb-3">Connect Authentically<br />& With Purpose</h2>
-                    <p class="text-light">Continually share open roles, update folks on processes, publicize company news,
-                        ask or answer questions, and more. Think of your community as a targeted social channel.
+                    <h2 class="titlesect text-cyan text-left mb-3">Data Overview</h2>
+                    <p class="text-light">
+                        Get a birds-eye view of all your diversity recruitment numbers in one place. 
+                        See how many open positions you have, how many hires you've made, and which 
+                        metrics need a little boost.
                     </p>
-                </div>
-                
-            </div>
-        </div>
-    </section>
-
-    <section class="bg-cyan pt-6 pb-6">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-12 col-md-12">
-                    <h2 class="titlesect">Supercharge your ATS</h2>
-                    <ul class="atslogo">
-                        <li class="itemats"><img src="{{ asset('argon') }}/home/ats1.png"></li>
-                        <li class="itemats"><img src="{{ asset('argon') }}/home/ats2.png"></li>
-                        <li class="itemats"><img src="{{ asset('argon') }}/home/ats3.png"></li>
-                        <li class="itemats"><img src="{{ asset('argon') }}/home/ats5.png"></li>
-                        <li class="itemats"><img src="{{ asset('argon') }}/home/ats6.png"></li>
-                        <li class="itemats"><img src="{{ asset('argon') }}/home/ats4.png"></li>
+                    <ul class="text-light p-0 dash">
+                        <li>Review actionable metrics that help measure your progress</li>
+                        <li>Implement new strategies to increase recruitment success</li>
+                        <li>Manage high performing positions and revise others accordingly</li>
                     </ul>
                 </div>
-            </div>
-        </div>
-    </section>
 
-    <section class="bg-primary pt-6 pb-6">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-12 col-md-12">
-                    <h2 class="title3">Big <b>Benefits.</b> Great <b>Talent.</b></h2>
-                </div>
-            </div>
-            <div class="row align-items-center mt-5">
-                <div class="col-lg-6 col-md-6">
-                    <div class="mb-5">
-                        <h3 class="text-warning">Hidden Gems</h3>
-                        <p class="text-light">Hidden gems are candidates who made it to the late stages of the interview process but ultimately weren’t hired for the role. Hidden gems have been vetted
-                            by hiring managers, both for hard and soft skills.
-                            Hidden gems are highly intent and already engaged candidates, which provides talent acquisition teams with a fully vetted and qualified candidate.</p>
-                    </div>
-                    <div class="mb-5">
-                        <h3 class="text-warning">Reduced Sourcing Time</h3>
-                        <p class="text-light">Enrich the top of your recruiting funnel with a constant stream of qualified underrepresented candidates.</p>
-                    </div>
-                    <div class="mb-5">
-                        <h3 class="text-warning">Streamlined screening process</h3>
-                        <p class="text-light">Eliminate spam resumes and reduce time- to-hire by up to 30%, adding highly qualified candidates to your pipeline</p>
-                        <div class="center-small">
-                            <a href="#" class="btn btn-xl btn-secondary mt-4">Explore Talent Stream</a>
-                        </div>
-                    </div>
-                </div>
                 <div class="col-lg-6 col-md-6">
                     <div class="image-box introimg">
-                        <img src="{{ asset('argon') }}/home/bigsol.png">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="bg-blue pt-6 pb-6">
-        <div class="container">
-            <div class="row align-items-center mt-5">
-                <div class="col-lg-6 col-md-6 mb-md-0 mb-4">
-                    <div class="image-box introimg">
-                        <img src="{{ asset('argon') }}/home/intro1.png">
-                    </div>
-                </div>
-
-                <div class="col-lg-6 col-md-6">
-                    <div class="text-md-right">
-                        <h2 class="title3">Data, data <b>and more</b> data</h2>
-                        <p class="text-light">Understand the diversity of your whole pipeline and discover how individuals self identify. Measure pipeline health and pass-through rates, reduce bias and
-                            share DE&I success.</p>
-                        <p class="text-light">It’s all about the data, optimize your recruiting strategy, analyze your progress all while eliminating biases in your hiring process with tailor-made
-                            reports, actionable insights and recommendations.</p>
-                        <div class="center-small">
-                            <a href="#" class="btn btn-xl btn-secondary mt-4">Explore Analytics</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="bg-white pt-6 pb-6 bg-decor" style="background-image: url('{{ asset('argon') }}/home/bgsolution.png');">
-        <div class="container">
-            <div class="row text-center">
-                <h2 class="title4 mx-md-auto mx-3">World-Class diversity recruiting powered by Technology</h2>
-            </div>
-        </div>
-    </section>
-
-
-    <section class="bg-blue pt-6 pb-6">
-        <div class="container">
-            <div class="row align-items-center mt-md-5">
-
-                <div class="col-lg-6 col-md-6">
-
-                    <h2 class="titlesect text-warning text-left">Enhanced Employer Brand</h2>
-                    <p class="text-light">Run impactful engaging virtual events with our end-to-end solution. Connect authentically with potential candidates and keep the
-                        conversation going with talent communities. Promote your open roles to drive more inbound applicants.</p>
-                    <div class="center-small">
-                        <a href="#" class="btn btn-xl btn-secondary mt-4">Explore Employer Brand</a>
-                    </div>
-
-                </div>
-                <div class="col-lg-6 col-md-6 mt-md-0 mt-5">
-                    <div class="image-box introimg">
-                        <img src="{{ asset('argon') }}/home/intro1.png">
+                        <img src="{{ asset('argon') }}/page/employer3.png">
                     </div>
                 </div>
 
@@ -162,37 +57,23 @@
     <section class="bg-white pt-6 pb-6">
         <div class="container">
             <div class="row align-items-center">
-                <div class="col-lg-12 col-md-12">
-                    <h2 class="titlesect text-left">A Modern recruiting platform</h2>
-                </div>
-            </div>
-            <div class="row align-items-center mt-5">
-                <div class="col-lg-6 col-md-6">
-                    <div class="mb-5">
-                        <h3 class="fw800">For Recruiter</h3>
-                        <p>Whether it’s building top of the funnel, understanding the diversity of your existing pipeline or
-                            managing your existing candidates efficiently, our solution has you covered.</p>
-                    </div>
-                    <div class="mb-5">
-                        <h3 class="fw800">For Talent Leader</h3>
-                        <p>Take the guesswork out of your diversity hiring goals. Understand your current hiring gaps and use
-                            our suite of solutions to run an end to end diversity recruiting strategy.</p>
-                    </div>
-                    <div class="mb-5">
-                        <h3 class="fw800">For DEI Leader</h3>
-                        <p>Understand the diversity of your recruiting team’s current pipeline with self-identified data.
-                            Build a strong employer brand as a diverse employer of choice. </p>
-                        <div class="center-small">
-                            <a href="#" class="btn btn-xl btn-secondary mt-4">Get Started</a>
-                        </div>
-                    </div>
 
-                </div>
-                <div class="col-lg-6 col-md-6">
+               <div class="col-lg-6 col-md-6 pb-md-0 pb-4">
                     <div class="image-box introimg">
-                        <img src="{{ asset('argon') }}/home/solution4.png">
+                        <img src="{{ asset('argon') }}/home/intro1.png">
                     </div>
                 </div>
+
+                <div class="col-lg-6 col-md-6">
+                    <h2 class="title5 text-danger mb-3">Turn insights into action with full-funnel analytics</h2>
+                    <p class="text-dark">
+                        Optimize your recruiting process by cutting, slicing, and dicing 
+                        the data depending on the insights your organization is looking for. 
+                        Plus, drill down to view analytics for individual candidates, iob 
+                        postings, or events to hone in on the most relevant insights.
+                    </p>
+                </div>
+                
             </div>
         </div>
     </section>
@@ -202,25 +83,66 @@
             <div class="row align-items-center">
 
                 <div class="col-lg-6 col-md-6">
-                    <h2 class="titlesect text-left">Going DE&I all the way</h2>
-                    <p>From a candidate's inbox to a company's ATS, Divrse seamlessly integrates with existing tools to provide an easy-to-adopt experience.</p>
+                    <h2 class="titlesect text-primary text-left mb-3">Actionable Data</h2>
+                    <p>
+                        It's all about the data. Optimize your recruiting strategy, analyze 
+                        your progress all while eliminating biases in your hiring process 
+                        with tailor-made reports, actionable insights and recommendations
+                    </p>
+                    <ul class="p-0 dash">
+                        <li>Analyze the performance Of your recruitment efforts</li>
+                        <li>Track the data that matters most and share it across teams</li>
+                        <li>Make tangible decisions based on customized data</li>
+                    </ul>
                 </div>
 
-                <div class="col-lg-6 col-md-6 text-md-right text-center mt-md-0 mt-4">
-                    <a href="#" class="btn btn-xl btn-secondary">Get Started</a>
+                <div class="col-lg-6 col-md-6">
+                    <div class="image-box introimg">
+                        <img src="{{ asset('argon') }}/page/employer3.png">
+                    </div>
                 </div>
 
             </div>
         </div>
     </section>
+
+    <section class="bg-white pt-6 pb-6">
+        <div class="container">
+            <div class="row align-items-center">
+
+                <div class="col-lg-6 col-md-6">
+                    <div class="image-box introimg">
+                        <img src="{{ asset('argon') }}/home/intro1.png">
+                    </div>
+                </div>
+
+                <div class="col-lg-6 col-md-6">
+                    <h2 class="titlesect text-cyan text-left mb-3">KPI Management</h2>
+                    <p>
+                        All your essential data in one place. Set real hiring goals and 
+                        benchmarks that you can revise anytime. Look at your Success over 
+                        time, reset your goals as needed, keeping a close eye on diversity 
+                        recruiting.
+                    </p>
+                    <ul class="p-0 dash">
+                        <li>Monitor efficiency in recruiting processes</li>
+                        <li>Keep up with revenue saved on sourcing costs</li>
+                        <li>Optimize your time-to-hire timeline strategically</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
     <footer class="py-5 footlanding">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-6 col-md-6 center-small">
-                    <h2 class="title2 text-white">Diversity won't wait</h2>
-                    <span class="text-light desc1">Turn diversity goals into action today.</span>
+                    <h2 class="title2 text-white">Stop setting diversity goals. Start meeting them.</h2>
+                    <span class="text-light desc1">We'll design a custom diversity hiring solution for your business.</span>
                     <br />
-                    <a href="#" class="btn btn-xl btn-secondary mt-md-5 mt-4">Learn More</a>
+                    <a href="#" class="btn btn-xl btn-secondary mt-md-5 mt-4">See it in Action</a>
                 </div>
                 <div class="col-lg-6 col-md-6">
                     <div class="image-box imgcta">
