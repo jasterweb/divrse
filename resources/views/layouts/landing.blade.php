@@ -30,6 +30,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet"> 
         <style>
+     
         </style>
         <link href="http://fonts.cdnfonts.com/css/futura-md-bt" rel="stylesheet">
 
@@ -49,6 +50,18 @@
         
         <!-- Argon JS -->
         <script src="{{ asset('argon') }}/js/argon.js?v=1.0.0"></script>
+        <script>
+        $(function(){
+            $('.dropdown').hover(function() {
+                $(this).addClass('show');
+                $('.dropdown-menu').addClass('show')
+            },
+            function() {
+                $('.dropdown-menu').removeClass('show')
+                $(this).removeClass('show');
+            });
+        });
+        </script>
         @yield('script')
     </body>
 </html>
