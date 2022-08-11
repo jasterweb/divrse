@@ -51,7 +51,6 @@ class ArticleController extends Controller
         $article->slug = \Str::slug($request->title);
         
         foreach ($request->input('document', []) as $file) {
-            $file = $request->input('document');
                $article->addMedia(storage_path('tmp/uploads/' . $file))->toMediaCollection('document');
                $article->img = $file;
             }
