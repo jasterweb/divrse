@@ -198,6 +198,10 @@
 .wrapproof h4{text-transform:uppercase;font-size:20px;margin-bottom:5px}
 .proofnum .itemproof:last-child{border:0}
 
+.proofnum2{display:flex;flex-wrap:wrap;margin:3rem -15px}
+.itemproof-light{width:25%;padding:0 15px;border-right:1px solid #e5a1a4}
+.itemproof-light:last-child{border:0}
+
 .w800{max-width: 800px; margin: 0 auto;}
 
 .statsol{margin:4rem -15px;display:flex;flex-wrap:wrap}
@@ -304,7 +308,7 @@
 .slider {
   -webkit-appearance: none;
   width: 60%;
-  height: 10px;
+  height: 8px;
   background: #e5a1a4;
   outline: none;
   opacity: 0.7;
@@ -322,12 +326,12 @@
   appearance: none;
   width: 32px;
   height: 32px;
-  background: #32325d;
+  background:  var(--cyan);
   cursor: pointer;
   border-radius: 20px;
   border-style: solid;
   border-width: 4px;
-  border-color: var(--cyan);
+  border-color: var(--primary);
 }
 
 /* .slider::-moz-range-thumb {
@@ -337,7 +341,7 @@
   cursor: pointer;
 } */
 
-.wrapstep span{margin:;margin-top:15px;font-size:20px;font-weight:700;color:var(--primary)}
+.wrapstep span{margin-top:15px;font-size:20px;font-weight:700;color:var(--primary)}
 .itemstep:after{content:"";background:rgba(1,1,1,0.25);padding:1px;position:absolute;width:50%;bottom:63%;right:-68px}
 .stepby .itemstep:last-child:after{display:none}
 
@@ -346,3 +350,11 @@
 .listitem li:before{content:"-";margin-right:10px}
 
 .wcuwrap h4{font-size: 1.2rem; margin-bottom: 1.2rem; font-weight: bold; padding: 0px 3%;}
+
+.dash {
+  list-style-type: none;
+}
+.dash li::before {
+  content: '- ';
+  margin-right: 5px;
+}

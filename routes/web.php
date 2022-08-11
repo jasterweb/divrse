@@ -19,6 +19,7 @@ Route::get('/solution', [App\Http\Controllers\LandingController::class, 'solutio
 Route::get('/candidate', [App\Http\Controllers\LandingController::class, 'candidate'])->name('candidate');
 Route::get('/talent-stream', [App\Http\Controllers\LandingController::class, 'talent'])->name('talent');
 Route::get('/employer', [App\Http\Controllers\LandingController::class, 'employer'])->name('employer');
+Route::get('/analytic', [App\Http\Controllers\LandingController::class, 'analytic'])->name('analytic');
 
 Auth::routes();
 
