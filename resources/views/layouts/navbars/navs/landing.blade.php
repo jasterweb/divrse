@@ -39,7 +39,7 @@
                         <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
 
                             <a class="dropdown-item" href="{{ route('talent') }}">Talent Stream</a>
-                            <a class="dropdown-item" href="#">Analytics</a>
+                            <a class="dropdown-item" href="{{ route('analytic') }}">Analytics</a>
                             <a class="dropdown-item" href="{{ route('employer') }}">Employer Community</a>
 
                         </div>
