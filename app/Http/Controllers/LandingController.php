@@ -18,4 +18,5 @@ class LandingController extends Controller
     }
     public function candidate(){return view('candidate');}
     public function talent(){return view('talent');}
+    public function employer(){return view('employer');}
 }
