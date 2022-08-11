@@ -44,7 +44,7 @@
                     </ul>
                 </div>
 
-                <div class="col-lg-6 col-md-6">
+                <div class="col-lg-6 col-md-6 pt-md-0 pt-3">
                     <div class="image-box introimg">
                         <img src="{{ asset('argon') }}/page/employer3.png">
                     </div>
@@ -96,7 +96,7 @@
                     </ul>
                 </div>
 
-                <div class="col-lg-6 col-md-6">
+                <div class="col-lg-6 col-md-6 pt-md-0 pt-3">
                     <div class="image-box introimg">
                         <img src="{{ asset('argon') }}/page/employer3.png">
                     </div>
@@ -110,7 +110,7 @@
         <div class="container">
             <div class="row align-items-center">
 
-                <div class="col-lg-6 col-md-6">
+                <div class="col-lg-6 col-md-6 pb-md-0 pb-4">
                     <div class="image-box introimg">
                         <img src="{{ asset('argon') }}/home/intro1.png">
                     </div>
