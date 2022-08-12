@@ -358,3 +358,12 @@
   content: '- ';
   margin-right: 5px;
 }
+
+@media (max-width: 768px) {
+  .res-img-top {
+    margin-bottom: 1.5rem;
+  }
+  .res-img-bottom {
+    margin-top: 1.5rem;
+  }
+}
