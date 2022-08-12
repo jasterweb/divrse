@@ -32,7 +32,7 @@
                 </li>
                 <li class="nav-item">
                     <div class="dropdown">
-                        <a class="dropdown-toggle nav-link nav-link-icon" href="{{ route('solution') }}" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <a class="dropdown-toggle nav-link nav-link-icon" href="{{ route('solution') }}" role="button" id="dropdownMenuLink" aria-haspopup="true" aria-expanded="false">
 
                             <span class="nav-link-inner--text">{{ __('Solutions') }}</span>
                         </a>
