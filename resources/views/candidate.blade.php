@@ -5,80 +5,240 @@
         <div class="container">
             <div class="header-body mt-4 mb-4">
                 <div class="row align-items-center">
+
                     <div class="col-lg-6 col-md-6">
-                        <div class="image-box heroimage">
+                        <div class="image-box heroimage res-img-top">
                             <img src="{{ asset('argon') }}/home/mainsolution.png" class="basehero">
-                            
                         </div>
                     </div>
+
                     <div class="col-lg-6 col-md-6">
-                        <h1 class="titlesect text-white text-left">Where jobs find you</h1>
-                        <span class="text-light">Divrse is on a mission: getting great talent, like yourself, matched with awesome opportunities at
-                            companies who want to take responsibility and diversify their workforce at all levels.</span>
-                        <br/>
-                        <a href="#" class="btn btn-secondary mt-4">Find A Job</a>
+                        <h1 class="titlesect text-cyan text-left">Where jobs find you</h1>
+                        <div class="text-light py-3">Divrse is on a mission: getting great talent, like yourself, matched with awesome opportunities at
+                            companies who want to take responsibility and diversify their workforce at all levels.</div>
+                        <br />
+                        <a href="#" class="btn btn-secondary">Find A Job</a>
                     </div>
-                    
+
                 </div>
             </div>
         </div>
     </div>
 
-
-
-    
     <section class="bg-white pt-6 pb-6">
         <div class="container">
             <div class="row align-items-center">
-               
+
                 <div class="col-lg-6 col-md-6">
-             
-                        <h2 class="titlesect text-left">An empowering community<br/>of support, vulnerability,<br/>openness, and mutual trust.</h2>
-                        <p class="text-dark">We support diverse and underrepresented talent as they navigate their journey through the
-                            labor market. Search for career opportunities and get access to job search tools, career
-                            development resources and a thriving community of diverse talent.</p>
-                    
+
+                    <h2 class="titlesect text-left mb-4">An empowering community<br />of support, vulnerability,<br />openness, and mutual trust.</h2>
+                    <p class="text-dark">We support diverse and underrepresented talent as they navigate their journey through the
+                        labor market. Search for career opportunities and get access to job search tools, career
+                        development resources and a thriving community of diverse talent.</p>
+
                 </div>
-                <div class="col-lg-6 col-md-6">
-                    <div class="image-box introimg">
-                        <img src="{{ asset('argon') }}/home/intro1.png">
-                    </div>
+
+                <div class="col-lg-5 col-md-5 offset-md-1 text-center text-md-left res-img-bottom">
+                    <img src="{{ asset('argon') }}/home/wcu.png">
                 </div>
 
             </div>
         </div>
     </section>
-    
-    
+
     <section class="bg-primary pt-6 pb-6">
         <div class="container">
             <div class="row align-items-center">
-               
-                <div class="col-lg-6 col-md-6">
-                    <div class="image-box introimg">
-                        <img src="{{ asset('argon') }}/home/intro1.png">
-                    </div>
+
+                <div class="col-lg-5 col-md-5 image-box res-img-top">
+                    <img src="{{ asset('argon') }}/home/wcu.png">
                 </div>
-                <div class="col-lg-6 col-md-6">
-                    <h2 class="titlesect text-danger text-left">Today's top<br/>companies are hiring.</h2>
-                    <p class="text-light">We partner with top Canadian companies from early-stage<br/>startups to Fortune 500 companies
-                        to bring the best jobs<br/>in tech and finance to you.</p>
+
+                <div class="col-lg-6 offset-md-1 col-md-6">
+                    <h2 class="titlesect text-danger text-left mb-4">Today's top<br />companies are hiring.</h2>
+                    <p class="text-light">
+                        We partner with top Canadian companies from early-stage <br class="d-md-block d-none" />
+                        startups to Fortune 500 companies to bring the best jobs <br class="d-md-block d-none" />
+                        in tech and finance to you.
+                    </p>
                 </div>
 
             </div>
         </div>
     </section>
 
- 
-  
+    <section class="bg-white pt-6 pb-6">
+        <div class="container">
+            <div class="row align-items-center">
+
+                <div class="col-lg-6 col-md-6">
+                    <h2 class="titlesect text-cyan text-left mb-4">Apply in one click.</h2>
+                    <p class="text-dark">
+                        Fill out your profile once, and it’s your application forever. <br class="d-md-block d-none" />
+                        No more cover letters or copying and pasting your work <br class="d-md-block d-none" />
+                        experience for the 50th time.
+                    </p>
+                </div>
+
+                <div class="col-lg-5 col-md-5 offset-md-1 text-center text-md-left res-img-bottom">
+                    <img src="{{ asset('argon') }}/home/wcu.png">
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-cyan pt-6 pb-6">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-12 col-md-12">
+                    <h2 class="titlesect text-primary">Resources and insights</h2>
+                </div>
+                <div class="col-lg-12 col-md-12">
+
+                    <div class="wcuslide">
+                        <div class="wcuitem">
+                            <div class="wcuwrap">
+                                <img class="mx-auto" src="{{ asset('argon') }}/home/wcu.png">
+                                <h4>Mentorship</h4>
+                                <p>
+                                    Mentorship is a powerful tool to help you reach your career goals. Attend our mentorship
+                                    sessions to meet industry leaders and get a head start in your career and in life.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="wcuitem">
+                            <div class="wcuwrap">
+                                <img class="mx-auto" src="{{ asset('argon') }}/home/wcu.png">
+                                <h4>Career Information Session</h4>
+                                <p>
+                                    What’s the best way to get your foot in the door? Interacting with companies is crucial to a
+                                    successful job search. We connect you with recruiters and hiring managers directly so you can
+                                    gain valuable insights into career options.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="wcuitem">
+                            <div class="wcuwrap">
+                                <img class="mx-auto" src="{{ asset('argon') }}/home/wcu.png">
+                                <h4>Events</h4>
+                                <p>
+                                    Our events are designed to help you overcome barriers to active participation in Canadian
+                                    society and the labor market. Through a series of workshops facilitated by experienced
+                                    professionals, you will develop the skills and confidence to achieve your goals.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="wcuitem">
+                            <div class="wcuwrap">
+                                <img class="mx-auto" src="{{ asset('argon') }}/home/wcu.png">
+                                <h4>Career Accelerator Bootcamp</h4>
+                                <p>
+                                    It is stressful and nerve-racking to interview for a job or seek advancement at work. Being
+                                    turned down for a role you really want is never fun, and it can seriously undermine your
+                                    self-esteem. We want to help you land your dream job by teaching you the entire job search
+                                    strategy from end to end free of charge.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="wcuitem">
+                            <div class="wcuwrap">
+                                <img class="mx-auto" src="{{ asset('argon') }}/home/wcu.png">
+                                <h4>Podcast</h4>
+                                <p>
+                                    Explore the Divrse podcast to gain insights into the stories, experiences, and journeys of real
+                                    people in order to provide you with strategies for success.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="wcuitem">
+                            <div class="wcuwrap">
+                                <img class="mx-auto" src="{{ asset('argon') }}/home/wcu.png">
+                                <h4>Blogs</h4>
+                                <p>
+                                    The blog contains useful resources for your job search and beyond. We’ve got you covered with
+                                    all the guides, how-to’s, tips, and tricks you’ll need to succeed in your career.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="wcuitem">
+                            <div class="wcuwrap">
+                                <img class="mx-auto" src="{{ asset('argon') }}/home/wcu.png">
+                                <h4>Tools & Templates</h4>
+                                <p>
+                                    Check out our tried-and-true job-winning tools. We’ve compiled ATS-friendly resumes, cover
+                                    letters, common interview questions, and other resources to help you along your career path.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-primary pt-6 pb-6">
+        <div class="container">
+            <div class="row align-items-center">
+
+                <div class="col-lg-6 col-md-6">
+
+                    <h2 class="titlesect text-cyan text-left mb-4">Jobs that are<br />tailored for you.</h2>
+                    <p class="text-light">
+                        Connect with the leading employers and give your career a rocket boost. Employers we match
+                        you with are engaged and actively seeking candidates with your skills and experience!
+                    </p>
+                    <p class="text-light">
+                        Our technology scans your resume and sends you customized job recommendations based on
+                        your skills and experience.
+                    </p>
+
+                </div>
+                <div class="col-lg-5 col-md-5 offset-md-1 text-center text-md-left res-img-bottom">
+                    <img src="{{ asset('argon') }}/home/wcu.png">
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-white pt-7 pb-7">
+        <div class="container">
+            <div class="row align-items-center">
+
+                <div class="col-lg-5 col-md-5 image-box res-img-top">
+                    <img src="{{ asset('argon') }}/home/wcu.png">
+                </div>
+                <div class="col-lg-6 offset-md-1 col-md-6">
+                    <h2 class="titlesect text-cyan text-left mb-4">Change is coming.<br />Be part of it</h2>
+                    <p class="text-dark">
+                        Our partners are committed to recruiting and hiring diverse talent. If your next job is with a
+                        Divrse partner, you’ll be joining a workplace that is committed to hiring and promoting diverse
+                        and underrepresented talent.
+                    </p>
+                    <p class="text-dark">
+                        Workplaces should be free of discrimination and offer equitable opportunities to all employees.
+                        The more candidates we get hired at great companies, the more inclusive and diverse their
+                        workforce becomes.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
     <footer class="py-5 footlanding">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-6 col-md-6">
-                    <h2 class="title2 text-white">Diversity won't wait</h2>
-                    <span class="text-light desc1">Turn diversity goals into action today.</span>
-                    <br/>
-                    <a href="#" class="btn btn-xl btn-secondary mt-5">Learn More</a>
+                    <h2 class="title2 text-white">Get started today.</h2>
+                    <div class="text-light desc1 py-4">
+                        Finding the right job is life-changing. Let Divrse <br class="d-md-block d-none" />
+                        help you find your next big opportunity.
+                    </div>
+                    <br />
+                    <a href="#" class="btn btn-xl btn-secondary">Sign Up</a>
                 </div>
                 <div class="col-lg-6 col-md-6">
                     <div class="image-box imgcta">
@@ -91,7 +251,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-12 text-light">Copyright © 2022 Divrse - All Rights Reserved</div>
-                    
+
                 </div>
             </div>
         </div>
@@ -99,72 +259,54 @@
 @endsection
 
 @section('script')
-<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-<script type="text/javascript">
-    $(document).ready(function(){
-        $('.atslogo').slick({
-            dots: true,
-            infinite: true,
-            arrows: false,
-            speed: 500,
-            slidesToShow: 4,         
-            autoplay: true,
-            autoplaySpeed: 1000,
-            slidesToScroll: 1,
-            responsive: [
-                {
-            breakpoint: 1024,
-            settings: {
-                slidesToShow: 4,
-                slidesToScroll: 1,
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('.wcuslide').slick({
+                dots: true,
                 infinite: true,
-                dots: true
-            }
-            },
-            {
-            breakpoint: 600,
-            settings: {
-                slidesToShow: 2,
-                slidesToScroll: 2
-            }
-            },
-            {
-            breakpoint: 480,
-            settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1
-            }
-            }
-        ]
+                arrows: false,
+                speed: 500,
+                slidesToShow: 3,
+                autoplay: true,
+                autoplaySpeed: 1000,
+                slidesToScroll: 1,
+                responsive: [
+                    {
+                        breakpoint: 992,
+                        settings: {
+                            slidesToShow: 3,
+                            slidesToScroll: 1,
+                            infinite: true,
+                            dots: true
+                        }
+                    },
+                    {
+                        breakpoint: 991,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 1,
+                            infinite: true,
+                            dots: true
+                        }
+                    },
+                    {
+                        breakpoint: 600,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 2
+                        }
+                    },
+                    {
+                        breakpoint: 480,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1
+                        }
+                    }
+                ]
+            });
+
         });
-      
-    });
-</script>
-<script type="text/javascript">
-    $(document).ready(function(){
-        $(".counting").each(function () {
-var $this = $(this),
-countTo = $this.attr("data-countto");
-countDuration = parseInt($this.attr("data-duration"));
-$({ counter: $this.text() }).animate(
-{
-counter: countTo
-},
-{
-duration: countDuration,
-easing: "linear",
-step: function () {
-$this.text(Math.floor(this.counter));
-},
-complete: function () {
-$this.text(this.counter);
-}
-}
-);
-});
-
-});
-</script>
+    </script>
 @endsection
-
-
