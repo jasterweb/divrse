@@ -61,7 +61,12 @@
   .center-small {text-align: center;}
 }
 .image-box{text-align: center;}
-.imgcta img{width: -webkit-fill-available;}
+.imgcta img {
+  width: 100%;
+  width: -moz-available;
+  width: -webkit-fill-available;
+  width: fill-available;
+}
 @media (min-width:1024px) {
   .imgcta img{margin-top:-6rem;};
 }
