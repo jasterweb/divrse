@@ -56,7 +56,7 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link nav-link-icon" href="{{ route('profile.edit') }}">
+                    <a class="nav-link nav-link-icon" href="{{ route('about') }}">
                         <span class="nav-link-inner--text">{{ __('About') }}</span>
                     </a>
                 </li>

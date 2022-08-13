@@ -20,6 +20,7 @@ Route::get('/candidate', [App\Http\Controllers\LandingController::class, 'candid
 Route::get('/talent-stream', [App\Http\Controllers\LandingController::class, 'talent'])->name('talent');
 Route::get('/employer', [App\Http\Controllers\LandingController::class, 'employer'])->name('employer');
 Route::get('/analytic', [App\Http\Controllers\LandingController::class, 'analytic'])->name('analytic');
+Route::get('/about', [App\Http\Controllers\LandingController::class, 'about'])->name('about');
 
 Auth::routes();
 

@@ -38,8 +38,10 @@
 
                 </div>
 
-                <div class="col-lg-5 col-md-5 offset-md-1 text-center text-md-left res-img-bottom">
-                    <img src="{{ asset('argon') }}/home/wcu.png">
+                <div class="col-lg-5 col-md-5">
+                    <div class="image-box img100">
+                        <img src="{{ asset('argon') }}/page/cand_empowering.png">
+                    </div>
                 </div>
 
             </div>
@@ -50,8 +52,10 @@
         <div class="container">
             <div class="row align-items-center">
 
-                <div class="col-lg-5 col-md-5 image-box res-img-top">
-                    <img src="{{ asset('argon') }}/home/wcu.png">
+                <div class="col-lg-5 col-md-5">
+                    <div class="image-box img100">
+                        <img src="{{ asset('argon') }}/page/cand_today.png">
+                    </div>
                 </div>
 
                 <div class="col-lg-6 offset-md-1 col-md-6">
@@ -80,8 +84,10 @@
                     </p>
                 </div>
 
-                <div class="col-lg-5 col-md-5 offset-md-1 text-center text-md-left res-img-bottom">
-                    <img src="{{ asset('argon') }}/home/wcu.png">
+                <div class="col-lg-5 col-md-5">
+                    <div class="image-box img100">
+                        <img src="{{ asset('argon') }}/page/cand_apply.png">
+                    </div>
                 </div>
 
             </div>
@@ -195,8 +201,10 @@
                     </p>
 
                 </div>
-                <div class="col-lg-5 col-md-5 offset-md-1 text-center text-md-left res-img-bottom">
-                    <img src="{{ asset('argon') }}/home/wcu.png">
+                <div class="col-lg-5 col-md-5">
+                    <div class="image-box img100">
+                        <img src="{{ asset('argon') }}/page/cand_jobs.png">
+                    </div>
                 </div>
 
             </div>
@@ -207,8 +215,10 @@
         <div class="container">
             <div class="row align-items-center">
 
-                <div class="col-lg-5 col-md-5 image-box res-img-top">
-                    <img src="{{ asset('argon') }}/home/wcu.png">
+                <div class="col-lg-5 col-md-5">
+                    <div class="image-box img100">
+                        <img src="{{ asset('argon') }}/page/cand_change.png">
+                    </div>
                 </div>
                 <div class="col-lg-6 offset-md-1 col-md-6">
                     <h2 class="titlesect text-cyan text-left mb-4">Change is coming.<br />Be part of it</h2>
@@ -232,7 +242,7 @@
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-6 col-md-6">
-                    <h2 class="title2 text-white">Get started today.</h2>
+                    <h2 class="title2 text-warning">Get started today.</h2>
                     <div class="text-light desc1 py-4">
                         Finding the right job is life-changing. Let Divrse <br class="d-md-block d-none" />
                         help you find your next big opportunity.

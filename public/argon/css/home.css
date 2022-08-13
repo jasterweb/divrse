@@ -354,7 +354,26 @@
 .listitem li{margin-bottom:10px;color:#212529!important}
 .listitem li:before{content:"-";margin-right:10px}
 
+.img100 img {
+  width: 100%;
+}
+
+.boxsquare{padding:2.4rem;margin-top:-7rem;border-radius:7px}
+.mivison{display:flex;gap:20px;margin-bottom:5rem}.mivison .boxsquare{width:50%}
+
 .wcuwrap h4{font-size: 1.2rem; margin-bottom: 1.2rem; font-weight: bold; padding: 0px 3%;}
+.quote1{display:flex;align-items:center;justify-content:center;flex-direction:column;width:750px;margin:0 auto;text-align:center}
+.quote1 h3{font-size:1.8rem;font-weight:700}.quoteby{font-size:2rem}
+
+.team{display:flex;flex-wrap:wrap}.team .itemteam{width:33.33%;margin-bottom:2rem}
+.wrapteam{display:flex;flex-direction:column;justify-content:center;align-items:center;padding:20px}
+.wrapteam img{width:55%;margin-bottom:1.2rem}.wrapteam h4{font-size:1.1rem;font-weight:600;margin-bottom:4px}
+.wrapteam ul{margin:1rem 0;padding:0;list-style:none;display:flex;flex-wrap:wrap;align-items:center}
+.wrapteam ul li{margin:0 3px}
+.wrapteam ul li:first-child a{background:#0077B5;padding:10px 15px;border-radius:7px}
+.wrapteam ul li i{color:#fff}
+.wrapteam ul li:last-child a{background:#55ACEE;padding:10px 15px;border-radius:7px}
+.btx a{background:var(--primary);padding:10px 15px;border-radius:7px;color:#fff}
 
 .dash {
   list-style-type: none;
