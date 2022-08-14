@@ -90,6 +90,7 @@
   text-align: center;
 }
 .wcuwrap img {
+  width:100%;
   margin-bottom: 1.5rem;
 }
 .wcuwrap h3 {
@@ -375,6 +376,13 @@
 .wrapteam ul li:last-child a{background:#55ACEE;padding:10px 15px;border-radius:7px}
 .btx a{background:var(--primary);padding:10px 15px;border-radius:7px;color:#fff}
 
+.deflogo{margin:0;padding:0;display:flex;list-style:none;flex-wrap:wrap}
+.deflogo li{position:relative;width:20%;display:flex;flex-direction:column;justify-content:center;align-items:center}
+.deflogo li span{margin:15px 0;color:var(--white);font-size:18px}
+.deflogo li:after{content:"+";color:#fff;font-weight:700;font-size:3rem;position:absolute;right:-5%;bottom:45%}
+.deflogo li:last-child:after{display:none}
+.deflogo li:nth-child(4)::after{content:"="}
+
 .dash {
   list-style-type: none;
 }
@@ -383,7 +391,14 @@
   margin-right: 5px;
 }
 
+.maingif{position: absolute; top: -315px; right: 0; width: 100%;}
+.img-md img{width: 65%;}
+
 @media (max-width: 768px) {
+  .deflogo li{width:50%;margin-bottom:25px}
+.deflogo li:nth-child(2)::after,.deflogo li:nth-child(4)::after{display:none}
+.deflogo li::after{right:-13%}
+.deflogo{justify-content:center}
   .res-img-top {
     margin-bottom: 1.5rem;
   }

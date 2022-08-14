@@ -21,6 +21,7 @@ Route::get('/talent-stream', [App\Http\Controllers\LandingController::class, 'ta
 Route::get('/employer', [App\Http\Controllers\LandingController::class, 'employer'])->name('employer');
 Route::get('/analytic', [App\Http\Controllers\LandingController::class, 'analytic'])->name('analytic');
 Route::get('/about', [App\Http\Controllers\LandingController::class, 'about'])->name('about');
+Route::get('/blog', [App\Http\Controllers\LandingController::class, 'blog'])->name('blog');
 
 Auth::routes();
 

@@ -51,7 +51,7 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link nav-link-icon" href="{{ route('profile.edit') }}">
+                    <a class="nav-link nav-link-icon" href="{{ route('blog') }}">
                         <span class="nav-link-inner--text">{{ __('Blog') }}</span>
                     </a>
                 </li>

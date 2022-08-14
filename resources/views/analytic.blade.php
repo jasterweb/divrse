@@ -60,12 +60,12 @@
 
                <div class="col-lg-6 col-md-6 pb-md-0 pb-4">
                     <div class="image-box introimg">
-                        <img src="{{ asset('argon') }}/home/intro1.png">
+                        <img src="{{ asset('argon') }}/page/analytics/turn.png">
                     </div>
                 </div>
 
                 <div class="col-lg-6 col-md-6">
-                    <h2 class="title5 text-danger mb-3">Turn insights into action with full-funnel analytics</h2>
+                    <h2 class="title5 text-danger mb-3">Turn insights into<br/>action with full-funnel<br/>analytics</h2>
                     <p class="text-dark">
                         Optimize your recruiting process by cutting, slicing, and dicing 
                         the data depending on the insights your organization is looking for. 
@@ -98,7 +98,7 @@
 
                 <div class="col-lg-6 col-md-6 pt-md-0 pt-3">
                     <div class="image-box introimg">
-                        <img src="{{ asset('argon') }}/page/employer3.png">
+                        <img src="{{ asset('argon') }}/page/analytics/action.png">
                     </div>
                 </div>
 
@@ -112,7 +112,7 @@
 
                 <div class="col-lg-6 col-md-6 pb-md-0 pb-4">
                     <div class="image-box introimg">
-                        <img src="{{ asset('argon') }}/home/intro1.png">
+                        <img src="{{ asset('argon') }}/page/analytics/kpi.png">
                     </div>
                 </div>
 
@@ -139,7 +139,7 @@
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-6 col-md-6 center-small">
-                    <h2 class="title2 text-white">Stop setting diversity goals. Start meeting them.</h2>
+                    <h2 class="title2 text-warning">Stop setting diversity goals. Start meeting them.</h2>
                     <span class="text-light desc1">We'll design a custom diversity hiring solution for your business.</span>
                     <br />
                     <a href="#" class="btn btn-xl btn-secondary mt-md-5 mt-4">See it in Action</a>
