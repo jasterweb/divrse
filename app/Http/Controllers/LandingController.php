@@ -9,12 +9,12 @@ class LandingController extends Controller
 {
     public function index()
     {
-        $articles = Article::all();
+        $articles = Article::paginate(3);
         return view('welcome',compact('articles'));
     }
     public function blog()
     {
-        $articles = Article::all();
+        $articles = Article::paginate(9);
         return view('blog',compact('articles'));
     }
     public function solution()

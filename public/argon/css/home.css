@@ -190,7 +190,7 @@
 .presslogo{margin:3rem 0 auto;list-style:none;display:flex;flex-wrap:wrap;padding:0;justify-content:center}.presslogo li{width:33.33%;padding:15px;margin-bottom:1rem}.presslogo li img{width:100%}
 
 .posthome{display:flex;flex-wrap:wrap;margin:2rem -28px}
-.feeditem{width:33.33%;padding:0 15px}
+.feeditem{width:33.33%;padding:0 15px;margin:15px 0px;}
 .feedwrap{background:#fff}
 .feedwrap img{width:100%}
 .feedcontent{padding:1.2rem}
