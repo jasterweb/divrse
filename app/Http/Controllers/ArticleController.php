@@ -94,6 +94,14 @@ class ArticleController extends Controller
 
         return redirect()->route('article.allpost');
     }
+
+    
+    public function show(Article $article)
+    {
+        return view('article.single',compact('article'));
+    }
+
+
     public function destroy(Article $article)
     {
         $article->delete();

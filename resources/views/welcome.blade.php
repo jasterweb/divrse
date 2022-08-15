@@ -288,7 +288,7 @@
         <div class="container">
             <div class="row align-items-center justify-content-between">
                     <h2 class="titlesect text-primary">DE&I Resources</h2>
-                    <a href="">View All Posts</a>
+                    <a href="{{route('blog')}}">View All Posts</a>
                    
             </div>
             <div class="posthome">
@@ -300,7 +300,7 @@
                         <div class="feedcontent">
                             <span>December 11, 2021</span>
                             <h2>{{$article->title}}</h2>
-                            <button class="btn btn-danger">Read More</button>
+                            <a href="{{route('article.show',$article)}}" class="btn btn-danger">Read More</a>
                         </div>
                         </div>
                     </div>
@@ -309,10 +309,6 @@
                     @endforelse
                     
             </div>
-            <div class="d-flex justify-content-center">
-                {{$articles->links()}}
-                </div>
-        
         </div>
     </section>
     <footer class="py-5 footlanding">
