@@ -62,21 +62,21 @@
                     <div class="wcuslide">
                         <div class="wcuitem">
                             <div class="wcuwrap">
-                                <img src="{{ asset('argon') }}/home/wcu.png">
+                                <img src="{{ asset('argon') }}/page/employer/impress.png">
                                 <h4>Impress & showcase your employer brand</h4>
                                 <p>Create robust event pages to highlight your talent brand. You’ll also have full control over invites, pages, photo galleries, agendas, speaker overviews, and more for every event</p>
                             </div>
                         </div>
                         <div class="wcuitem">
                             <div class="wcuwrap">
-                                <img src="{{ asset('argon') }}/home/wcu.png">
+                                <img src="{{ asset('argon') }}/page/employer/scale.png">
                                 <h4>Scale your events, reach new audiences</h4>
                                 <p>Attract diverse talent by promoting your events to our qualified pool of candidates directly on our platform to expand your reach and grow RSVPs. It’s as simple as a couple of clicks.</p>
                             </div>
                         </div>
                         <div class="wcuitem">
                             <div class="wcuwrap">
-                                <img src="{{ asset('argon') }}/home/wcu.png">
+                                <img src="{{ asset('argon') }}/page/employer/manage.png">
                                 <h4>Manage events<br/>end-to-end</h4>
                                 <p>Streamline your entire event management process from creating events to sending bulk invites, to automating post-event follow-ups. Create, run, and duplicate fully branded events in minutes, not days.</p>
                             </div>
@@ -130,17 +130,17 @@
                 <div class="col-lg-6 col-md-6">
              
                     <h2 class="titlesect mb-3 text-left">White-Labeled Candidate Experience</h2>
-                    <p class="text-dark">Enhance your candidate experience with a personalized rejection letter completed with a company-branded message
-                        and send them off with further professional opportunities at Divrse’s partnering companies.
+                    <p class="text-dark mt-5 mb-5">Enhance your candidate experience with a personalized<br/>rejection letter completed with a company-branded<br/>message
+                        and send them off with further professional<br/>opportunities at Divrse’s partnering companies.
                     </p>
                     <ul class="listitem">
-                        <li>Redefine candidate experience with a graceful farewell</li>
-                        <li>Display how your company cares by extending further opportunities</li>
-                        <li>Reflect your employer brand with the company’s lingo and tone, enhancing your brand’s visual standards.</li>
+                        <li>Redefine candidate experience with a graceful<br/>farewell</li>
+                        <li>Display how your company cares by extending<br/>urther opportunities</li>
+                        <li>Reflect your employer brand with the company’s<br/>lingo and tone, enhancing your brand’s visual<br/>standards.</li>
                     </ul>
                 </div>
                <div class="col-lg-6 col-md-6">
-                    <div class="image-box introimg">
+                    <div class="image-box img-md">
                         <img src="{{ asset('argon') }}/page/employer4.png">
                     </div>
                 </div>

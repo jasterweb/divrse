@@ -12,6 +12,11 @@ class LandingController extends Controller
         $articles = Article::all();
         return view('welcome',compact('articles'));
     }
+    public function blog()
+    {
+        $articles = Article::all();
+        return view('blog',compact('articles'));
+    }
     public function solution()
     {
         return view('solution');

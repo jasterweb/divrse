@@ -41,7 +41,7 @@
                 </div>
                 <div class="col-lg-6 col-md-6">
                     <div class="image-box introimg">
-                        <img src="{{ asset('argon') }}/home/intro1.png">
+                        <img src="{{ asset('argon') }}/page/talent_wedo.png">
                     </div>
                 </div>
 
@@ -58,12 +58,12 @@
                
                 <div class="col-lg-5 col-md-5">
                     <div class="image-box introimg">
-                        <img src="{{ asset('argon') }}/home/intro1.png">
+                        <img src="{{ asset('argon') }}/page/talent_buildauth.png">
                     </div>
                 </div>
                 <div class="col-lg-7 col-md-7">
              
-                        <h2 class="title3 text-left mb-md-2 mt-md-0 my-3">Build <b>Authentic</b> connections with <b>qualified</b> Talent</h2>
+                        <h2 class="title3 text-left mb-md-2 mt-md-0 my-3">Build <b>Authentic</b> connections<br/>with <b>qualified</b> Talent</h2>
                         <p class="text-light">Increase your outbound recruiting response rates by connecting with our highly engaged talent pool. Manage conversations
                             at scale by leveraging our suite of recruiting tools such as messaging, events, and communities to build authentic connections.</p>
                         
@@ -83,25 +83,25 @@
                     <div class="stepby row">
                         <div class="itemstep col-md col-6">
                             <div class="wrapstep">
-                                <img src="{{ asset('argon') }}/home/journey.png">
+                                <img src="{{ asset('argon') }}/page/talent/connect.png">
                                 <span>Connect Divrse</span>
                             </div>
                         </div>
                         <div class="itemstep col-md col-6 mb-md-0 mb-5">
                             <div class="wrapstep">
-                                <img src="{{ asset('argon') }}/home/journey.png">
+                                <img src="{{ asset('argon') }}/page/talent/share.png">
                                 <span>Share Positions</span>
                             </div>
                         </div>
                         <div class="itemstep col-md col-6">
                             <div class="wrapstep">
-                                <img src="{{ asset('argon') }}/home/journey.png">
+                                <img src="{{ asset('argon') }}/page/talent/expose.png">
                                 <span>Expose Opportunity</span>
                             </div>
                         </div>
                         <div class="itemstep col-md col-6">
                             <div class="wrapstep">
-                                <img src="{{ asset('argon') }}/home/journey.png">
+                                <img src="{{ asset('argon') }}/page/talent/get.png">
                                 <span>Get Talent</span>
                             </div>
                         </div>
@@ -117,7 +117,7 @@
                
                 <div class="col-lg-6 col-md-6">
              
-                    <h2 class="titlesect text-danger text-left">Build an equitable top-of-funnel pipeline</h2>
+                    <h2 class="titlesect text-danger text-left">Build an equitable<br/>top-of-funnel pipeline</h2>
                     <p class="text-light">Instantly discover a new pool of qualified applicants by easily filtering through data points
                         including demographic, experiential, and cognitive diversity.</p>
                     
@@ -125,7 +125,7 @@
             </div>
                 <div class="col-lg-6 col-md-6">
                     <div class="image-box introimg">
-                        <img src="{{ asset('argon') }}/home/intro1.png">
+                        <img src="{{ asset('argon') }}/page/talent_buildan.png">
                     </div>
                 </div>
 
@@ -169,7 +169,7 @@
             <div class="row align-items-center">
                <div class="col-lg-6 col-md-6 pb-md-0 pb-4">
                     <div class="image-box introimg">
-                        <img src="{{ asset('argon') }}/home/intro1.png">
+                        <img src="{{ asset('argon') }}/page/talent_join.png">
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6">

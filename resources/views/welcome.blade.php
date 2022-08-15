@@ -13,11 +13,12 @@
                         <a href="#" class="btn btn-xl btn-secondary mt-4">Get Started</a>
                     </div>
                     <div class="col-lg-6 col-md-6">
-                        <div class="image-box heroimage">
-                            <img src="{{ asset('argon') }}/home/hero1.png" class="basehero">
+                        <div class="image-box maingif">
+                            <img src="{{ asset('argon') }}/home/main.gif" class="">
+                            {{-- <img src="{{ asset('argon') }}/home/hero1.png" class="basehero">
                             <img src="{{ asset('argon') }}/home/gear1.png" class="gear1">
                             <img src="{{ asset('argon') }}/home/gear2.png" class="gear2">
-                            <img src="{{ asset('argon') }}/home/rocket.png" class="rocket">
+                            <img src="{{ asset('argon') }}/home/rocket.png" class="rocket"> --}}
                         </div>
                     </div>
                 </div>

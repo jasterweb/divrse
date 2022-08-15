@@ -7,8 +7,8 @@
                 <div class="row align-items-center">
 
                     <div class="col-lg-6 col-md-6">
-                        <div class="image-box heroimage res-img-top">
-                            <img src="{{ asset('argon') }}/home/mainsolution.png" class="basehero">
+                        <div class="image-box heroimage">
+                            <img src="{{ asset('argon') }}/page/candidate/main.png" class="basehero">
                         </div>
                     </div>
 

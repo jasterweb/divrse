@@ -14,8 +14,8 @@
                         
                     </div>
                     <div class="col-lg-6 col-md-6">
-                        <div class="image-box img100">
-                            <img src="{{ asset('argon') }}/home/mainsolution.png" class="basehero">
+                        <div class="image-box heroimage">
+                            <img src="{{ asset('argon') }}/page/about/main.png" class="basehero">
                         </div>
                     </div>
 
@@ -55,7 +55,7 @@
         </div>
     </section>
 
-    <section class="bg-primary pt-6 pb-6">
+    <section class="bg-blue pt-6 pb-6">
         <div class="container">
             <div class="row align-items-center">
 
@@ -81,6 +81,23 @@
 
             </div>
         </div>
+    </section>
+    
+    <section class="bg-primary pt-6 pb-6">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-12">
+                    <ul class="deflogo">
+                        <li><img src="{{ asset('argon') }}/page/about/a.png"/><span>Connectivity</span></li>
+                        <li><img src="{{ asset('argon') }}/page/about/b.png"/><span>Diversity</span></li>
+                        <li><img src="{{ asset('argon') }}/page/about/c.png"/><span>Peoples</span></li>
+                        <li><img src="{{ asset('argon') }}/page/about/e.png"/><span>Demonstrate</span></li>
+                        <li><img src="{{ asset('argon') }}/page/about/f.png"/></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
     </section>
 
     
@@ -144,7 +161,7 @@
             <div class="row align-items-center">
                 <div class="col-lg-12 col-md-12">
                     <h2 class="titlesect text-primary">Our Leadership</h2>
-                    <div class="team">
+                    <div class="team" style="background-image: url('http://localhost:8000/argon/page/about/line.png');background-size: contain;background-position: center;background-repeat: no-repeat;">
                         <div class="itemteam">
                             <div class="wrapteam">
                                 <img class="mx-auto" src="{{ asset('argon') }}/page/team.png">
