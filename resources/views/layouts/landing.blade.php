@@ -14,6 +14,7 @@
         <link type="text/css" href="{{ asset('argon') }}/css/home.css" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
         <script src="https://unpkg.com/dropzone@5/dist/min/dropzone.min.js"></script>
+        <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
         <link
         rel="stylesheet"
         href="https://unpkg.com/dropzone@5/dist/min/dropzone.min.css"
