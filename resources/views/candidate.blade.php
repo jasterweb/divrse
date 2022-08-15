@@ -8,7 +8,8 @@
 
                     <div class="col-lg-6 col-md-6">
                         <div class="image-box heroimage">
-                            <img src="{{ asset('argon') }}/page/candidate/main.png" class="basehero">
+                            {{-- <img src="{{ asset('argon') }}/page/candidate/main.png" class="basehero"> --}}
+                            <lottie-player src="https://assets6.lottiefiles.com/private_files/lf30_sznqoklz.json" background="transparent" speed="1" loop autoplay></lottie-player>
                         </div>
                     </div>
 

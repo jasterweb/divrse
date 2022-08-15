@@ -13,12 +13,8 @@
                         <a href="#" class="btn btn-xl btn-secondary mt-4">Get Started</a>
                     </div>
                     <div class="col-lg-6 col-md-6">
-                        <div class="image-box maingif">
-                            <img src="{{ asset('argon') }}/home/main.gif" class="">
-                            {{-- <img src="{{ asset('argon') }}/home/hero1.png" class="basehero">
-                            <img src="{{ asset('argon') }}/home/gear1.png" class="gear1">
-                            <img src="{{ asset('argon') }}/home/gear2.png" class="gear2">
-                            <img src="{{ asset('argon') }}/home/rocket.png" class="rocket"> --}}
+                        <div class="image-box my--6">
+                            <lottie-player src="https://assets3.lottiefiles.com/private_files/lf30_8wzbup15.json" background="transparent" speed="1" loop autoplay></lottie-player>
                         </div>
                     </div>
                 </div>
