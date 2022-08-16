@@ -61,7 +61,7 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link nav-link-icon" href="{{ route('profile.edit') }}">
+                    <a class="nav-link nav-link-icon" href="{{ route('get-started') }}">
                         <span class="nav-link-inner--text">{{ __('Get Started') }}</span>
                     </a>
                 </li>

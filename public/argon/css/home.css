@@ -406,3 +406,79 @@
     margin-top: 1.5rem;
   }
 }
+
+.socshare {
+  text-align: center;
+  margin: 20px 0 40px
+}
+
+.socshare h4 {
+  display: block;
+  margin-bottom: 25px;
+  font-size: 20px;
+  font-weight: 600
+}
+
+.sshare {
+  display: inline-block;
+  width: 100%;
+  columns: 4;
+  margin: 0;
+  list-style: none;
+}
+
+.sshare li {
+  width: 100%
+}
+
+.sshare a {
+  color: #fff !important;
+  font-size: 14px;
+  padding: 11px 10px;
+  width: 100% !important;
+  display: inline-block;
+  border-radius: 5px
+}
+
+.sshare li i {
+  font-size: 12px;
+  margin-right: 7px
+}
+
+@media only screen and (max-width: 767px) {
+  .sshare li {
+      margin-bottom: 15px
+  }
+
+  .sshare {
+      columns: 2
+  }
+}
+
+.fb {
+  background: #355e9c !important
+}
+
+.wa {
+  background: #359d2e
+}
+
+.ig {
+  background: #e3002d
+}
+
+.tw {
+  background: #46d4fe
+}
+
+.yt {
+  background: #DD241E
+}
+
+.te {
+  background: #179cde
+}
+
+.sshare li a:hover {
+  background: #1a1a1a !important;
+}

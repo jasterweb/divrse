@@ -27,6 +27,17 @@
                             <span>December 11, 2021</span>
                             <h2>{{$article->title}}</h2>
                             <p>{{strip_tags($article->desc)}}</p>
+                            <div class="socshare">
+                                <h4>
+                                Bagikan produk ini
+                            </h4>
+                            <ul class="sshare">
+                                <li><a class="fb" href="https://www.facebook.com/sharer/sharer.php?u={{ $article->slug }}" title="Share on Facebook" target="_blank" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;"><i class="fab fa-facebook-f"></i> Facebook</a></li>
+                                <li><a class="tw" href="https://twitter.com/intent/tweet?url={{ $article->slug }}&text={{ $article->title }}&via={{ $article->author }}" title="Tweet this on Twitter" onclick="window.open(this.href, 'twitter-share','width=580,height=296');return false;"><i class="fab fa-twitter"></i> Twitter</a></li>
+                                <li><a class="wa" href="https://api.whatsapp.com/send?text={{ $article->title }} {{ $article->slug }}" title="Share on Whatsapp" target="_blank" onclick="window.open(this.href, 'whatsapp-share','width=580,height=500');return false;"><i class="fab fa-whatsapp"></i> Whatsapp</a></li>
+                                <li><a class="te" href="https://t.me/share/url?url={{ $article->slug }}&text={{ $article->title }}" title="Share on Telegram" target="_blank" onclick="window.open(this.href, 'telegram-share','width=580,height=500');return false;"><i class="fab fa-telegram-plane"></i> Telegram</a></li>
+                            </ul>
+                            </div>
                         </div>
                         </div>
                     </div>

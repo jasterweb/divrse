@@ -22,6 +22,7 @@ Route::get('/employer', [App\Http\Controllers\LandingController::class, 'employe
 Route::get('/analytic', [App\Http\Controllers\LandingController::class, 'analytic'])->name('analytic');
 Route::get('/about', [App\Http\Controllers\LandingController::class, 'about'])->name('about');
 Route::get('/blog', [App\Http\Controllers\LandingController::class, 'blog'])->name('blog');
+Route::get('/get-started', [App\Http\Controllers\LandingController::class, 'started'])->name('get-started');
 
 Auth::routes();
 

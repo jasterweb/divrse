@@ -26,4 +26,5 @@ class LandingController extends Controller
     public function employer(){return view('employer');}
     public function analytic(){return view('analytic');}
     public function about(){return view('about');}
+    public function started(){return view('get-started');}
 }
