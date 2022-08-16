@@ -7042,6 +7042,7 @@ button.close
     overflow: hidden;
 
     outline: 0;
+    background: #202020b3;
 }
 
 .modal-dialog
