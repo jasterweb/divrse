@@ -187,6 +187,11 @@
         </div>
     </section>
 
+    @include('layouts.footers.footerwide', [
+        'title' => 'Ready to stop talking about diversity recruitment and start doing it?',
+        'desc' => 'Contact us to design a custom diversity hiring solution for your business.',
+        'cta' => 'Learn More'
+    ])
 
     <footer class="py-5 footlanding center-small">
         <div class="container">

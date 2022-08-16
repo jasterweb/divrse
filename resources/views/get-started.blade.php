@@ -25,32 +25,10 @@
         </div>
     </div>
 
-    <footer class="py-5 footlanding">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-6 col-md-6">
-                    <h2 class="title2 text-warning">Get started today.</h2>
-                    <div class="text-light desc1 py-4">
-                        Finding the right job is life-changing. Let Divrse <br class="d-md-block d-none" />
-                        help you find your next big opportunity.
-                    </div>
-                    <br />
-                    <a href="#" class="btn btn-xl btn-secondary">Sign Up</a>
-                </div>
-                <div class="col-lg-6 col-md-6">
-                    <div class="image-box imgcta">
-                        <img src="{{ asset('argon') }}/home/footcta.png">
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="copyr">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12 text-light">Copyright © 2022 Divrse - All Rights Reserved</div>
+    @include('layouts.footers.footer', [
+        'title' => 'Get started today.',
+        'desc' => 'Finding the right job is life-changing. Let Divrse help you find your next big opportunity.',
+        'cta' => 'Sign Up'
+    ])
 
-                </div>
-            </div>
-        </div>
-    </footer>
 @endsection

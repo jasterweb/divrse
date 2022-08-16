@@ -228,31 +228,11 @@
 
             </div>
         </div>
-    </section>
-    <footer class="py-5 footlanding">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-6 col-md-6 center-small">
-                    <h2 class="title2 text-white">Diversity won't wait</h2>
-                    <span class="text-light desc1">Turn diversity goals into action today.</span>
-                    <br/>
-                    <a href="#" class="btn btn-xl btn-secondary mt-md-5 mt-4">Learn More</a>
-                </div>
-                <div class="col-lg-6 col-md-6">
-                    <div class="image-box imgcta">
-                        <img src="{{ asset('argon') }}/home/footcta.png">
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="copyr">
-            <div class="container">
-                <div class="row center-small">
-                    <div class="col-md-12 text-light">Copyright © 2022 Divrse - All Rights Reserved</div>
-                </div>
-            </div>
-        </div>
-    </footer>
+    </section>@include('layouts.footers.footer', [
+        'title' => 'Diversity won\'t wait',
+        'desc' => 'Turn diversity goals into action today.',
+        'cta' => 'Learn More'
+    ])
 @endsection
 
 @section('script')
