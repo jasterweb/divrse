@@ -98,6 +98,7 @@ class ArticleController extends Controller
     
     public function show(Article $article)
     {
+        $article->with('user')->first();
         return view('article.single',compact('article'));
     }
 

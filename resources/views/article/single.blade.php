@@ -2,68 +2,56 @@
 @section('title', 'Single Blog')
 
 @section('content')
-    <div class="header bg-primary pb-2 pt-8 ">
-        <div class="container">
-            <div class="header-body mt-4 mb-4">
-                <div class="row align-items-center">
-                    <div class="col-lg-12 col-md-12">
-                        <h1 class="titlesect text-white text-center">{{$article->title}}</h1>
+    <div class="header bg-white-2 pt-7">
+
+        <section class="bg-white-2">
+            <div class="container">
+    
+                <div class="row justify-content-between">
+    
+                    <div class="wrapper col-7">
                        
+                        <h2 class="post-title">{{ $article->title }}</h2>
+                        <p>Posted by {{ $article->user->username }} <i class="fa fa-solid fa-clock mx-2"></i> {{ date('F, d Y', strtotime($article->created_at)) }}</p>
+    
+                        <div class="post-image mx-auto my-4">
+                            <img class="w-100" src="{{$article->getFirstMediaUrl('document')}}">
+                        </div>
+    
+                        <div class="article-desc my-5">
+                            <p>{{ strip_tags($article->desc) }}</p>
+                        </div>
+    
+                        <div class="socshare">
+                            <h4>Share this information</h4>
+                            <ul class="sshare">
+                                <li><a class="fb" href="https://www.facebook.com/sharer/sharer.php?u={{ $article->slug }}" title="Share on Facebook" target="_blank" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;"><i class="fab fa-facebook-f"></i> Facebook</a></li>
+                                <li><a class="tw" href="https://twitter.com/intent/tweet?url={{ $article->slug }}&text={{ $article->title }}&via={{ $article->user->username }}" title="Tweet this on Twitter" onclick="window.open(this.href, 'twitter-share','width=580,height=296');return false;"><i class="fab fa-twitter"></i> Twitter</a></li>
+                                <li><a class="wa" href="https://api.whatsapp.com/send?text={{ $article->title }} {{ $article->slug }}" title="Share on Whatsapp" target="_blank" onclick="window.open(this.href, 'whatsapp-share','width=580,height=500');return false;"><i class="fab fa-whatsapp"></i> Whatsapp</a></li>
+                                <li><a class="te" href="https://t.me/share/url?url={{ $article->slug }}&text={{ $article->title }}" title="Share on Telegram" target="_blank" onclick="window.open(this.href, 'telegram-share','width=580,height=500');return false;"><i class="fab fa-telegram-plane"></i> Telegram</a></li>
+                            </ul>
+                        </div>
+                        
                     </div>
+    
+                    <div class="col-4">
+                        
+                    </div>
+    
                 </div>
+    
+            
             </div>
-        </div>
+        </section>
+
     </div>
 
+    @include('layouts.footers.footerwide', [
+        'title' => 'Ready to stop talking about diversity recruitment and start doing it?',
+        'desc' => 'Turn your DE&I goals into reality with Divrse’s quick, easy and affordable solution',
+        'cta' => 'Get Started'
+    ])
     
-    <section class="bg-white-2">
-        <div class="container">
-            <div class="wrapper">
-               
-                    <div class="item">
-                        <div class="content-wrap">
-                        <img src="{{$article->getFirstMediaUrl('document')}}">
-                        <div class="content">
-                            <span>December 11, 2021</span>
-                            <h2>{{$article->title}}</h2>
-                            <p>{{strip_tags($article->desc)}}</p>
-                        </div>
-                        </div>
-                    </div>
-                
-            </div>
-
-        
-        </div>
-    </section>
-
-   
-    
-    <footer class="py-5 footlanding">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-6 col-md-6">
-                    <h2 class="title2 text-white">Ready to stop talking about diversity recruitment and start doing it?</h2>
-                    <span class="text-light desc1">Turn your DE&I goals into reality with Divrse’s quick, easy and affordable solution</span>
-                    <br/>
-                    <a href="#" class="btn btn-xl btn-secondary mt-5">Get Started</a>
-                </div>
-                <div class="col-lg-6 col-md-6">
-                    <div class="image-box imgcta">
-                        <img src="{{ asset('argon') }}/home/footcta.png">
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="copyr">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12 text-light">Copyright © 2022 Divrse - All Rights Reserved</div>
-                    
-                </div>
-            </div>
-        </div>
-    </footer>
 @endsection
 
 @section('script')

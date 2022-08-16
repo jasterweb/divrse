@@ -136,28 +136,10 @@
         </div>
     </section>
 
-    <footer class="py-5 footlanding">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-6 col-md-6 center-small">
-                    <h2 class="title2 text-warning">Stop setting diversity goals. Start meeting them.</h2>
-                    <span class="text-light desc1">We'll design a custom diversity hiring solution for your business.</span>
-                    <br />
-                    <a href="#" class="btn btn-xl btn-secondary mt-md-5 mt-4">See it in Action</a>
-                </div>
-                <div class="col-lg-6 col-md-6">
-                    <div class="image-box imgcta">
-                        <img src="{{ asset('argon') }}/home/footcta.png">
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="copyr">
-            <div class="container">
-                <div class="row center-small">
-                    <div class="col-md-12 text-light">Copyright © 2022 Divrse - All Rights Reserved</div>
-                </div>
-            </div>
-        </div>
-    </footer>
+    @include('layouts.footers.footerwide', [
+        'title' => 'Stop setting diversity goals. Start meeting them.',
+        'desc' => 'We\'ll design a custom diversity hiring solution for your business.',
+        'cta' => 'See it in Action'
+    ])
+    
 @endsection
