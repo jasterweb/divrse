@@ -33,7 +33,7 @@
         </svg>
     </div>
 
-    <section class="bg-white">
+    <section class="bg-white pt-6 pb-6">
         <div class="container">
             <div class="row align-items-center mb-10">
                 <div class="col-lg-6 col-md-6 pr-5">
@@ -56,7 +56,7 @@
                 </div>
                 <div class="col-lg-6 col-md-6">
                     <div class="image-box introimg">
-                        <img src="{{ asset('argon') }}/home/recruiting.png">
+                        <img src="{{ asset('argon') }}/home/recruiting.png" style="width: 47%;margin-top: -12px;">
                     </div>
                 </div>
             </div>
@@ -69,7 +69,7 @@
                 </div>
                 <div class="col-lg-6 col-md-6">
                     <div class="image-box introimg">
-                        <img src="{{ asset('argon') }}/home/diversity.png">
+                        <img src="{{ asset('argon') }}/home/diversity.png" style="width: 42%;margin-top: 13px;">
                     </div>
                 </div>
             </div>

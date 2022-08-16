@@ -42,7 +42,7 @@
                 </div>
                 <div class="col-lg-6 col-md-6">
                     <div class="image-box introimg">
-                        <img src="{{ asset('argon') }}/page/talent_wedo.png">
+                        <img src="{{ asset('argon') }}/page/talent_wedo.png" style="width: 53%;">
                     </div>
                 </div>
 
@@ -170,7 +170,7 @@
             <div class="row align-items-center">
                <div class="col-lg-6 col-md-6 pb-md-0 pb-4">
                     <div class="image-box introimg">
-                        <img src="{{ asset('argon') }}/page/talent_join.png">
+                        <img src="{{ asset('argon') }}/page/talent_join.png" style="width: 100%;">
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6">

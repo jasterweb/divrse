@@ -47,7 +47,7 @@
 
                 <div class="col-lg-6 col-md-6 pt-md-0 pt-3">
                     <div class="image-box introimg">
-                        <img src="{{ asset('argon') }}/page/employer3.png">
+                        <img src="{{ asset('argon') }}/page/employer3.png" style="width: 82%;">
                     </div>
                 </div>
 
