@@ -408,23 +408,24 @@
 }
 
 .socshare {
-  text-align: center;
   margin: 20px 0 40px
 }
 
 .socshare h4 {
   display: block;
-  margin-bottom: 25px;
+  margin-bottom: 16px;
   font-size: 20px;
   font-weight: 600
 }
 
 .sshare {
+  text-align: center;
   display: inline-block;
   width: 100%;
   columns: 4;
   margin: 0;
   list-style: none;
+  padding: 0;
 }
 
 .sshare li {
@@ -481,4 +482,12 @@
 
 .sshare li a:hover {
   background: #1a1a1a !important;
+}
+
+.post-title {
+  font-size:1.8rem;
+  font-weight:700;
+  line-height:normal;
+  text-align: left;
+  margin-bottom: 16px;
 }
