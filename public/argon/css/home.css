@@ -379,7 +379,45 @@
 .wcuwrap h4{font-size: 1.2rem; margin-bottom: 1.2rem; font-weight: bold; padding: 0px 3%;}
 .quote1{display:flex;align-items:center;justify-content:center;flex-direction:column;width:750px;margin:0 auto;text-align:center}
 .quote1 h3{font-size:1.8rem;font-weight:700}.quoteby{font-size:2rem}
-
+@media screen and (max-width:768px){
+  .quote1 {
+    width: 495px;
+  }
+  .team .itemteam {
+    width: 50%!important;
+  }
+  .mivison {
+    flex-direction: column;
+  }
+  .boxsquare {
+    margin-top: -7rem;
+    margin-bottom: 7rem;
+  }
+  .boxsquare.bg-danger {
+    margin-top: -7rem;
+    margin-bottom: 0rem;
+  }
+  .mivison .boxsquare {
+    width: 100%;
+  }
+}
+@media screen and (max-width:550px){
+  .team .itemteam {
+    width: 50%!important;
+  }
+  .mivison {
+    flex-direction: column;
+  }
+  .boxsquare {
+    margin-top: 0rem;
+  }
+  .mivison .boxsquare {
+    width: 100%;
+  }
+  .quote1 {
+    width: 385px;
+  }
+}
 .team{display:flex;flex-wrap:wrap}.team .itemteam{width:33.33%;margin-bottom:2rem}
 .wrapteam{display:flex;flex-direction:column;justify-content:center;align-items:center;padding:20px}
 .wrapteam img{width:55%;margin-bottom:1.2rem}.wrapteam h4{font-size:1.1rem;font-weight:600;margin-bottom:4px}
