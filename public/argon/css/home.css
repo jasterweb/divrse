@@ -1,4 +1,7 @@
 
+@media (prefers-reduced-motion: reduce) {
+  html{scroll-behavior:auto}
+  }
 .title1 {
     color: var(--white);
     font-weight: bold;
@@ -186,7 +189,7 @@
 }
 
 .introimg img{width: 78%;}
-
+.bigsol img {width: 85%;}
 .presslogo{margin:3rem 0 auto;list-style:none;display:flex;flex-wrap:wrap;padding:0;justify-content:center}.presslogo li{width:33.33%;padding:15px;margin-bottom:1rem}.presslogo li img{width:100%}
 
 .posthome{display:flex;flex-wrap:wrap;margin:2rem -28px}
@@ -196,6 +199,17 @@
 .feedcontent{padding:1.2rem}
 .feedcontent h2{font-size:16px;font-weight:600;margin-bottom:1rem}
 .feedcontent span{text-transform:uppercase;margin-bottom:10px;display:inline-block;font-size:14px}
+
+@media screen and (max-width:768px){
+    .feeditem {
+      width: 50%!important;
+    }
+}
+@media screen and (max-width:550px){
+  .feeditem {
+    width: 100%!important;
+  }
+}
 
 .proofnum{display:flex;flex-wrap:wrap;margin:3rem -15px}
 .itemproof{width:25%;padding:0 15px;border-right:1px solid rgba(1,1,1,0.08)}
@@ -405,4 +419,35 @@
   .res-img-bottom {
     margin-top: 1.5rem;
   }
+}
+.scrollToTopBtn {
+	background-color: #f66d6d;
+	color: #fff !important;
+	cursor: pointer;
+	position: fixed;
+	bottom: 20px;
+	left: 20px;
+	z-index: 999;
+	opacity: 0;
+	transform: translateY(100px);
+	transition: all .5s ease;
+	text-align: center;
+	padding: 12px;
+	border-radius: 100px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.scrollToTopBtn:hover{background:#f66d6d;color:#fff}
+.showBtn{opacity:1;transform:translateY(0)}
+
+@media screen and (max-width:768px) {
+  .scrollToTopBtn {
+    padding: 10px;
+    bottom: 15px;
+    left: 15px;
+    }
+    .scrollToTopBtn svg {
+    width: 18px;
+    }
 }

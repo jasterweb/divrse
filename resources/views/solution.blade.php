@@ -111,7 +111,7 @@
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6">
-                    <div class="image-box introimg">
+                    <div class="image-box introimg bigsol">
                         <img src="{{ asset('argon') }}/home/bigsol.png">
                     </div>
                 </div>
@@ -124,7 +124,7 @@
             <div class="row align-items-center mt-5">
                 <div class="col-lg-6 col-md-6 mb-md-0 mb-4">
                     <div class="image-box introimg">
-                        <img src="{{ asset('argon') }}/home/intro1.png">
+                        <img src="{{ asset('argon') }}/home/Solution_Data.png">
                     </div>
                 </div>
 
@@ -167,7 +167,7 @@
                 </div>
                 <div class="col-lg-6 col-md-6 mt-md-0 mt-5">
                     <div class="image-box introimg">
-                        <img src="{{ asset('argon') }}/home/intro1.png">
+                        <img src="{{ asset('argon') }}/home/Solution_Enhanced.png">
                     </div>
                 </div>
 
@@ -205,8 +205,8 @@
                    
                 </div>
                 <div class="col-lg-6 col-md-6">
-                    <div class="image-box introimg">
-                        <img src="{{ asset('argon') }}/home/solution4.png">
+                    <div class="image-box introimg bigsol">
+                        <img src="{{ asset('argon') }}/home/Solution_AModern.png">
                     </div>
                 </div>
             </div>

@@ -106,7 +106,7 @@
                     <div class="wcuslide">
                         <div class="wcuitem">
                             <div class="wcuwrap">
-                                <img class="mx-auto" src="{{ asset('argon') }}/home/wcu.png">
+                                <img class="mx-auto" src="{{ asset('argon') }}/candidate/cand_Mentorship.png">
                                 <h4>Mentorship</h4>
                                 <p>
                                     Mentorship is a powerful tool to help you reach your career goals. Attend our mentorship
@@ -116,7 +116,7 @@
                         </div>
                         <div class="wcuitem">
                             <div class="wcuwrap">
-                                <img class="mx-auto" src="{{ asset('argon') }}/home/wcu.png">
+                                <img class="mx-auto" src="{{ asset('argon') }}/candidate/cand_CareerInfo.png">
                                 <h4>Career Information Session</h4>
                                 <p>
                                     What’s the best way to get your foot in the door? Interacting with companies is crucial to a
@@ -127,7 +127,7 @@
                         </div>
                         <div class="wcuitem">
                             <div class="wcuwrap">
-                                <img class="mx-auto" src="{{ asset('argon') }}/home/wcu.png">
+                                <img class="mx-auto" src="{{ asset('argon') }}/candidate/cand_Event.png">
                                 <h4>Events</h4>
                                 <p>
                                     Our events are designed to help you overcome barriers to active participation in Canadian
@@ -138,7 +138,7 @@
                         </div>
                         <div class="wcuitem">
                             <div class="wcuwrap">
-                                <img class="mx-auto" src="{{ asset('argon') }}/home/wcu.png">
+                                <img class="mx-auto" src="{{ asset('argon') }}/candidate/cand_Career.png">
                                 <h4>Career Accelerator Bootcamp</h4>
                                 <p>
                                     It is stressful and nerve-racking to interview for a job or seek advancement at work. Being
@@ -150,7 +150,7 @@
                         </div>
                         <div class="wcuitem">
                             <div class="wcuwrap">
-                                <img class="mx-auto" src="{{ asset('argon') }}/home/wcu.png">
+                                <img class="mx-auto" src="{{ asset('argon') }}/candidate/cand_Podcast.png">
                                 <h4>Podcast</h4>
                                 <p>
                                     Explore the Divrse podcast to gain insights into the stories, experiences, and journeys of real
@@ -160,7 +160,7 @@
                         </div>
                         <div class="wcuitem">
                             <div class="wcuwrap">
-                                <img class="mx-auto" src="{{ asset('argon') }}/home/wcu.png">
+                                <img class="mx-auto" src="{{ asset('argon') }}/candidate/cand_Blog.png">
                                 <h4>Blogs</h4>
                                 <p>
                                     The blog contains useful resources for your job search and beyond. We’ve got you covered with
@@ -170,7 +170,7 @@
                         </div>
                         <div class="wcuitem">
                             <div class="wcuwrap">
-                                <img class="mx-auto" src="{{ asset('argon') }}/home/wcu.png">
+                                <img class="mx-auto" src="{{ asset('argon') }}/candidate/cand_Tools.png">
                                 <h4>Tools & Templates</h4>
                                 <p>
                                     Check out our tried-and-true job-winning tools. We’ve compiled ATS-friendly resumes, cover
