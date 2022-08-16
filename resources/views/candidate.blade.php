@@ -4,12 +4,12 @@
     <div class="header bg-primary pt-9 pb-6">
         <div class="container">
             <div class="header-body mt-4 mb-4">
-                <div class="row align-items-center">
+                <div class="row align-items-center justify-content-between">
 
-                    <div class="col-lg-6 col-md-6">
+                    <div class="col-lg-5 col-md-6">
                         <div class="image-box heroimage">
                             {{-- <img src="{{ asset('argon') }}/page/candidate/main.png" class="basehero"> --}}
-                            <lottie-player src="https://assets6.lottiefiles.com/private_files/lf30_sznqoklz.json" background="transparent" speed="1" loop autoplay></lottie-player>
+                            <lottie-player src="{{ asset('argon') }}/animation/kedua.json" background="transparent" speed="1" loop autoplay></lottie-player>
                         </div>
                     </div>
 
