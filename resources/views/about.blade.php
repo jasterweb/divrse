@@ -113,14 +113,14 @@
                     <div class="wcuslide">
                         <div class="wcuitem">
                             <div class="wcuwrap">
-                                <img class="mx-auto" src="{{ asset('argon') }}/home/wcu.png">
+                                <img class="mx-auto" src="{{ asset('argon') }}/page/about/About_ChangeMindset.png">
                                 <h4>Change mindset not behavior</h4>
                                 <p>We’re innovating a new way of normal and pushing DEI to the front of the conversation.</p>
                             </div>
                         </div>
                         <div class="wcuitem">
                             <div class="wcuwrap">
-                                <img class="mx-auto" src="{{ asset('argon') }}/home/wcu.png">
+                                <img class="mx-auto" src="{{ asset('argon') }}/page/about/About_Empower.png">
                                 <h4>Empowerment</h4>
                                 <p>We are committed to providing access to the resources our members need to increase their earning capacity, access better career opportunities,
                                     and become a more valuable asset.</p>
@@ -128,7 +128,7 @@
                         </div>
                         <div class="wcuitem">
                             <div class="wcuwrap">
-                                <img class="mx-auto" src="{{ asset('argon') }}/home/wcu.png">
+                                <img class="mx-auto" src="{{ asset('argon') }}/page/about/About_Empathy.png">
                                 <h4>Empathy</h4>
                                 <p>We understand and can relate to the challenges of our members. Therefore, we would continue
                                     to facilitate connections and push for change</p>
@@ -136,7 +136,7 @@
                         </div>
                         <div class="wcuitem">
                             <div class="wcuwrap">
-                                <img class="mx-auto" src="{{ asset('argon') }}/home/wcu.png">
+                                <img class="mx-auto" src="{{ asset('argon') }}/page/about/About_Believein.png">
                                 <h4>Believe in all</h4>
                                 <p>We love and support everyone, no strings attached. We believe that revolutions
                                     are about power for the people </p>
@@ -144,7 +144,7 @@
                         </div>
                         <div class="wcuitem">
                             <div class="wcuwrap">
-                                <img class="mx-auto" src="{{ asset('argon') }}/home/wcu.png">
+                                <img class="mx-auto" src="{{ asset('argon') }}/page/about/Abou_Honesty.png">
                                 <h4>Honesty</h4>
                                 <p>We say what we mean and we mean what we say, there are no guessing games here at Divrse</p>
                             </div>
@@ -169,7 +169,26 @@
                                 <span>Chief Executive Officer & Co-Founder</span>
                                 <ul>
                                     <li><a href=""><i class="fab fa-linkedin-in"></i></a></li>
-                                    <li class="btx"><a href="">Profile</a></li>
+                                    <li class="btx"><a type="button" class="btn btn-primary text-white" data-toggle="modal" data-target="#exampleModalCenter1">
+                                        Profile
+                                    </a></li>
+                                    <div class="modal fade" id="exampleModalCenter1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                        <div class="modal-dialog" role="document">
+                                          <div class="modal-content">
+                                            <div class="modal-header">
+                                              <h5 class="modal-title" id="exampleModalLongTitle">Profile</h5>
+                                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                              </button>
+                                            </div>
+                                            <div class="modal-body">
+                                            <h2>Anthony Davis, BBA</h2>
+                                            <span>Chief Executive Officer & Co-Founder</span>
+                                              <p class="text-dark">Anthony Davis is a serial entrepreneur with an unquenchable passion for business. He holds a Bachelor's Degree in Business Administration from the University of Windsor, Ont. and attained the CFA designation in 2001.   He has played a key role in the success of various businesses with total revenues of over a half a billion dollars in sectors ranging from finance, retail clothing, medical supply distribution, real estate development, and oil & gas distribution. His life motto is that "It takes all of us to help each of us", which has fuelled his passion to give back and has led to his involvement in a number of charitable organizations both locally and internationally. His quest for knowledge and an unending desire to stay ahead of the curve has led him to become an Angel Investor, Venture Capitalist, and Business Coach & Mentor.</p>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
                                     <li><a href=""><i class="fab fa-twitter"></i></a></li>
                                 </ul>
                             </div>
@@ -181,7 +200,27 @@
                                 <span>Chief Technical Officer & Co-Founder</span>
                                 <ul>
                                     <li><a href=""><i class="fab fa-linkedin-in"></i></a></li>
-                                    <li class="btx"><a href="">Profile</a></li>
+                                    <li class="btx"><a type="button" class="btn btn-primary text-white" data-toggle="modal" data-target="#exampleModalCenter2">
+                                        Profile
+                                    </a></li>
+                                    <div class="modal fade" id="exampleModalCenter2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                        <div class="modal-dialog" role="document">
+                                          <div class="modal-content">
+                                            <div class="modal-header">
+                                              <h5 class="modal-title" id="exampleModalLongTitle">Profile</h5>
+                                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                              </button>
+                                            </div>
+                                            <div class="modal-body">
+                                            <h2>Amine Barrak, MSC</h2>
+                                            <span>Chief Technical Officer & Co-Founder</span>
+                                              <p class="text-dark">Amine has over 4+ years of experience in research and implementation in data analysis, machine learning, data manipulation, statistical methods, including regression, classification, neural network architectures and natural language processing. Amine possesses over 4 years of programming experience with Python, R, Bash and C/C++. Autonomous, yet social and a team player, Amine has an excellent work ethic and problem-solving mindset.
+                                                Languages: French and English</p>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
                                     <li><a href=""><i class="fab fa-twitter"></i></a></li>
                                 </ul>
                             </div>
@@ -193,7 +232,29 @@
                                 <span>Chief Financial Officer & Co-Founder</span>
                                 <ul>
                                     <li><a href=""><i class="fab fa-linkedin-in"></i></a></li>
-                                    <li class="btx"><a href="">Profile</a></li>
+                                    <li class="btx"><a type="button" class="btn btn-primary text-white" data-toggle="modal" data-target="#exampleModalCenter3">
+                                        Profile
+                                    </a></li>
+                                    <div class="modal fade" id="exampleModalCenter3" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                        <div class="modal-dialog" role="document">
+                                          <div class="modal-content">
+                                            <div class="modal-header">
+                                              <h5 class="modal-title" id="exampleModalLongTitle">Profile</h5>
+                                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                              </button>
+                                            </div>
+                                            <div class="modal-body">
+                                            <h2>Janelle Watson, MPA</h2>
+                                            <span>Chief Financial Officer</span>
+                                              <p class="text-dark">Janelle Watson graduated with a Masters Degree in Professional Accounting from the University of Miami in Miami, Florida, U.S.A., where she was inducted into the University’s honor society for international business, management and administration. Shortly thereafter, she attained a Certified Public Accountant license in the U.S. state of Florida, while employed as a staff accountant at PricewaterhouseCoopers. <br>
+
+                                                After finding her niche in retail accounting, Mrs. Watson then joined the accounting department of a multi-million-dollar retail company, where she served for nine years as Chief Financial Officer and Vice President of Finance. In those capacities, she gained significant experience in all aspects of financial management, including strategic planning, forecasting, budgeting, financial reporting and analysis, as well as overseeing all aspects of the accounting function.
+                                                Mrs. Watson, as an accounting consultant serves as a Director and Audit Committee Chairman on several Boards.   She  provides a broad range of accounting, financial and business advisory services to clients in various industries, including retail, manufacturing, distribution, professional services and technology. Her experience working with international and diverse talent in the numerous corporate roles that she has held, and her passion to assist in developing this talent, has led her to Divrse.</p>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
                                     <li><a href=""><i class="fab fa-twitter"></i></a></li>
                                 </ul>
                             </div>
@@ -205,7 +266,27 @@
                                 <span>Chief Marketing Officer & Co-Founder</span>
                                 <ul>
                                     <li><a href=""><i class="fab fa-linkedin-in"></i></a></li>
-                                    <li class="btx"><a href="">Profile</a></li>
+                                    <li class="btx"><a type="button" class="btn btn-primary text-white" data-toggle="modal" data-target="#exampleModalCenter4">
+                                        Profile
+                                    </a></li>
+                                    <div class="modal fade" id="exampleModalCenter4" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                        <div class="modal-dialog" role="document">
+                                          <div class="modal-content">
+                                            <div class="modal-header">
+                                              <h5 class="modal-title" id="exampleModalLongTitle">Profile</h5>
+                                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                              </button>
+                                            </div>
+                                            <div class="modal-body">
+                                            <h2>Nicole Calabrigo, BS</h2>
+                                            <span>Chief Marketing Officer  </span>
+                                              <p class="text-dark">Nciole has over 4+ years of experience in research and implementation in data analysis, machine learning, data manipulation, statistical methods, including regression, classification, neural network architectures and natural language processing. Amine possesses over 4 years of programming experience with Python, R, Bash and C/C++. Autonomous, yet social and a team player, Amine has an excellent work ethic and problem-solving mindset.
+                                                Languages: French and English</p>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
                                     <li><a href=""><i class="fab fa-twitter"></i></a></li>
                                 </ul>
                             </div>
@@ -217,7 +298,27 @@
                                 <span>Chief Operating Officer & Co-Founder</span>
                                 <ul>
                                     <li><a href=""><i class="fab fa-linkedin-in"></i></a></li>
-                                    <li class="btx"><a href="">Profile</a></li>
+                                    <li class="btx"><a type="button" class="btn btn-primary text-white" data-toggle="modal" data-target="#exampleModalCenter5">
+                                        Profile
+                                    </a></li>
+                                    <div class="modal fade" id="exampleModalCenter5" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                        <div class="modal-dialog" role="document">
+                                          <div class="modal-content">
+                                            <div class="modal-header">
+                                              <h5 class="modal-title" id="exampleModalLongTitle">Profile</h5>
+                                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                              </button>
+                                            </div>
+                                            <div class="modal-body">
+                                            <h2>Carol Henderson, MHRM</h2>
+                                            <span>Chief Operating Officer</span>
+                                              <p class="text-dark">Carol has over 4+ years of experience in research and implementation in data analysis, machine learning, data manipulation, statistical methods, including regression, classification, neural network architectures and natural language processing. Amine possesses over 4 years of programming experience with Python, R, Bash and C/C++. Autonomous, yet social and a team player, Amine has an excellent work ethic and problem-solving mindset.
+                                                Languages: French and English</p>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
                                     <li><a href=""><i class="fab fa-twitter"></i></a></li>
                                 </ul>
                             </div>
@@ -229,7 +330,27 @@
                                 <span>Chief Product Officer & Co-Founder</span>
                                 <ul>
                                     <li><a href=""><i class="fab fa-linkedin-in"></i></a></li>
-                                    <li class="btx"><a href="">Profile</a></li>
+                                    <li class="btx"><a type="button" class="btn btn-primary text-white" data-toggle="modal" data-target="#exampleModalCenter6">
+                                        Profile
+                                    </a></li>
+                                    <div class="modal fade" id="exampleModalCenter6" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                        <div class="modal-dialog" role="document">
+                                          <div class="modal-content">
+                                            <div class="modal-header">
+                                              <h5 class="modal-title" id="exampleModalLongTitle">Profile</h5>
+                                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                              </button>
+                                            </div>
+                                            <div class="modal-body">
+                                            <h2>Jack Davis, MD</h2>
+                                            <span>Chief Product Officer</span>
+                                              <p class="text-dark">Jack has over 4+ years of experience in research and implementation in data analysis, machine learning, data manipulation, statistical methods, including regression, classification, neural network architectures and natural language processing. Amine possesses over 4 years of programming experience with Python, R, Bash and C/C++. Autonomous, yet social and a team player, Amine has an excellent work ethic and problem-solving mindset.
+                                                Languages: French and English</p>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
                                     <li><a href=""><i class="fab fa-twitter"></i></a></li>
                                 </ul>
                             </div>

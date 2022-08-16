@@ -89,10 +89,10 @@
      
             const url = $(this).attr('href');
             swal({
-             title: 'Yakin mau Delete ?',
-                text: 'Pastikan dulu biar ngga salah 🙏',
+             title: 'Are you sure delete article?',
+                text: 'Please be sure for delete this article 🙏',
                 icon: 'warning',
-                buttons: ["Gajadi, maap", "Tolak"],
+                buttons: ["Not sure", "Tolak"],
             }).then(function(value) {
                 if (value) {
                     window.location.href = url;
