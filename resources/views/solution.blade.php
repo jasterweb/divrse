@@ -87,7 +87,7 @@
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-12 col-md-12">
-                    <h2 class="title3">Big <b>Benefits.</b> Great <b>Talent.</b></h2>
+                    <h2 class="title3">Big <b>Benefits.</b><br/>Great <b>Talent.</b></h2>
                 </div>
             </div>
             <div class="row align-items-center mt-5">

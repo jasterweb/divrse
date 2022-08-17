@@ -161,7 +161,7 @@
             <div class="row align-items-center">
                 <div class="col-lg-12 col-md-12">
                     <h2 class="titlesect text-primary">Our Leadership</h2>
-                    <div class="team" style="background-image: url('http://localhost:8000/argon/page/about/line.png');background-size: contain;background-position: center;background-repeat: no-repeat;">
+                    <div class="team" style="background-image: url('{{ asset('argon') }}/page/about/line.png');background-size: contain;background-position: center;background-repeat: no-repeat;">
                         <div class="itemteam">
                             <div class="wrapteam">
                                 <img class="mx-auto" src="{{ asset('argon') }}/page/team.png">

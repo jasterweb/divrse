@@ -90,7 +90,7 @@
                         your progress all while eliminating biases in your hiring process 
                         with tailor-made reports, actionable insights and recommendations
                     </p>
-                    <ul class="p-0 dash">
+                    <ul class="listitem">
                         <li>Analyze the performance Of your recruitment efforts</li>
                         <li>Track the data that matters most and share it across teams</li>
                         <li>Make tangible decisions based on customized data</li>
@@ -119,13 +119,13 @@
 
                 <div class="col-lg-6 col-md-6">
                     <h2 class="titlesect text-cyan text-left mb-3">KPI Management</h2>
-                    <p>
+                    <p class="text-dark">
                         All your essential data in one place. Set real hiring goals and 
                         benchmarks that you can revise anytime. Look at your Success over 
                         time, reset your goals as needed, keeping a close eye on diversity 
                         recruiting.
                     </p>
-                    <ul class="p-0 dash">
+                    <ul class="listitem">
                         <li>Monitor efficiency in recruiting processes</li>
                         <li>Keep up with revenue saved on sourcing costs</li>
                         <li>Optimize your time-to-hire timeline strategically</li>

@@ -12,7 +12,7 @@
             </div>
 
             <div class="col-lg-6 col-md-6">
-                <div class="image-box imgcta">
+                <div class="footimg imgcta">
                     <lottie-player src="{{ asset('argon') }}/animation/foot.json" background="transparent" speed="1" loop autoplay></lottie-player>
                 </div>
             </div>
