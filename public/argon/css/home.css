@@ -76,7 +76,7 @@
 @media (max-width:768px) {
   .imgcta img{padding: 3rem 0};
 }
-.footlanding{border-bottom: 8px solid var(--cyan);}
+.footlanding{overflow: hidden;border-bottom: 8px solid var(--cyan);}
 
 
 .wcuslide {
@@ -226,6 +226,9 @@
 
 .statsol{margin:4rem -15px;display:flex;flex-wrap:wrap}
 .itemstatsol{border-right:1px solid rgba(255, 255, 255, 0.22); padding: 0 15px;width:25%}
+.footimgbig lottie-player{width:100%}.footimgbig{display:flex;justify-content:center;bottom:-18rem;right:0;position:absolute;width:85%}
+
+
 @media (max-width: 768px) {
   .itemstatsol:nth-child(2){border: 0;margin-bottom: 20px;}
 }
@@ -238,7 +241,7 @@
 
 .title3{color:var(--cyan);font-size:2.2rem;font-weight: 800;}
 .title3 b{color:var(--danger)}
-.title4{font-weight:700;text-align:center;font-size:2.2rem;max-width:750px;margin:0 auto}
+.title4{color: var(--primary);font-weight:700;text-align:center;font-size:2.2rem;max-width:750px;margin:0 auto}
 @media (max-width: 426px) {
   .title3 {
     font-size: 1.9rem;
@@ -395,7 +398,7 @@
 
 
 @media screen and (max-width:768px){
-  .footimg{position: relative; top: 0; right: 0%;}
+  .footimg,.footimgbig{position: relative; top: 0; right: 0%;}
   .nav-item .dropdown{width: 100%;}
   .quote1 h3{font-size:1.2rem}.quoteby{font-size:1.1rem}
   .team{margin: 2rem 0;}

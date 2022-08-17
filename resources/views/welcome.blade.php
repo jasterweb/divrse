@@ -309,7 +309,7 @@
         </div>
     </section>
 
-    @include('layouts.footers.footerwide', [
+    @include('layouts.footers.footerbig', [
         'title' => 'Ready to stop talking about diversity recruitment and start doing it?',
         'desc' => 'Turn your DE&I goals into reality with Divrse’s quick, easy and affordable solution',
         'link' => route('get'),

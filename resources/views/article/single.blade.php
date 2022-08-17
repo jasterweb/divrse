@@ -46,7 +46,7 @@
 
     </div>
 
-    @include('layouts.footers.footerwide', [
+    @include('layouts.footers.footer', [
         'title' => 'Diversity won\'t wait',
         'desc' => 'Turn diversity goals into action today',
         'link' => route('get'),

@@ -101,7 +101,7 @@ body
 
     text-align: left;
 
-    color: #525f7f;
+    color: var(--primary);
     background-color: #f8f9fe;
 }
 
@@ -14636,7 +14636,7 @@ a.text-light:focus
 
 .text-dark
 {
-    color: #212529 !important;
+    color: var(--primary) !important;
 }
 
 a.text-dark:hover,
