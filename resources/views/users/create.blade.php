@@ -1,5 +1,5 @@
 @extends('layouts.app')
-
+@section('title', 'Create New User')
 @section('content')
 
     {{-- Gradient Background --}}
@@ -10,10 +10,10 @@
 
     {{-- Form Card --}}
     <div class="container-fluid mt--7">
-        <div class="card shadow p-lg-5 pb-lg-0 py-md-5 px-md-2 col-xl-9 col-12 mx-auto mb-5">
+        <div class="card shadow col-xl-9 col-12 mx-auto">
 
             <div class="card-header">
-                <h2 class="text-black mb-0">Add User</h2>
+                <h2 class="text-black mb-0">Add New User</h2>
             </div>
 
             <div class="card-body">
@@ -55,14 +55,16 @@
                                 <input type="text" name="fullname" id="input-fullname" class="form-control form-control-alternative{{ $errors->has('name') ? ' is-invalid' : '' }}" placeholder="{{ __('Full Name') }}" value="" required>
                             </div>
     
-                            <div class="form-group">
-                                <label class="form-control-label" for="input-address">{{ __('Address') }}</label>
-                                <input type="text" name="address" id="input-address" class="form-control form-control-alternative{{ $errors->has('name') ? ' is-invalid' : '' }}" placeholder="{{ __('Address') }}" value="" required>
-                            </div>
     
                             <div class="form-group">
                                 <label class="form-control-label" for="input-phone">{{ __('Phone') }}</label>
                                 <input type="text" name="phone" id="input-phone" class="form-control form-control-alternative{{ $errors->has('name') ? ' is-invalid' : '' }}" placeholder="{{ __('Phone') }}" value="" required>
+                            </div>
+
+                            
+                            <div class="form-group">
+                                <label class="form-control-label" for="input-address">{{ __('Address') }}</label>
+                                <textarea name="address" id="input-address" class="form-control form-control-alternative{{ $errors->has('name') ? ' is-invalid' : '' }}" placeholder="{{ __('Address') }}" value="" required></textarea>
                             </div>
                         </div>
 

@@ -1,4 +1,5 @@
-@extends('layouts.app', ['title' => __('User Profile')])
+@extends('layouts.app')
+@section('title', 'Create New Post')
 
 @section('content')
     @include('users.partials.header', [
@@ -34,7 +35,7 @@
                                     </div>
                                     <div class="d-flex justify-content-between item-info">
                                         <h3>Post By </h3>
-                                        <p class="ml-4 description text-dark">{{ auth()->user()->name }}</p>
+                                        <p class="ml-4 description text-dark">{{ auth()->user()->fullname }}</p>
                                      </div>
                                      <div class="item-info">
                                         <h3>Thumbnail </h3>

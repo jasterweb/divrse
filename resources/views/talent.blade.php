@@ -11,7 +11,7 @@
                         <span class="desc1 text-light">With Divrse’s AI-powered recruiting automation platform, you’ll set your team
                             up for success by hiring diverse, qualified talent year round.</span>
                         <br/>
-                        <a href="#" class="btn btn-xl btn-secondary mt-4 mb-md-2 mb-4">Get Started</a>
+                        <a href="{{ route('get') }}" class="btn btn-xl btn-secondary mt-4 mb-md-2 mb-4">Get Started</a>
                     </div>
                     <div class="col-lg-6 col-md-6">
                         <div class="image-box heroimage">
@@ -180,7 +180,7 @@
                         historically marginalized talent, rethink job qualifications and enhance employer branding.
                     </p>
                     <div class="center-small">
-                        <a href="#" class="btn btn-xl btn-secondary mt-4">Get Started</a>
+                        <a href="{{ route('get') }}" class="btn btn-xl btn-secondary mt-4">Get Started</a>
                     </div>
                 </div>
             </div>
@@ -190,34 +190,11 @@
     @include('layouts.footers.footerwide', [
         'title' => 'Ready to stop talking about diversity recruitment and start doing it?',
         'desc' => 'Contact us to design a custom diversity hiring solution for your business.',
+        'link' => route('get'),
         'cta' => 'Learn More'
     ])
 
-    <footer class="py-5 footlanding center-small">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-6 col-md-6">
-                    <h2 class="title2 text-white">Ready to stop talking about diversity recruitment and start doing it?</h2>
-                    <span class="text-light desc1">Contact us to design a custom diversity hiring solution for your business.</span>
-                    <br/>
-                    <a href="#" class="btn btn-xl btn-secondary mt-5">Learn More</a>
-                </div>
-                <div class="col-lg-6 col-md-6">
-                    <div class="image-box imgcta">
-                        <img src="{{ asset('argon') }}/home/footcta.png">
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="copyr">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12 text-light">Copyright © 2022 Divrse - All Rights Reserved</div>
-                    
-                </div>
-            </div>
-        </div>
-    </footer>
+
 @endsection
 
 @section('script')

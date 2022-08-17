@@ -373,6 +373,7 @@
   width: 100%;
 }
 
+.imgcta lottie-player{margin-top: -6rem;}
 .boxsquare{padding:2.4rem;margin-top:-7rem;border-radius:7px}
 .mivison{display:flex;gap:20px;margin-bottom:5rem}.mivison .boxsquare{width:50%}
 
@@ -380,6 +381,22 @@
 .quote1{display:flex;align-items:center;justify-content:center;flex-direction:column;width:750px;margin:0 auto;text-align:center}
 .quote1 h3{font-size:1.8rem;font-weight:700}.quoteby{font-size:2rem}
 @media screen and (max-width:768px){
+  .title1{font-size: 1.8rem;}
+  .switchmob{flex-direction: column-reverse;}
+  .text-2rem{font-size: 1.5rem !important;}
+  .presslogo li{width: 50%; padding: 5px;}
+  .introimg{padding:2rem 0}.introimg img{width:60%!important}
+  .image-box.my--6{margin-bottom: 2rem !important;}
+  .presslogo li{width:50%;padding:5px}
+  .colmob{flex-direction: column;}
+.itemproof-light{width:50%;margin-bottom:2rem}
+.proofnum2 .itemproof-light:nth-child(2){border:0}
+.posthome{padding: 2rem;}
+.wrapproof h2{font-size:2rem}
+.title2{font-size: 1.7rem;}
+.imgcta lottie-player{margin: 3rem 0 0 0;}
+.wrapproof h4{font-size:14px;padding:0 20px}
+.copyr .text-light{font-size: 14px; text-align: center;}
   .quote1 {
     width: 495px;
   }

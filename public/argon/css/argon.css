@@ -3138,8 +3138,8 @@ fieldset:disabled a.btn
 .btn-warning:hover
 {
     color: #333;
-    border-color: var(--orange); 
-    background-color: var(--orange);
+    border-color:#FDF3BC; 
+    background-color: #FDF3BC;
 }
 .btn-warning:focus,
 .btn-warning.focus
@@ -3158,14 +3158,14 @@ fieldset:disabled a.btn
 .show > .btn-warning.dropdown-toggle
 {
     color: #fff;
-    border-color: var(--orange); 
-    background-color: #fa3a0e;
+    border-color: #FDF3BC; 
+    background-color: #FDF3BC;
 }
 .btn-warning:not(:disabled):not(.disabled):active:focus,
 .btn-warning:not(:disabled):not(.disabled).active:focus,
 .show > .btn-warning.dropdown-toggle:focus
 {
-    box-shadow: none, 0 0 0 0 rgba(251, 99, 64, .5);
+    box-shadow: none 0 0 0 0 rgba(251, 99, 64, .5);
 }
 
 .btn-danger

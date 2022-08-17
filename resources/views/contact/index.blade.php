@@ -1,5 +1,5 @@
 @extends('layouts.app')
-
+@section('title', 'Contact')
 @section('content')
 
     {{-- Gradient Background --}}
@@ -10,7 +10,7 @@
 
     {{-- Form Card --}}
     <div class="container-fluid mt--7">
-        <div class="card shadow p-lg-5 pb-lg-0 py-md-5 px-md-2 col-xl-9 col-12 mx-auto mb-5">
+        <div class="card shadow col-xl-9 col-12 mx-auto">
 
             <div class="card-header">
                 <h2 class="text-black mb-0">Update personal details here.</h2>

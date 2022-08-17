@@ -8,12 +8,12 @@
                     {{ $desc }}
                 </div>
                 <br />
-                <a href="#" class="btn btn-xl btn-secondary mb-4">{{ $cta }}</a>
+                <a href="{{ $link }}" class="btn btn-xl btn-secondary mb-4">{{ $cta }}</a>
             </div>
 
             <div class="col-lg-6 col-md-6">
                 <div class="image-box imgcta">
-                    <img src="{{ asset('argon') }}/home/footer.png">
+                    <lottie-player src="{{ asset('argon') }}/animation/foot.json" background="transparent" speed="1" loop autoplay></lottie-player>
                 </div>
             </div>
 

@@ -170,6 +170,7 @@
     @include('layouts.footers.footerwide', [
         'title' => 'Ready to stop talking about diversity recruitment and start doing it?',
         'desc' => 'Contact Divrse Today',
+        'link' => route('get'),
         'cta' => 'See It in Action'
     ])
 

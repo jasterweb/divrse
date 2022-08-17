@@ -15,7 +15,7 @@
                     </div>
                     <div class="col-lg-6 col-md-6">
                         <div class="image-box heroimage">
-                            <img src="{{ asset('argon') }}/page/about/main.png" class="basehero">
+                            <lottie-player src="{{ asset('argon') }}/animation/about.json" background="transparent" speed="1" loop autoplay></lottie-player>
                         </div>
                     </div>
 
@@ -68,7 +68,7 @@
                         From there, AI-powered skills-based matching recommends applicants by the criteria you provide.
                         By bridging the gap between companies and candidates, Divrse has built a diversity recruitment
                         platform that benefits all parties.</p>
-                        <a href="#" class="btn btn-xl btn-secondary mt-2">Get Started</a>
+                        <a href="{{route('get')}}" class="btn btn-xl btn-secondary mt-2">Get Started</a>
                
                     </p>
                 </div>
@@ -364,6 +364,7 @@
     @include('layouts.footers.footer', [
         'title' => 'Diversity won\'t wait',
         'desc' => 'Turn diversity goals into action today',
+        'link' => route('get'),
         'cta' => 'Get Started'
     ])
 

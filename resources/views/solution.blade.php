@@ -16,7 +16,7 @@
                         <span class="desc1">Divrse connects high quality, underrepresented talent, with world-class companies that care about (value) diversity, equity, and inclusion.</span>
                         <br/>
                         <div class="center-small">
-                            <a href="#" class="btn btn-xl btn-secondary mt-4 ">Get Started</a>
+                            <a href="{{route('get')}}" class="btn btn-xl btn-secondary mt-4 ">Get Started</a>
                         </div>
                     </div>
                     
@@ -106,7 +106,7 @@
                         <h3 class="text-warning">Streamlined screening process</h3>
                         <p class="text-light">Eliminate spam resumes and reduce time- to-hire by up to 30%, adding highly qualified candidates to your pipeline</p>
                         <div class="center-small">
-                            <a href="#" class="btn btn-xl btn-secondary mt-4">Explore Talent Stream</a>
+                            <a href="{{ route('talent') }}" class="btn btn-xl btn-secondary mt-4">Explore Talent Stream</a>
                         </div>
                     </div>
                 </div>
@@ -134,7 +134,7 @@
                         <p class="text-light">Understand the diversity of your whole pipeline and discover how individuals self identify. Measure pipeline health and pass-through rates, reduce bias and share DE&I success.</p>
                         <p class="text-light">It’s all about the data, optimize your recruiting strategy, analyze your progress all while eliminating biases in your hiring process with tailor-made reports, actionable insights and recommendations.</p>
                         <div class="center-small">
-                            <a href="#" class="btn btn-xl btn-secondary mt-4">Explore Analytics</a>
+                            <a href="{{ route('analytic') }}" class="btn btn-xl btn-secondary mt-4">Explore Analytics</a>
                         </div>
                     </div>
                 </div>
@@ -161,7 +161,7 @@
                         <p class="text-light">Run impactful engaging virtual events with our end-to-end solution. Connect authentically with potential candidates and keep the
                             conversation going with talent communities. Promote your open roles to drive more inbound applicants.</p>
                         <div class="center-small">                       
-                            <a href="#" class="btn btn-xl btn-secondary mt-4">Explore Employer Brand</a>
+                            <a href="{{ route('employer') }}" class="btn btn-xl btn-secondary mt-4">Explore Employer Brand</a>
                         </div>
                 
                 </div>
@@ -199,7 +199,7 @@
                         <p>Understand the diversity of your recruiting team’s current pipeline with self-identified data.
                             Build a strong employer brand as a diverse employer of choice.  </p>
                         <div class="center-small">
-                            <a href="#" class="btn btn-xl btn-secondary mt-4">Get Started</a>
+                            <a href="{{route('get')}}" class="btn btn-xl btn-secondary mt-4">Get Started</a>
                         </div>
                     </div>
                    
@@ -223,7 +223,7 @@
                 </div>
                 
                 <div class="col-lg-6 col-md-6 text-md-right text-center mt-md-0 mt-4">
-                    <a href="#" class="btn btn-xl btn-secondary">Get Started</a>
+                    <a href="{{route('get')}}" class="btn btn-xl btn-secondary">Get Started</a>
                 </div>
 
             </div>
@@ -231,6 +231,7 @@
     </section>@include('layouts.footers.footer', [
         'title' => 'Diversity won\'t wait',
         'desc' => 'Turn diversity goals into action today.',
+        'link' => route('get'),
         'cta' => 'Learn More'
     ])
 @endsection

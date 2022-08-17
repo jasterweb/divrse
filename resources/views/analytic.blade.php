@@ -139,6 +139,7 @@
     @include('layouts.footers.footerwide', [
         'title' => 'Stop setting diversity goals. Start meeting them.',
         'desc' => 'We\'ll design a custom diversity hiring solution for your business.',
+        'link' => route('get'),
         'cta' => 'See it in Action'
     ])
     
