@@ -403,7 +403,7 @@
   .quote1 h3{font-size:1.2rem}.quoteby{font-size:1.1rem}
   .team{margin: 2rem 0;}
   .wrapteam img{width:70%}.wrapteam span{font-size:12px;text-align: center;}
-  .wrapteam{padding: 0 5px;}.wrapteam h4{font-size: 14px;}
+  .wrapteam{padding: 0 5px;}.wrapteam h4{font-size: 14px;text-align:center;}
   .team{margin:2rem 0}.wrapteam ul li a{width:100%;display:inline-block}.wrapteam ul{display:inline-block;text-align:center;width:100%}.wrapteam ul li{margin:0 0 5px}
   .title1{font-size: 1.8rem;}
   .switchmob{flex-direction: column-reverse;}
