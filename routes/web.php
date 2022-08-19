@@ -22,7 +22,8 @@ Route::get('/employer', [App\Http\Controllers\LandingController::class, 'employe
 Route::get('/analytic', [App\Http\Controllers\LandingController::class, 'analytic'])->name('analytic');
 Route::get('/about', [App\Http\Controllers\LandingController::class, 'about'])->name('about');
 Route::get('/blog', [App\Http\Controllers\LandingController::class, 'blog'])->name('blog');
-Route::get('/get-started', [App\Http\Controllers\LandingController::class, 'started'])->name('get-started');
+Route::get('/get-started', [App\Http\Controllers\LandingController::class, 'started'])->name('get');
+Route::get('article/{article:slug}', ['as' => 'article.show', 'uses' => 'App\Http\Controllers\ArticleController@show']);
 
 Auth::routes();
 
@@ -48,7 +49,6 @@ Route::group(['middleware' => 'auth'], function () {
 	Route::get('article/{article}/edit', ['as' => 'article.edit', 'uses' => 'App\Http\Controllers\ArticleController@edit']);
 	Route::put('article/{article}/update', ['as' => 'article.update', 'uses' => 'App\Http\Controllers\ArticleController@update']);
 	Route::get('article/{article}/delete', ['as' => 'article.delete', 'uses' => 'App\Http\Controllers\ArticleController@destroy']);
-	Route::get('article/{article:slug}', ['as' => 'article.show', 'uses' => 'App\Http\Controllers\ArticleController@show']);
 
 	// user route
 	Route::resource('user', 'App\Http\Controllers\UserController', ['except' => ['show']]);

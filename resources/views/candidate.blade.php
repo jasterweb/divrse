@@ -242,6 +242,7 @@
     @include('layouts.footers.footer', [
         'title' => 'Get started today.',
         'desc' => 'Finding the right job is life-changing. Let Divrse help you find your next big opportunity.',
+        'link' => route('get'),
         'cta' => 'Sign Up'
     ])
 

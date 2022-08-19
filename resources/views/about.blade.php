@@ -15,7 +15,7 @@
                     </div>
                     <div class="col-lg-6 col-md-6">
                         <div class="image-box heroimage">
-                            <img src="{{ asset('argon') }}/page/about/main.png" class="basehero">
+                            <lottie-player src="{{ asset('argon') }}/animation/about.json" background="transparent" speed="1" loop autoplay></lottie-player>
                         </div>
                     </div>
 
@@ -68,7 +68,7 @@
                         From there, AI-powered skills-based matching recommends applicants by the criteria you provide.
                         By bridging the gap between companies and candidates, Divrse has built a diversity recruitment
                         platform that benefits all parties.</p>
-                        <a href="#" class="btn btn-xl btn-secondary mt-2">Get Started</a>
+                        <a href="{{route('get')}}" class="btn btn-xl btn-secondary mt-2">Get Started</a>
                
                     </p>
                 </div>
@@ -161,7 +161,7 @@
             <div class="row align-items-center">
                 <div class="col-lg-12 col-md-12">
                     <h2 class="titlesect text-primary">Our Leadership</h2>
-                    <div class="team" style="background-image: url('http://localhost:8000/argon/page/about/line.png');background-size: contain;background-position: center;background-repeat: no-repeat;">
+                    <div class="team" style="background-image: url('{{ asset('argon') }}/page/about/line.png');background-size: contain;background-position: center;background-repeat: no-repeat;">
                         <div class="itemteam">
                             <div class="wrapteam">
                                 <img class="mx-auto" src="{{ asset('argon') }}/page/team.png">
@@ -364,6 +364,7 @@
     @include('layouts.footers.footer', [
         'title' => 'Diversity won\'t wait',
         'desc' => 'Turn diversity goals into action today',
+        'link' => route('get'),
         'cta' => 'Get Started'
     ])
 

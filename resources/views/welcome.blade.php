@@ -5,16 +5,17 @@
     <div class="header bg-primary pb-0 pt-8 ">
         <div class="container">
             <div class="header-body mt-4 mb-4">
-                <div class="row align-items-center">
+                <div class="row align-items-center switchmob">
                     <div class="col-lg-6 col-md-6">
                         <h1 class="title1">Unlock DE&I<br/>in the<br/>workplace.</h1>
                         <span class="text-light desc1">Divrse connects high quality, underrepresented talent, with world-class companies that care about (value) diversity, equity, and inclusion.</span>
                         <br/>
-                        <a href="#" class="btn btn-xl btn-secondary mt-4">Get Started</a>
+                        <a href="{{ route('get') }}" class="btn btn-xl btn-secondary mt-4">Get Started</a>
                     </div>
                     <div class="col-lg-6 col-md-6">
                         <div class="image-box my--6">
-                            <lottie-player src="https://assets3.lottiefiles.com/private_files/lf30_8wzbup15.json" background="transparent" speed="1" loop autoplay></lottie-player>
+                            
+                            <lottie-player src="{{ asset('argon') }}/animation/home.json" background="transparent" speed="1" loop autoplay></lottie-player>
                         </div>
                     </div>
                 </div>
@@ -60,12 +61,12 @@
                     </div>
                 </div>
             </div>
-            <div class="row align-items-center mb-10">
+            <div class="row align-items-center">
                 <div class="col-lg-6 col-md-6 pr-5">
                     <h2 class="text-blue text-2rem font-weight-800">Diversity won't wait</h2>
                     <p>From startups to Fortune 500 companies, employers of all sizes use Divrse to find skilled and underrepresented talent for a wide
                         variety of employment opportunities including remote, part-time and full-time, permanent and contract roles. </p> <br/>
-                        <a href="#" class="btn btn-xl btn-secondary mt-4">Get Started</a>
+                        <a href="{{ route('get') }}" class="btn btn-xl btn-secondary mt-4">Get Started</a>
                 </div>
                 <div class="col-lg-6 col-md-6">
                     <div class="image-box introimg">
@@ -101,7 +102,7 @@
                 </div>
 
                 <div class="slider-container" style="width: 100%; text-align:center;">
-                    <h2 id="positions" class="title4 text-light mb-5" style="font-size: 2.75rem">3320 open positions</h2>
+                    <h2 id="positions" class="title4 text-light mb-5">3320 open positions</h2>
                     <input type="range" class="slider" min="1" max="25" value="17">
                 </div>
 
@@ -150,7 +151,7 @@
             </svg>
     </section>
 
-    <section class="bg-primary">
+    <section class="bg-primary pt-6 pb-6">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-6 col-md-6">
@@ -282,7 +283,7 @@
     
     <section class="bg-white-2">
         <div class="container">
-            <div class="row align-items-center justify-content-between">
+            <div class="row align-items-center justify-content-between colmob">
                     <h2 class="titlesect text-primary">DE&I Resources</h2>
                     <a href="{{route('blog')}}">View All Posts</a>
                    
@@ -308,9 +309,10 @@
         </div>
     </section>
 
-    @include('layouts.footers.footerwide', [
+    @include('layouts.footers.footerbig', [
         'title' => 'Ready to stop talking about diversity recruitment and start doing it?',
         'desc' => 'Turn your DE&I goals into reality with Divrse’s quick, easy and affordable solution',
+        'link' => route('get'),
         'cta' => 'Get Started'
     ])
 

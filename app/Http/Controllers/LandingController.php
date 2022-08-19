@@ -4,17 +4,19 @@ namespace App\Http\Controllers;
 
 use App\Models\Article;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class LandingController extends Controller
 {
     public function index()
     {
-        $articles = Article::paginate(3);
+        
+        $articles = Article::orderBy('published_at','desc')->paginate(3);
         return view('welcome',compact('articles'));
     }
     public function blog()
     {
-        $articles = Article::paginate(9);
+        $articles = Article::orderBy('published_at','desc')->paginate(9);
         return view('blog',compact('articles'));
     }
     public function solution()

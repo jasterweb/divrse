@@ -167,9 +167,10 @@
         </div>
     </section>
 
-    @include('layouts.footers.footerwide', [
+    @include('layouts.footers.footerbig', [
         'title' => 'Ready to stop talking about diversity recruitment and start doing it?',
         'desc' => 'Contact Divrse Today',
+        'link' => route('get'),
         'cta' => 'See It in Action'
     ])
 
