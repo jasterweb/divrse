@@ -386,7 +386,7 @@
 .quote1 h3{font-size:1.8rem;font-weight:700}.quoteby{font-size:2rem}
 
 
-.team{display:flex;flex-wrap:wrap}.team .itemteam{width:33.33%;margin-bottom:2rem}
+.team{display: flex; flex-wrap: wrap; max-width: 750px; margin: 0 auto;}.team .itemteam{width:50%;margin-bottom:2rem}
 .wrapteam{display:flex;flex-direction:column;justify-content:center;align-items:center;padding:20px}
 .wrapteam img{width:55%;margin-bottom:1.2rem}.wrapteam h4{font-size:1.1rem;font-weight:600;margin-bottom:4px}
 .wrapteam ul{margin:1rem 0;padding:0;list-style:none;display:flex;flex-wrap:wrap;align-items:center}
@@ -396,6 +396,7 @@
 .wrapteam ul li:last-child a{background:#55ACEE;padding:10px 15px;border-radius:7px}
 .btx a{background:var(--primary);padding:10px 15px;border-radius:7px;color:#fff}
 
+.imgcta2{bottom: -7px; position: relative; right: 0;}
 
 @media screen and (max-width:768px){
   .footimg,.footimgbig{position: relative; top: 0; right: 0%;}

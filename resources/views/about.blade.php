@@ -196,38 +196,6 @@
                         <div class="itemteam">
                             <div class="wrapteam">
                                 <img class="mx-auto" src="{{ asset('argon') }}/page/team.png">
-                                <h4>Amine Barrak, MSC</h4>
-                                <span>Chief Technical Officer & Co-Founder</span>
-                                <ul>
-                                    <li><a href=""><i class="fab fa-linkedin-in"></i></a></li>
-                                    <li class="btx"><a type="button" class="btn btn-primary text-white" data-toggle="modal" data-target="#exampleModalCenter2">
-                                        Profile
-                                    </a></li>
-                                    <div class="modal fade" id="exampleModalCenter2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-                                        <div class="modal-dialog" role="document">
-                                          <div class="modal-content">
-                                            <div class="modal-header">
-                                              <h5 class="modal-title" id="exampleModalLongTitle">Profile</h5>
-                                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                <span aria-hidden="true">&times;</span>
-                                              </button>
-                                            </div>
-                                            <div class="modal-body">
-                                            <h2>Amine Barrak, MSC</h2>
-                                            <span>Chief Technical Officer & Co-Founder</span>
-                                              <p class="text-dark">Amine has over 4+ years of experience in research and implementation in data analysis, machine learning, data manipulation, statistical methods, including regression, classification, neural network architectures and natural language processing. Amine possesses over 4 years of programming experience with Python, R, Bash and C/C++. Autonomous, yet social and a team player, Amine has an excellent work ethic and problem-solving mindset.
-                                                Languages: French and English</p>
-                                            </div>
-                                          </div>
-                                        </div>
-                                      </div>
-                                    <li><a href=""><i class="fab fa-twitter"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="itemteam">
-                            <div class="wrapteam">
-                                <img class="mx-auto" src="{{ asset('argon') }}/page/team.png">
                                 <h4>Janelle Watson, MPA</h4>
                                 <span>Chief Financial Officer & Co-Founder</span>
                                 <ul>
@@ -282,38 +250,6 @@
                                             <h2>Nicole Calabrigo, BS</h2>
                                             <span>Chief Marketing Officer  </span>
                                               <p class="text-dark">Nciole has over 4+ years of experience in research and implementation in data analysis, machine learning, data manipulation, statistical methods, including regression, classification, neural network architectures and natural language processing. Amine possesses over 4 years of programming experience with Python, R, Bash and C/C++. Autonomous, yet social and a team player, Amine has an excellent work ethic and problem-solving mindset.
-                                                Languages: French and English</p>
-                                            </div>
-                                          </div>
-                                        </div>
-                                      </div>
-                                    <li><a href=""><i class="fab fa-twitter"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="itemteam">
-                            <div class="wrapteam">
-                                <img class="mx-auto" src="{{ asset('argon') }}/page/team.png">
-                                <h4>Carol Henderson, MHRM</h4>
-                                <span>Chief Operating Officer & Co-Founder</span>
-                                <ul>
-                                    <li><a href=""><i class="fab fa-linkedin-in"></i></a></li>
-                                    <li class="btx"><a type="button" class="btn btn-primary text-white" data-toggle="modal" data-target="#exampleModalCenter5">
-                                        Profile
-                                    </a></li>
-                                    <div class="modal fade" id="exampleModalCenter5" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-                                        <div class="modal-dialog" role="document">
-                                          <div class="modal-content">
-                                            <div class="modal-header">
-                                              <h5 class="modal-title" id="exampleModalLongTitle">Profile</h5>
-                                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                <span aria-hidden="true">&times;</span>
-                                              </button>
-                                            </div>
-                                            <div class="modal-body">
-                                            <h2>Carol Henderson, MHRM</h2>
-                                            <span>Chief Operating Officer</span>
-                                              <p class="text-dark">Carol has over 4+ years of experience in research and implementation in data analysis, machine learning, data manipulation, statistical methods, including regression, classification, neural network architectures and natural language processing. Amine possesses over 4 years of programming experience with Python, R, Bash and C/C++. Autonomous, yet social and a team player, Amine has an excellent work ethic and problem-solving mindset.
                                                 Languages: French and English</p>
                                             </div>
                                           </div>
