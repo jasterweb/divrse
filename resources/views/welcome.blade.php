@@ -6,7 +6,7 @@
         <div class="container">
             <div class="header-body mt-4 mb-4">
                 <div class="row align-items-center switchmob">
-                    <div class="col-lg-6 col-md-6">
+                    <div class="col-lg-5 col-md-6">
                         <h1 class="title1">Unlock Diversity, <br/>Equity & Inclusion <br/>in the workplace.</h1>
                         <span class="text-light desc1">
                             Divrse connects high quality, underrepresented talent, with word-class companies that share 
@@ -16,7 +16,7 @@
                         <br/>
                         <a href="{{ route('get') }}" class="btn btn-xl btn-secondary mt-4">Get Started</a>
                     </div>
-                    <div class="col-lg-6 col-md-6">
+                    <div class="col-lg-7 col-md-6">
                         <div class="image-box my--6">
                             
                             <lottie-player src="{{ asset('argon') }}/animation/home.json" background="transparent" speed="1" loop autoplay></lottie-player>
@@ -151,7 +151,7 @@
 
             </div>
         </div>
-        <svg class="waves mt-3" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+        <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
             <defs>
                 <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
             </defs>
