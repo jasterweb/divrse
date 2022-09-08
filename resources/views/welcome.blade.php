@@ -40,7 +40,7 @@
 
     <section class="bg-white pt-6 pb-6">
         <div class="container">
-            <div class="row align-items-center mb-3">
+            <div class="row align-items-center mb-3 border-bottom">
                 <div class="col-lg-6 col-md-6 pr-5">
                     <h2 class="text-cyan text-2rem font-weight-800">Empowering underrepresented Professionals</h2>
                     <p>
@@ -56,7 +56,7 @@
                     </div>
                 </div>
             </div>
-            <div class="row align-items-center mb-3">
+            <div class="row align-items-center pb-2 mb-3 border-bottom">
                 <div class="col-lg-6 col-md-6">
                     <div class="image-box introimg">
                         <img src="{{ asset('argon') }}/home/recruiting.png" style="width: 47%;margin-top: -12px;">

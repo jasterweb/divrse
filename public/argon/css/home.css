@@ -608,3 +608,7 @@
     width: 18px;
     }
 }
+
+.border-bottom {
+  border-bottom: 3px solid var(--danger) !important;
+}
