@@ -81,6 +81,8 @@
                 </div>
                 <div class="col-lg-6 col-md-6">
                     <div class="image-box introimg">
+                        {{-- <lottie-player src="{{ asset('argon') }}/animation/clock.json" background="transparent" speed="1" loop autoplay></lottie-player> --}}
+                        
                         <img src="{{ asset('argon') }}/home/diversity.png" style="width: 42%;margin-top: 13px;">
                     </div>
                 </div>
@@ -260,28 +262,28 @@
                     <div class="wcuslide">
                         <div class="wcuitem">
                             <div class="wcuwrap">
-                                <img src="{{ asset('argon') }}/home/Home_Qualified.png">
-                                <h3>Qualified andengaged</h3>
+                                <img src="{{ asset('argon') }}/home/qualified_engaged.png">
+                                <h3>Qualified and engaged</h3>
                                 <p>Every candidate in Divrse’s talent pool is vetted and interviewed by our partner companies before they are invited to join our talent pool. Each applicant is actively seeking new opportunities and ready to get to work.</p>
                             </div>
                         </div>
                         <div class="wcuitem">
                             <div class="wcuwrap">
-                                <img src="{{ asset('argon') }}/home/Home_Streamline.png">
+                                <img src="{{ asset('argon') }}/home/streamline.png">
                                 <h3>Streamline the screening process</h3>
                                 <p>Companies using Divrse boast a 16% reduction in time-to-hire by adding highly qualified candidates into their talent pipeline.</p>
                             </div>
                         </div>
                         <div class="wcuitem">
                             <div class="wcuwrap">
-                                <img src="{{ asset('argon') }}/home/Home_Transparent.png">
+                                <img src="{{ asset('argon') }}/home/transparent.png">
                                 <h3>Transparent, AI-based technology</h3>
                                 <p>Divrse’s unified solution syncs with your preferred ATS and plays an integral part of your daily workflow so you can sit back and watch the applications flow in.</p>
                             </div>
                         </div>
                         <div class="wcuitem">
                             <div class="wcuwrap">
-                                <img src="{{ asset('argon') }}/home/Home_Elevated.png">
+                                <img src="{{ asset('argon') }}/home/elevated.png">
                                 <h3>Elevated candidate experience</h3>
                                 <p>Divrse empowers companies to deliver empathy throughout the hiring process and assist those who were not a good fit for your team as they seek a new role. </p>
                             </div>
