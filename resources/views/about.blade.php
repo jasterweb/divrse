@@ -1,7 +1,7 @@
 @extends('layouts.landing', ['class' => 'bg-default'])
 @section('title', 'About Us')
 @section('content')
-    <div class="header bg-primary pt-9 pb-6">
+    <div class="header bg-primary pt-5 pb-6">
         <div class="container">
             <div class="header-body mt-4 mb-4">
                 <div class="row align-items-center">

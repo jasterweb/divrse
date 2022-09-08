@@ -1,7 +1,7 @@
 @extends('layouts.landing', ['class' => 'bg-default'])
 @section('title', 'Talent Stream')
 @section('content')
-    <div class="header bg-primary pt-md-9 pt-7 pb-6">
+    <div class="header bg-primary pt-md-5 pt-7 pb-6">
         <div class="container">
             <div class="header-body my-4">
                 <div class="row align-items-center">
