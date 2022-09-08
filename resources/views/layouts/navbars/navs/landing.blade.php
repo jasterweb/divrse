@@ -27,14 +27,14 @@
             <ul class="navbar-nav ml-auto align-items-md-center">
                 <li class="nav-item">
                     <a class="nav-link nav-link-icon" href="/">
-                        <span class="nav-link-inner--text">{{ __('Home') }}</span>
+                        <span class="nav-link-inner--text pb-1 {{ Route::currentRouteName() == 'landing' ? 'border-bottom' : '' }}">{{ __('Home') }}</span>
                     </a>
                 </li>
                 <li class="nav-item">
                     <div class="dropdown">
                         <a class="dropdown-toggle nav-link nav-link-icon" href="{{ route('solution') }}" role="button" id="dropdownMenuLink" aria-haspopup="true" aria-expanded="false">
 
-                            <span class="nav-link-inner--text">{{ __('Solutions') }}</span>
+                            <span class="nav-link-inner--text pb-1 {{ Route::currentRouteName() == 'solution' ? 'border-bottom' : '' }}">{{ __('Solutions') }}</span>
                         </a>
                         <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
 
@@ -47,22 +47,22 @@
                 </li>
                 <li class="nav-item">
                     <a class="nav-link nav-link-icon" href="{{ route('candidate') }}">
-                        <span class="nav-link-inner--text">{{ __('Candidates') }}</span>
+                        <span class="nav-link-inner--text pb-1 {{ Route::currentRouteName() == 'candidate' ? 'border-bottom' : '' }}">{{ __('Candidates') }}</span>
                     </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link nav-link-icon" href="{{ route('blog') }}">
-                        <span class="nav-link-inner--text">{{ __('Blog') }}</span>
+                        <span class="nav-link-inner--text pb-1 {{ Route::currentRouteName() == 'blog' ? 'border-bottom' : '' }}">{{ __('Blog') }}</span>
                     </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link nav-link-icon" href="{{ route('about') }}">
-                        <span class="nav-link-inner--text">{{ __('About') }}</span>
+                        <span class="nav-link-inner--text pb-1 {{ Route::currentRouteName() == 'about' ? 'border-bottom' : '' }}">{{ __('About') }}</span>
                     </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link nav-link-icon" href="{{ route('get') }}">
-                        <span class="nav-link-inner--text">{{ __('Get Started') }}</span>
+                        <span class="nav-link-inner--text pb-1 {{ Route::currentRouteName() == 'get' ? 'border-bottom' : '' }}">{{ __('Get Started') }}</span>
                     </a>
                 </li>
             </ul>
