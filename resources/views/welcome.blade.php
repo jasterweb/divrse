@@ -7,8 +7,12 @@
             <div class="header-body mt-4 mb-4">
                 <div class="row align-items-center switchmob">
                     <div class="col-lg-6 col-md-6">
-                        <h1 class="title1">Unlock DE&I<br/>in the<br/>workplace.</h1>
-                        <span class="text-light desc1">Divrse connects high quality, underrepresented talent, with world-class companies that care about (value) diversity, equity, and inclusion.</span>
+                        <h1 class="title1">Unlock Diversity, <br/>Equity & Inclusion <br/>in the workplace.</h1>
+                        <span class="text-light desc1">
+                            Divrse connects high quality, underrepresented talent, with word-class companies that share 
+                            their commitment to diversity, equity and inclusion. Together, we can help create a more 
+                            inclusive future for all.
+                        </span>
                         <br/>
                         <a href="{{ route('get') }}" class="btn btn-xl btn-secondary mt-4">Get Started</a>
                     </div>
@@ -36,11 +40,15 @@
 
     <section class="bg-white pt-6 pb-6">
         <div class="container">
-            <div class="row align-items-center mb-10">
+            <div class="row align-items-center mb-3">
                 <div class="col-lg-6 col-md-6 pr-5">
-                    <h2 class="text-cyan text-2rem font-weight-800">Uplifting underrepresented Candidates</h2>
-                    <p>Divrse’s talent pool includes women, visible minorities, immigrants and members of the 2SLQBTQ+ community. These candidates are vetted, qualified and interviewed by our partner
-                        companies before they are invited to join our talent pool. Each applicant is actively seeking new opportunities and ready to get to work.</p>
+                    <h2 class="text-cyan text-2rem font-weight-800">Empowering underrepresented Professionals</h2>
+                    <p>
+                        Divrse’s talent pool includes women, visible minorities, immigrants and members of the 2SLQBTQ+ 
+                        community. These candidates are vetted, qualified and interviewed by our partner companies before 
+                        they are invited to join our talent pool. Each applicant is actively seeking new opportunities 
+                        and ready to get to work.
+                    </p>
                 </div>
                 <div class="col-lg-6 col-md-6">
                     <div class="image-box introimg">
@@ -48,17 +56,20 @@
                     </div>
                 </div>
             </div>
-            <div class="row align-items-center mb-10">
-                <div class="col-lg-6 col-md-6 pr-5">
-                    <h2 class="text-pink text-2rem font-weight-800">Diversity recruiting.<br/>Powered by Technology.</h2>
-                    <p>Divrse’s solution is proven to increase workforce diversity and the number of applicants from underrepresented backgrounds. Our diversity-first
-                        recruitment solution focuses entirely on bringing qualified and underrepresented candidates directly to the top of your hiring funnel.
-                    </p>
-                </div>
+            <div class="row align-items-center mb-3">
                 <div class="col-lg-6 col-md-6">
                     <div class="image-box introimg">
                         <img src="{{ asset('argon') }}/home/recruiting.png" style="width: 47%;margin-top: -12px;">
                     </div>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <h2 class="text-pink text-2rem font-weight-800">Diversity recruiting.<br/>Powered by Technology.</h2>
+                    <p>
+                        Divrse’s proven solution to increase workforce diversity and the number of applicants from 
+                        underrepresented backgrounds is a tried-and-true approach. Our diversity centered solution 
+                        focuses entirely on bringing qualified underrepresented candidates directly into your hiring 
+                        funnel, ensuring success.
+                    </p>
                 </div>
             </div>
             <div class="row align-items-center">
@@ -83,11 +94,11 @@
                 <div class="col-lg-12 col-md-12">
                     <h2 class="titlesect">In The Press</h2>
                     <ul class="presslogo">
-                        <li><img src="{{ asset('argon') }}/home/client1.png"></li>
-                        <li><img src="{{ asset('argon') }}/home/client2.png"></li>
-                        <li><img src="{{ asset('argon') }}/home/client3.png"></li>
-                        <li><img src="{{ asset('argon') }}/home/client4.png"></li>
-                        <li><img src="{{ asset('argon') }}/home/client5.png"></li>
+                        <li class="itempress"><img src="{{ asset('argon') }}/home/client1.png"></li>
+                        <li class="itempress"><img src="{{ asset('argon') }}/home/client2.png"></li>
+                        <li class="itempress"><img src="{{ asset('argon') }}/home/client3.png"></li>
+                        <li class="itempress"><img src="{{ asset('argon') }}/home/client4.png"></li>
+                        <li class="itempress"><img src="{{ asset('argon') }}/home/client5.png"></li>
                     </ul>
                 </div>
             </div>
@@ -98,11 +109,11 @@
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-12 col-md-12">
-                    <h2 class="text-center text-light mb-0">Divrse in numbers</h2>
+                    <h1 class="text-center text-light mb-0 ">Divrse in numbers</h1>
                 </div>
 
                 <div class="slider-container" style="width: 100%; text-align:center;">
-                    <h2 id="positions" class="title4 text-light mb-5">3320 open positions</h2>
+                    <h2 id="positions" class="title4 text-light mb-5">3,320 open positions</h2>
                     <input type="range" class="slider" min="1" max="25" value="17">
                 </div>
 
@@ -138,7 +149,7 @@
 
             </div>
         </div>
-        <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+        <svg class="waves mt-3" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
             <defs>
                 <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
             </defs>
@@ -222,7 +233,7 @@
                 </div>
             </div>
         </div>
-        <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+        <svg class="waves mt-0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
             <defs>
                 <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
             </defs>
@@ -327,9 +338,9 @@
             'position': [
                 '20','70','170','220','370',
                 '420','520','620','720','870',
-                '920','1.170','1.520','2.020','2.850',
-                '3.320','4.210','4.820','5.420','5.920',
-                '6.470','7.970','8.420','9.170','10.000'
+                '920','1,170','1,520','2,020','2,850',
+                '3,320','4,210','4,820','5,420','5,920',
+                '6,470','7,970','8,420','9,170','10,000'
             ],
             'reduction': [
                 '8H','10H','25H','32H','53H',
@@ -397,6 +408,43 @@
             }
         ]
         });
+
+        $('.presslogo').slick({
+            dots: true,
+            infinite: true,
+            arrows: false,
+            speed: 500,
+            slidesToShow: 4,         
+            autoplay: true,
+            autoplaySpeed: 1000,
+            slidesToScroll: 1,
+            responsive: [
+                {
+            breakpoint: 1024,
+            settings: {
+                slidesToShow: 4,
+                slidesToScroll: 1,
+                infinite: true,
+                dots: true
+            }
+            },
+            {
+            breakpoint: 600,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2
+            }
+            },
+            {
+            breakpoint: 480,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1
+            }
+            }
+        ]
+        });
+
         $('.proofnum').slick({
             dots: true,
             infinite: true,
