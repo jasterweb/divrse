@@ -2,7 +2,7 @@
 @section('title', 'Blog')
 
 @section('content')
-    <div class="header bg-primary pb-2 pt-8 ">
+    <div class="header bg-primary pb-2 pt-5 ">
         <div class="container">
             <div class="header-body mt-4 mb-4">
                 <div class="row align-items-center">
