@@ -23,7 +23,7 @@ Route::get('/analytic', [App\Http\Controllers\LandingController::class, 'analyti
 Route::get('/about', [App\Http\Controllers\LandingController::class, 'about'])->name('about');
 Route::get('/blog', [App\Http\Controllers\LandingController::class, 'blog'])->name('blog');
 Route::get('/get-started', [App\Http\Controllers\LandingController::class, 'started'])->name('get');
-Route::get('article/{article:slug}', ['as' => 'article.show', 'uses' => 'App\Http\Controllers\ArticleController@show']);
+
 
 Auth::routes();
 
@@ -59,3 +59,4 @@ Route::group(['middleware' => 'auth'], function () {
 	Route::put('contact/{contact}', ['as' => 'contact.update', 'uses' => 'App\Http\Controllers\ContactController@update']);
 });
 
+Route::get('article/{article:slug}', ['as' => 'article.show', 'uses' => 'App\Http\Controllers\ArticleController@show']);
