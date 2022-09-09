@@ -2,7 +2,7 @@
 @section('title', 'Single Blog')
 
 @section('content')
-    <div class="header bg-white-2 pt-7">
+    <div class="header bg-white-2 pt-4">
 
         <section class="bg-white-2">
             <div class="container">

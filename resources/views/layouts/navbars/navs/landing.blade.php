@@ -1,4 +1,4 @@
-<nav class="navbar sticky-top bg-primary navbar-horizontal navbar-expand-md navbar-dark">
+<nav class="navbar px-0 sticky-top bg-primary navbar-horizontal navbar-expand-md navbar-dark">
     <div class="container px-4">
         <a class="navbar-brand" href="/">
             <img src="{{ asset('argon') }}/logo/logow.png" />
