@@ -81,9 +81,8 @@
                 </div>
                 <div class="col-lg-6 col-md-6">
                     <div class="image-box introimg">
-                        {{-- <lottie-player src="{{ asset('argon') }}/animation/clock.json" background="transparent" speed="1" loop autoplay></lottie-player> --}}
                         
-                        <img src="{{ asset('argon') }}/home/diversity.png" style="width: 42%;margin-top: 13px;">
+                        <lottie-player class="mx-auto" style="width: 80%;margin-top: 13px;" src="{{ asset('argon') }}/animation/jm.json" background="transparent" speed="1" loop autoplay></lottie-player>
                     </div>
                 </div>
             </div>
