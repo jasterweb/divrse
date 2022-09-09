@@ -425,7 +425,7 @@
   .colmob{flex-direction: column;}
   .itemproof-light{width:50%;margin-bottom:2rem}
   .proofnum2 .itemproof-light:nth-child(2){border:0}
-  .posthome{padding: 2rem;}
+  .posthome{margin: 2rem;}
   .wrapproof h2{font-size:2rem}
   .title2{font-size: 1.7rem;}
   .imgcta lottie-player{margin: 3rem 0 0 0;}
