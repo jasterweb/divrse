@@ -1,7 +1,7 @@
 @extends('layouts.landing', ['class' => 'bg-default'])
 @section('title', 'Analytics')
 @section('content')
-    <div class="header bg-white pt-md-5 pt-8 pb-6">
+    <div class="header bg-white pt-5 pb-6">
         <div class="container">
             <div class="header-body mt-4 mb-4">
                 <div class="row align-items-center">

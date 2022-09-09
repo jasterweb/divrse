@@ -332,6 +332,11 @@
     margin: 3rem auto;
     margin-bottom: 1rem;
   }
+  .presslogo {
+    width: 100%;
+    margin: 3rem auto;
+    margin-bottom: 1rem;
+  }
 }
 
 .slider {
@@ -415,10 +420,8 @@
   .title1{font-size: 1.8rem;}
   .switchmob{flex-direction: column-reverse;}
   .text-2rem{font-size: 1.5rem !important;}
-  .presslogo li{width: 50%; padding: 5px;}
   .introimg{padding:2rem 0}.introimg img{width:60%!important}
   .image-box.my--6{margin-bottom: 2rem !important;}
-  .presslogo li{width:50%;padding:5px}
   .colmob{flex-direction: column;}
   .itemproof-light{width:50%;margin-bottom:2rem}
   .proofnum2 .itemproof-light:nth-child(2){border:0}
