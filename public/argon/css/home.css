@@ -613,5 +613,5 @@
 }
 
 .border-bottom {
-  border-bottom: 3px solid var(--danger) !important;
+  border-bottom: 2px solid #eaeaea !important;
 }

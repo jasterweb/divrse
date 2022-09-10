@@ -124,7 +124,7 @@
             <div class="row align-items-center mt-5">
                 <div class="col-lg-6 col-md-6 mb-md-0 mb-4">
                     <div class="image-box introimg">
-                        <img src="{{ asset('argon') }}/home/Solution_Data.png">
+                        <img src="{{ asset('argon') }}/home/solution/solution_data.png">
                     </div>
                 </div>
 
@@ -167,7 +167,7 @@
                 </div>
                 <div class="col-lg-6 col-md-6 mt-md-0 mt-5">
                     <div class="image-box introimg">
-                        <img src="{{ asset('argon') }}/home/Solution_Enhanced.png">
+                        <img src="{{ asset('argon') }}/home/solution/solution_enhanced.png">
                     </div>
                 </div>
 
