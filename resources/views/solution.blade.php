@@ -87,34 +87,46 @@
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-12 col-md-12">
-                    <h2 class="title3">Big <b>Benefits.</b><br/>Great <b>Talent.</b></h2>
+                    <h2 class="title3" style="text-align: center;line-height:55px;">Big <b>Benefits.</b> <br />Great <b>Talent.</b></h2>
                 </div>
             </div>
-            <div class="row align-items-center mt-5">
-                <div class="col-lg-6 col-md-6">
-                    <div class="mb-5">
-                        <h3 class="text-warning">Hidden Gems</h3>
-                        <p class="text-light">Hidden gems are candidates who made it to the late stages of the interview process but ultimately weren’t hired for the role. Hidden gems have been vetted
+            <div class="row align-items-start mt-5">
+                <div class="col-lg-4 col-md-4">
+                    <div class="image-box introimg">
+                        <img src="{{ asset('argon') }}/home/solution/hidden gems.png" style="width:250px;height:230px;">
+                    </div>
+                    <div class="mt-5 mb-5">
+                        <h3 class="text-warning text-center">Hidden Gems</h3>
+                        <p class="text-light text-center">Hidden gems are candidates who made it to the late stages of the interview process but ultimately weren’t hired for the role. Hidden gems have been vetted
                             by hiring managers, both for hard and soft skills.
                             Hidden gems are highly intent and already engaged candidates, which provides talent acquisition teams with a fully vetted and qualified candidate.</p>
                     </div>
-                    <div class="mb-5">
-                        <h3 class="text-warning">Reduced Sourcing Time</h3>
-                        <p class="text-light">Enrich the top of your recruiting funnel with a constant stream of qualified underrepresented candidates.</p>
+                </div>
+                <div class="col-lg-4 col-md-4">
+                    <div class="image-box introimg">
+                        <img src="{{ asset('argon') }}/home/solution/reduced sourcing time.png" style="width:250px;height:230px;">
                     </div>
-                    <div class="mb-5">
-                        <h3 class="text-warning">Streamlined screening process</h3>
-                        <p class="text-light">Eliminate spam resumes and reduce time- to-hire by up to 30%, adding highly qualified candidates to your pipeline</p>
-                        <div class="center-small">
-                            <a href="{{ route('talent') }}" class="btn btn-xl btn-secondary mt-4">Explore Talent Stream</a>
-                        </div>
+                    <div class="mt-5 mb-5">
+                        <h3 class="text-warning text-center">Reduced Sourcing Time</h3>
+                        <p class="text-light text-center">Enrich the top of your recruiting funnel with a constant stream of qualified underrepresented candidates.</p>
                     </div>
                 </div>
-                <div class="col-lg-6 col-md-6">
-                    <div class="image-box introimg bigsol">
-                        <img src="{{ asset('argon') }}/home/bigsol.png">
+                <div class="col-lg-4 col-md-4">
+                    <div class="image-box introimg">
+                        <img src="{{ asset('argon') }}/home/solution/stremalined screening.png" style="width:250px;height:230px;">
+                    </div>
+                    <div class="mt-5 mb-5">
+                    <h3 class="text-warning text-center">Streamlined screening process</h3>
+                    <p class="text-light text-center">Eliminate spam resumes and reduce time- to-hire by up to 30%, adding highly qualified candidates to your pipeline</p>
+                    
                     </div>
                 </div>
+            </div>
+
+            <div class="center-small text-align-center">
+                <center>
+                    <a href="{{ route('talent') }}" class="btn btn-xl btn-secondary mt-4">Explore Talent Stream</a>
+                </center>
             </div>
         </div>
     </section>
@@ -183,32 +195,47 @@
                 </div>
             </div>
             <div class="row align-items-center mt-5">
-                <div class="col-lg-6 col-md-6">
-                    <div class="mb-5">
+                <div class="col-lg-4 col-md-4">
+                    <div class="image-box introimg">
+                        <img src="{{ asset('argon') }}/home/solution/for recruiter.png" style="width:250px;height:230px;">
+                    </div>
+                    
+                    <div class="mb-5 mt-5 ">
                         <h3 class="fw800">For Recruiter</h3>
                         <p>Whether it’s building top of the funnel, understanding the diversity of your existing pipeline or
                             managing your existing candidates efficiently, our solution has you covered.</p>
                     </div>
-                    <div class="mb-5">
+                   
+                </div>
+                <div class="col-lg-4 col-md-4">
+                    <div class="image-box introimg">
+                        <img src="{{ asset('argon') }}/home/solution/for talent leader.png" style="width:250px;height:230px;">
+                    </div>
+                    <div class="mt-5  mb-5">
                         <h3 class="fw800">For Talent Leader</h3>
                         <p>Take the guesswork out of your diversity hiring goals. Understand your current hiring gaps and use
                             our suite of solutions to run an end to end diversity recruiting strategy.</p>
                     </div>
-                    <div class="mb-5">
+                </div>
+
+                <div class="col-lg-4 col-md-4">
+                    <div class="image-box introimg">
+                        <img src="{{ asset('argon') }}/home/solution/for DEI leader.png" style="width:250px;height:230px;">
+                    </div>
+                    <div class="mt-5 mb-5">
                         <h3 class="fw800">For DEI Leader</h3>
                         <p>Understand the diversity of your recruiting team’s current pipeline with self-identified data.
                             Build a strong employer brand as a diverse employer of choice.  </p>
-                        <div class="center-small">
-                            <a href="{{route('get')}}" class="btn btn-xl btn-secondary mt-4">Get Started</a>
-                        </div>
-                    </div>
-                   
-                </div>
-                <div class="col-lg-6 col-md-6">
-                    <div class="image-box introimg bigsol">
-                        <img src="{{ asset('argon') }}/home/Solution_AModern.png">
+                       
                     </div>
                 </div>
+
+               
+            <div class="center-small text-align-center">
+                <center>
+                    <a href="{{ route('talent') }}" class="btn btn-xl btn-secondary mt-4">Explore Talent Stream</a>
+                </center>
+            </div>
             </div>
         </div>
     </section>

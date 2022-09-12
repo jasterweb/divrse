@@ -4,7 +4,7 @@
 @section('content')
     <div class="header bg-primary pb-0 pt-5">
         <div class="container">
-            <div class="header-body mt-4 mb-4">
+            <div class="header-body mt-7 mb-4">
                 <div class="row align-items-center switchmob">
                     <div class="col-lg-5 col-md-6">
                         <h1 class="title1">Unlock Diversity, <br/>Equity & Inclusion <br/>in the workplace.</h1>
@@ -252,7 +252,7 @@
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-12 col-md-12">
-                    <h2 class="titlesect text-primary">Why companies and<br/>
+                    <h2 class="titlesect text-primary">Why companies and s<br/>
                         recruiters use Divrse</h2>
                         <p class="text-center w600 m0-auto">Our all-in-one platform helps companies and recruiters source diversified,
                             pre-screened and  qualified candidates with confidence, while reducing time-to-hire and increasing net-promoter-score. </p>
