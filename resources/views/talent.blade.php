@@ -187,12 +187,14 @@
         </div>
     </section>
 
-    @include('layouts.footers.footer', [
+    @include('layouts.footers.footerbig', [
         'title' => 'Ready to stop talking about diversity recruitment and start doing it?',
         'desc' => 'Contact us to design a custom diversity hiring solution for your business.',
         'link' => route('get'),
         'cta' => 'Learn More'
     ])
+
+    @include('layouts.footers.footer')
 
 
 @endsection

@@ -50,6 +50,7 @@
         'link' => route('get'),
         'cta' => 'Get Started'
     ])
+    @include('layouts.footers.footer', [
     
 @endsection
 

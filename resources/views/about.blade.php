@@ -297,12 +297,13 @@
         </div>
     </section>
 
-    @include('layouts.footers.footer', [
+    @include('layouts.footers.ctafoot', [
         'title' => 'Diversity won\'t wait',
         'desc' => 'Turn diversity goals into action today',
         'link' => route('get'),
         'cta' => 'Get Started'
     ])
+    @include('layouts.footers.footer')
 
 @endsection
 

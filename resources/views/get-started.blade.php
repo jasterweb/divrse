@@ -25,11 +25,13 @@
         </div>
     </div>
 
-    @include('layouts.footers.footer', [
+    @include('layouts.footers.ctafoot', [
         'title' => 'Get started today.',
         'desc' => 'Finding the right job is life-changing. Let Divrse help you find your next big opportunity.',
         'link' => route('get'),
         'cta' => 'See It in Action'
     ])
+
+    @include('layouts.footers.footer')
 
 @endsection
