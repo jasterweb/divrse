@@ -136,7 +136,7 @@
         </div>
     </section>
 
-    @include('layouts.footers.footerbig', [
+    @include('layouts.footers.footer', [
         'title' => 'Stop setting diversity goals. Start meeting them.',
         'desc' => 'We\'ll design a custom diversity hiring solution for your business.',
         'link' => route('get'),

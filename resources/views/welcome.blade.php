@@ -4,7 +4,7 @@
 @section('content')
     <div class="header bg-primary pb-0 pt-5">
         <div class="container">
-            <div class="header-body mt-7 mb-4">
+            <div class="header-body mt-2 mb-2">
                 <div class="row align-items-center switchmob">
                     <div class="col-lg-5 col-md-6">
                         <h1 class="title1">Unlock Diversity, <br/>Equity & Inclusion <br/>in the workplace.</h1>
@@ -42,8 +42,8 @@
         <div class="container">
             <div class="row align-items-center mb-3 border-bottom">
                 <div class="col-lg-6 col-md-6 pr-5">
-                    <h2 class="text-cyan text-2rem font-weight-800">Empowering underrepresented Professionals</h2>
-                    <p>
+                    <h2 class="text-cyan text-1-5rem font-weight-800">Empowering underrepresented Professionals</h2>
+                    <p class="font14">
                         Divrse’s talent pool includes women, visible minorities, immigrants and members of the 2SLQBTQ+ 
                         community. These candidates are vetted, qualified and interviewed by our partner companies before 
                         they are invited to join our talent pool. Each applicant is actively seeking new opportunities 
@@ -63,8 +63,8 @@
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6">
-                    <h2 class="text-pink text-2rem font-weight-800">Diversity recruiting.<br/>Powered by Technology.</h2>
-                    <p>
+                    <h2 class="text-pink text-1-5rem font-weight-800">Diversity recruiting.<br/>Powered by Technology.</h2>
+                    <p class="font14">
                         Divrse’s proven solution to increase workforce diversity and the number of applicants from 
                         underrepresented backgrounds is a tried-and-true approach. Our diversity centered solution 
                         focuses entirely on bringing qualified underrepresented candidates directly into your hiring 
@@ -74,8 +74,8 @@
             </div>
             <div class="row align-items-center">
                 <div class="col-lg-6 col-md-6 pr-5">
-                    <h2 class="text-blue text-2rem font-weight-800">Diversity won't wait</h2>
-                    <p>From startups to Fortune 500 companies, employers of all sizes use Divrse to find skilled and underrepresented talent for a wide
+                    <h2 class="text-blue text-1-5rem font-weight-800">Diversity won't wait</h2>
+                    <p class="font14">From startups to Fortune 500 companies, employers of all sizes use Divrse to find skilled and underrepresented talent for a wide
                         variety of employment opportunities including remote, part-time and full-time, permanent and contract roles. </p> <br/>
                         <a href="{{ route('get') }}" class="btn btn-xl btn-secondary mt-4">Get Started</a>
                 </div>
@@ -321,7 +321,7 @@
         </div>
     </section>
 
-    @include('layouts.footers.footerbig', [
+    @include('layouts.footers.footer', [
         'title' => 'Ready to stop talking about diversity recruitment and start doing it?',
         'desc' => 'Turn your DE&I goals into reality with Divrse’s quick, easy and affordable solution',
         'link' => route('get'),

@@ -23,6 +23,10 @@ Route::get('/analytic', [App\Http\Controllers\LandingController::class, 'analyti
 Route::get('/about', [App\Http\Controllers\LandingController::class, 'about'])->name('about');
 Route::get('/blog', [App\Http\Controllers\LandingController::class, 'blog'])->name('blog');
 Route::get('/get-started', [App\Http\Controllers\LandingController::class, 'started'])->name('get');
+Route::get('/contact-us', [App\Http\Controllers\LandingController::class, 'contactus'])->name('contactus');
+Route::get('/privacy', [App\Http\Controllers\LandingController::class, 'privacy'])->name('privacy');
+Route::get('/terms', [App\Http\Controllers\LandingController::class, 'terms'])->name('terms');
+Route::get('/compliance', [App\Http\Controllers\LandingController::class, 'compliance'])->name('compliance');
 
 
 Auth::routes();

@@ -29,4 +29,8 @@ class LandingController extends Controller
     public function analytic(){return view('analytic');}
     public function about(){return view('about');}
     public function started(){return view('get-started');}
+    public function contactus(){return view('contact');}
+    public function terms(){return view('terms');}
+    public function privacy(){return view('privacy');}
+    public function compliance(){return view('compliance');}
 }
