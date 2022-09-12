@@ -74,7 +74,7 @@
                 </div>
                 <div class="col-lg-6 col-md-6">
                     <div class="image-box img100">
-                        <img src="{{ asset('argon') }}/page/cand_today.png">
+                        <img src="{{ asset('argon') }}/home/about-what-we-do.png">
                     </div>
                 </div>
 

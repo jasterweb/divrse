@@ -41,7 +41,7 @@
 
                 <div class="col-lg-5 col-md-5">
                     <div class="image-box img100">
-                        <img src="{{ asset('argon') }}/page/cand_empowering.png" style="width: 80%;">
+                        <img src="{{ asset('argon') }}/page/candidate/cand_emp.png" style="width: 80%;">
                     </div>
                 </div>
 
@@ -55,7 +55,7 @@
 
                 <div class="col-lg-5 col-md-5">
                     <div class="image-box img100">
-                        <img src="{{ asset('argon') }}/page/cand_today.png" style="width: 59%;">
+                        <img src="{{ asset('argon') }}/page/candidate/cand_top.png" style="width: 59%;">
                     </div>
                 </div>
 
@@ -87,7 +87,7 @@
 
                 <div class="col-lg-5 col-md-5">
                     <div class="image-box img100">
-                        <img src="{{ asset('argon') }}/page/Candidates_Apply2.png">
+                        <img src="{{ asset('argon') }}/page/candidate/cand_apply.png">
                     </div>
                 </div>
 
@@ -204,7 +204,7 @@
                 </div>
                 <div class="col-lg-5 col-md-5">
                     <div class="image-box img100">
-                        <img src="{{ asset('argon') }}/page/cand_jobs.png">
+                        <img src="{{ asset('argon') }}/page/candidate/cand_tailor.png">
                     </div>
                 </div>
 
@@ -218,7 +218,7 @@
 
                 <div class="col-lg-5 col-md-5">
                     <div class="image-box img100">
-                        <img src="{{ asset('argon') }}/page/cand_change.png">
+                        <img src="{{ asset('argon') }}/page/candidate/cand_change.png">
                     </div>
                 </div>
                 <div class="col-lg-6 offset-md-1 col-md-6">
