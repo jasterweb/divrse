@@ -7,7 +7,6 @@
                 <div class="row align-items-center">
                     <div class="col-lg-6 col-md-6">
                         <div class="image-box heroimage">
-                            {{-- <img src="{{ asset('argon') }}/home/mainsolution.png" class="basehero"> --}}
                             <lottie-player src="{{ asset('argon') }}/animation/kelima.json" background="transparent" speed="1" loop autoplay></lottie-player>
                         </div>
                     </div>
@@ -92,8 +91,17 @@
             </div>
             <div class="row align-items-start mt-5">
                 <div class="col-lg-4 col-md-4">
-                    <div class="image-box introimg">
-                        <img src="{{ asset('argon') }}/home/solution/hidden gems.png" style="width:250px;height:230px;">
+                    <div class="mx-auto d-flex justify-content-center" style="width:250px;height:230px;">
+                        <img src="{{ asset('argon') }}/home/solution/reduced sourcing time.png">
+                    </div>
+                    <div class="mt-5 mb-5">
+                        <h3 class="text-warning text-center">Reduced Sourcing Time</h3>
+                        <p class="text-light text-center">Enrich the top of your recruiting funnel with a constant stream of qualified underrepresented candidates.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4">
+                    <div class="mx-auto d-flex justify-content-center" style="width:250px;height:230px;">
+                        <img src="{{ asset('argon') }}/home/solution/hidden gems.png">
                     </div>
                     <div class="mt-5 mb-5">
                         <h3 class="text-warning text-center">Hidden Gems</h3>
@@ -103,17 +111,8 @@
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-4">
-                    <div class="image-box introimg">
-                        <img src="{{ asset('argon') }}/home/solution/reduced sourcing time.png" style="width:250px;height:230px;">
-                    </div>
-                    <div class="mt-5 mb-5">
-                        <h3 class="text-warning text-center">Reduced Sourcing Time</h3>
-                        <p class="text-light text-center">Enrich the top of your recruiting funnel with a constant stream of qualified underrepresented candidates.</p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4">
-                    <div class="image-box introimg">
-                        <img src="{{ asset('argon') }}/home/solution/stremalined screening.png" style="width:250px;height:230px;">
+                    <div class="mx-auto d-flex justify-content-center" style="width:250px;height:230px;">
+                        <img src="{{ asset('argon') }}/home/solution/stremalined screening.png">
                     </div>
                     <div class="mt-5 mb-5">
                     <h3 class="text-warning text-center">Streamlined screening process</h3>
@@ -196,8 +195,8 @@
             </div>
             <div class="row align-items-center mt-5">
                 <div class="col-lg-4 col-md-4">
-                    <div class="image-box introimg">
-                        <img src="{{ asset('argon') }}/home/solution/for recruiter.png" style="width:250px;height:230px;">
+                    <div class="mx-auto d-flex justify-content-center" style="width:250px;height:230px;">
+                        <img src="{{ asset('argon') }}/home/solution/for recruiter.png">
                     </div>
                     
                     <div class="mb-5 mt-5 ">
@@ -208,8 +207,8 @@
                    
                 </div>
                 <div class="col-lg-4 col-md-4">
-                    <div class="image-box introimg">
-                        <img src="{{ asset('argon') }}/home/solution/for talent leader.png" style="width:250px;height:230px;">
+                    <div class="mx-auto d-flex justify-content-center" style="width:250px;height:230px;">
+                        <img src="{{ asset('argon') }}/home/solution/for talent leader.png">
                     </div>
                     <div class="mt-5  mb-5">
                         <h3 class="fw800">For Talent Leader</h3>
@@ -219,8 +218,8 @@
                 </div>
 
                 <div class="col-lg-4 col-md-4">
-                    <div class="image-box introimg">
-                        <img src="{{ asset('argon') }}/home/solution/for DEI leader.png" style="width:250px;height:230px;">
+                    <div class="mx-auto d-flex justify-content-center" style="width:250px;height:230px;">
+                        <img src="{{ asset('argon') }}/home/solution/for DEI leader.png">
                     </div>
                     <div class="mt-5 mb-5">
                         <h3 class="fw800">For DEI Leader</h3>
