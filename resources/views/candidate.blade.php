@@ -55,7 +55,7 @@
 
                 <div class="col-lg-5 col-md-5">
                     <div class="image-box img100">
-                        <img src="{{ asset('argon') }}/page/candidate/cand_top.png" style="width: 59%;">
+                        <img src="{{ asset('argon') }}/page/candidate/cand_top.png" style="width: 75%;">
                     </div>
                 </div>
 
@@ -87,7 +87,7 @@
 
                 <div class="col-lg-5 col-md-5">
                     <div class="image-box img100">
-                        <img src="{{ asset('argon') }}/page/candidate/cand_apply.png">
+                        <img src="{{ asset('argon') }}/page/candidate/cand_apply.png" style="width: 65%;">
                     </div>
                 </div>
 

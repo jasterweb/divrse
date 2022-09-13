@@ -15,7 +15,6 @@
                     </div>
                     <div class="col-lg-6 col-md-6">
                         <div class="image-box heroimage">
-                            {{-- <img src="{{ asset('argon') }}/home/herotalent.png" class="basehero"> --}}
                             <lottie-player src="{{ asset('argon') }}/animation/keempat.json" background="transparent" speed="1" loop autoplay></lottie-player>
 
                         </div>
@@ -42,7 +41,7 @@
                 </div>
                 <div class="col-lg-6 col-md-6">
                     <div class="image-box introimg">
-                        <img src="{{ asset('argon') }}/page/talent_wedo.png" style="width: 53%;">
+                        <img src="{{ asset('argon') }}/page/talent_Wedo2.png" style="width: 53%;">
                     </div>
                 </div>
 
@@ -57,12 +56,12 @@
         <div class="container">
             <div class="row align-items-center">
                
-                <div class="col-lg-5 col-md-5">
+                <div class="col-md-6">
                     <div class="image-box introimg">
-                        <img src="{{ asset('argon') }}/page/talent_buildauth.png">
+                        <img src="{{ asset('argon') }}/page/talent_BuildAut2.png">
                     </div>
                 </div>
-                <div class="col-lg-7 col-md-7">
+                <div class="col-md-6">
              
                         <h2 class="title3 text-left mb-md-2 mt-md-0 my-3">Build <b>Authentic</b> connections<br/>with <b>qualified</b> Talent</h2>
                         <p class="text-light">Increase your outbound recruiting response rates by connecting with our highly engaged talent pool. Manage conversations
@@ -126,7 +125,7 @@
             </div>
                 <div class="col-lg-6 col-md-6">
                     <div class="image-box introimg">
-                        <img src="{{ asset('argon') }}/page/talent_buildan.png">
+                        <img src="{{ asset('argon') }}/page/talent_BuildAn3.png" style="width: 65%;">
                     </div>
                 </div>
 
